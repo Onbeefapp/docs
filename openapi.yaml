@@ -13,6 +13,8 @@ info:
     - **Eventos de pedidos** e confirmações de entrega
 
     Documentação Open Delivery: <a href="https://abrasel-nacional.github.io/docs" target="_blank">https://abrasel-nacional.github.io/docs</a>
+  x-logo:
+    url: 'https://onbeefapp.com.br/wp-content/uploads/2024/03/logo_onbeef.20b983ed-300x300.png'
   version: 1.0.0
   contact:
     email: rafael@onbeefapp.com.br
