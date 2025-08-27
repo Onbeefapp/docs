@@ -1,0 +1,6 @@
+name: X-App-MerchantId
+in: header
+description: ID do Merchant na aplicação
+required: true
+schema:
+  type: string

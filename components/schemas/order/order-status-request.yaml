@@ -1,0 +1,18 @@
+type: object
+properties:
+  reason:
+    type: 'string'
+    description: Campo livre para mais informações sobre a confirmação do pedido, como, por exemplo, qual funcionário aceitou o pedido.
+  createdAt:
+    type: 'string'
+    format: 'date-time'
+    description: Data e hora de criação do pedido.
+  orderExternalCode:
+    type: 'string'
+    description: Código externo do pedido, que pode ser usado pelo lojista ou marketplace.
+  preparationTime:
+    type: integer
+    description: Indica uma estimativa do tempo de preparo (em minutos) para o pedido que está sendo confirmado.
+required:
+- createdAt
+- orderExternalCode

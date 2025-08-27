@@ -1,0 +1,118 @@
+properties:
+  id:
+    type: string
+    format: uuid
+    description: O identificador único do produto.
+  name:
+    type: string
+    description: O nome do produto.
+  externalCode:
+    type: string
+    nullable: true
+    description: O código externo do produto (normalmente no PDV do Merchant).
+  kit_id:
+    type: string
+    nullable: true
+    description: O identificador único do kit que pertence esse produto.
+  unit:
+    type: string
+    description: Unidade de medida do produto.
+    enum:
+    - UN
+    - KG
+  quantity:
+    type: number
+    description: |
+      Quantidade do produto.
+
+      > Valores fracionários para quantidades menores que a unidade de medida: Exemplo: 500 gramas = 0,5 KG
+  specialInstructions:
+    type: string
+    nullable: true
+    description: Instruções especiais do produto.
+  unitPrice:
+    type: object
+    description: Informações sobre o preço unitário do produto.
+    properties:
+      value:
+        type: number
+        description: Preço unitário do produto.
+      currency:
+        type: string
+        description: Moeda do preço unitário do produto.
+        enum:
+        - BRL
+  originalPrice:
+    type: object
+    description: Informações sobre o preço original do produto.
+    properties:
+      value:
+        type: number
+        description: Preço original do produto.
+      currency:
+        type: string
+        description: Moeda do preço original do produto.
+        enum:
+        - BRL
+  totalPrice:
+    type: object
+    description: Informações sobre o preço total do produto.
+    properties:
+      value:
+        type: number
+        description: Preço total do produto.
+      currency:
+        type: string
+        description: Moeda do preço total do produto.
+        enum:
+        - BRL
+  options:
+    type: array
+    description: Extras opcionais escolhidos pelo consumidor, relacionados a este item.
+    items:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+          description: O identificador único do extra.
+        name:
+          type: string
+          description: O nome do extra.
+        unit:
+          type: string
+          description: Unidade de medida do produto.
+          enum:
+          - UN
+          - KG
+        quantity:
+          type: number
+          description: Quantidade do extra.
+        specialInstructions:
+          type: string
+          nullable: true
+          description: Instruções especiais do extra.
+        unitPrice:
+          type: object
+          description: Informações sobre o preço do extra.
+          properties:
+            value:
+              type: number
+              description: Preço do extra.
+            currency:
+              type: string
+              description: Moeda do preço do extra.
+              enum:
+              - BRL
+        totalPrice:
+          type: object
+          description: Informações sobre o preço total do extra.
+          properties:
+            value:
+              type: number
+              description: Preço total do extra.
+            currency:
+              type: string
+              description: Moeda do preço total do extra.
+              enum:
+              - BRL

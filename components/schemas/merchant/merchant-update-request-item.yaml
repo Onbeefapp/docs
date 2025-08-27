@@ -1,0 +1,10 @@
+allOf:
+  - $ref: '#/components/schemas/MerchantUpdateRequestBody'
+  - type: object
+    properties:
+      updatedObjects:
+        description: 'Updated `Item` entity objects'
+        type: array
+        items:
+          description: 'Updated `Item` entity object'
+          $ref: '#/components/schemas/MerchantUpdateItemRequest'

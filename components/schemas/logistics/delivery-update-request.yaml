@@ -1,0 +1,366 @@
+type: object
+properties:
+  deliveryId:
+    type: string
+    format: uuid
+    description: O ID da entrega gerado pelo Serviço Logístico.
+  orderId:
+    type: string
+    format: uuid
+    description: O orderId gerado pela Onbeef.
+  orderDisplayId:
+    type: string
+    description: D do pedido exibido na interface do Sistema Onbeef para o cliente.
+  merchant:
+    type: object
+    description: Informações do Merchant.
+    properties:
+      id:
+        type: string
+        format: uuid
+        description: |
+          Identificador único. 
+
+          Identifica o Merchant nos diferentes sistemas com os quais ele irá se comunicar.
+      name:
+        type: string
+        description: Nome público do Merchant.
+    required:
+    - id
+    - name
+  event:
+    type: object
+    description: Informações do Evento Atual.
+    properties:
+      type:
+        type: string
+        description: O evento de entrega atual.
+        enum:
+        - PENDING
+        - ACCEPTED
+        - REJECTED
+        - PICKUP_ONGOING
+        - ARRIVED_AT_MERCHANT
+        - ORDER_PICKED
+        - DELIVERY_ONGOING
+        - ARRIVED_AT_CUSTOMER
+        - ORDER_DELIVERED
+        - RETURNING_TO_MERCHANT
+        - RETURNED_TO_MERCHANT
+        - DELIVERY_FINISHED
+        - CANCELLED
+      message:
+        type: string
+        description: |
+          Mensagem livre. 
+
+          Deve ser usada para fornecer informações mais detalhadas.
+      datetime:
+        type: string
+        format: date-time
+        description: Data e hora em que o evento ocorreu.
+      rejectionInfo:
+        type: object
+        description: |
+          Informações de rejeição. 
+
+          Deve ser fornecido para detalhar melhor quando o tipo de evento for `REJECTED`.
+        properties:
+          reason:
+            type: string
+            description: Motivo pelo qual o pedido foi rejeitado.
+            enum:
+            - INVALID_ADDRESS
+            - PRICE_EXCEEDED
+            - VEHICLE_NOT_AVAILABLE
+            - NO_DELIVERYPERSON_AVAILABLE
+            - DOES_NOT_MEET_REQUESTED_TIMES
+            - REGION_NOT_SERVED
+            - OTHER
+        required:
+        - reason
+    required:
+    - type
+    - datetime
+  problem:
+    type: array
+    description: Lista de problemas que podem ocorrer.
+    items:
+      type: object
+      properties:
+        reason:
+          type: string
+          description: Motivo do problema.
+          enum:
+          - DELIVERYPERSON_OCCURRENCE
+          - PAYMENT_PROBLEMS
+          - WRONG_PRODUCT_OR_ITEM
+          - ORDER_DELAYED
+          - ORDER_DAMAGED_OR_VIOLATED
+          - CUSTOMER_DID_NOT_PLACE_ORDER
+          - CUSTOMER_ADDRESS_UNKNOWN
+          - ORDER_MISSING_ITEMS
+          - NOBODY_TO_RECEIVE
+          - DELIVERYPERSON_WAITING_PAYMENT_FOR_ALREADY_PAID_ORDER
+          - ORDER_DELIVERED_WITHOUT_PAYMENT
+          - FRAUD_OR_THEFT
+          - OTHER
+        message:
+          type: string
+          description: |
+            Mensagem livre. 
+
+            Deve ser usada para fornecer informações mais detalhadas.
+        datetime:
+          type: string
+          format: date-time
+          description: Data e hora em que o problema ocorreu.
+        canFinishDeliver:
+          type: boolean
+          description: Informa se ainda é possível ou não concluir a entrega.
+        needMerchantAction:
+          type: boolean
+          description: Informa se o Merchant precisa ou não realizar alguma ação para que a entrega continue.
+      required:
+      - reason
+      - datetime
+      - canFinishDeliver
+      - needMerchantAction
+  customerName:
+    type: string
+    description: Nome do cliente.
+  vehicle:
+    type: object
+    description: Esta propriedade é OBRIGATÓRIA quando o `event > type` for diferente de `PENDING`, `REJECTED` e `CANCELLED`.
+    properties:
+      type:
+        type: string
+        description: O tipo de veiculo.
+        enum:
+        - MOTORBIKE_BAG
+        - MOTORBIKE_BOX
+        - CAR
+        - BICYCLE
+        - SCOOTER
+        - VUC
+      container:
+        type: string
+        description: O tipo de contêiner (bolsa) do veículo.
+        enum:
+        - NORMAL
+        - THERMIC
+      containerSize:
+        type: string
+        description: O tamanho do contêiner (bolsa) do veículo.
+        enum:
+        - SMALL
+        - MEDIUM
+        - LARGE
+        - EXTRA_LARGE
+      instruction:
+        type: string
+        description: Instruções especiais.
+    required:
+    - type
+    - container
+  deliveryPrice:
+    type: object
+    description: |
+      Informações de precificação da entrega.
+
+      > Esta propriedade é OBRIGATÓRIA quando o event > type for diferente de PENDING, REJECTED e CANCELLED.
+    properties:
+      price:
+        type: object
+        description: |
+          O preço calculado da entrega. Pode ser 0. 
+
+          O preço deve ser calculado de acordo com a Tabela de Preços utilizada, bem como com os acordos comerciais previamente estabelecidos.
+        properties:
+          value:
+            type: number
+            format: decimal
+            description: |
+              Valor do preço. São aceitos 4 casas decimais.
+          currency:
+            type: string
+            description: Código da moeda.
+          required:
+          - price
+          - currency
+      pricingList:
+        type: string
+        description: Indica qual tabela foi usada para calcular o preço da entrega.
+        enum:
+        - NORMAL
+        - DYNAMIC
+      additionalPricePercentual:
+        type: number
+        description: Indica a porcentagem adicional sobre o preço da tabela que foi aplicada para esta entrega.
+    required:
+    - price
+    - pricingList
+    - additionalPricePercentual
+  eta:
+    type: object
+    description: |
+      Estimativas de horários de retirada e entrega.
+
+      > Esta propriedade é OBRIGATÓRIA quando o `event > type` for diferente de `PENDING`, `REJECTED` e `CANCELLED`.
+    properties:
+      updateMethod:
+        type: string
+        description: |
+          Método de atualização: indica como os horários serão atualizados nos eventos.
+
+          `OFFLINE`: O horário será calculado no evento ACCEPTED e não será mais atualizado nos eventos seguintes.
+
+          `ONLINE`: O horário será atualizado em todos os eventos. Nesse caso, quando a coleta já tiver ocorrido, a propriedade `pickupEtaInMinutes` será definida como 0 e a propriedade `pickupEtaDatetime` será o horário em que a coleta ocorreu.
+        enum:
+        - OFFLINE
+        - ONLINE
+      pickupEtaInMinutes:
+        type: integer
+        description: |
+          Estimativa de chegada para coleta em minutos. 
+
+          Informa quantos minutos o entregador levará para chegar ao Merchant para retirada do pedido.
+      pickupEtaDatetime:
+        type: string
+        format: date-time
+        description: |
+          Data e hora estimadas para chegada do entregador ao Merchant para retirada do pedido.
+      deliveryEtaInMinutes:
+        type: integer
+        description: |
+          Estimativa de entrega em minutos. 
+
+          Informa quantos minutos o entregador levará para chegar ao endereço do consumidor para entrega do pedido.
+      deliveryEtaDatetime:
+        type: string
+        format: date-time
+        description: >
+          Data e hora estimadas para chegada do entregador ao endereço do consumidor para entrega do pedido.
+      returnToMerchantEtaInMinutes:
+        type: integer
+        description: |
+          Estimativa de retorno do entregador ao Merchant em minutos. 
+
+          Informa quantos minutos o entregador levará para retornar ao Merchant. 
+
+          > Válido somente quando `returnToMerchant` for `true`.
+      returnToMerchantEtaDatetime:
+        type: string
+        format: date-time
+        description: |
+          Data e hora estimadas para o retorno do entregador ao Merchant. 
+
+          > Válido somente quando `returnToMerchant` for `true`.
+      maxDeliveryTime:
+        type: string
+        format: date-time
+        description: |
+          Data e hora máxima para a entrega. 
+
+          Esse horário não deve exceder o limite de tempo de entrega definido na solicitação do pedido.
+    required:
+    - updateMethod
+    - pickupEtaInMinutes
+    - pickupEtaDatetime
+    - deliveryEtaInMinutes
+    - deliveryEtaDatetime
+    - maxDeliveryTime
+  deliveryPerson:
+    type: object
+    description: |
+      Informações do entregador.
+
+      > Esta propriedade é *OBRIGATÓRIA* quando `event > type` for diferente de `PENDING`, `REJECTED` e `CANCELLED`.
+    properties:
+      id:
+        type: string
+        format: uuid
+        description: |
+          ID do entregador gerado pelo Serviço Logístico.
+      name:
+        type: string
+        description: Nome do entregador.
+      pictureURL:
+        type: string
+        description: URL da foto do entregador.
+      phone:
+        type: string
+        description: Telefone do entregador.
+    required:
+    - id
+    - name
+  geoLocalization:
+    type: object
+    description: |
+      Informações de geolocalização.
+    properties:
+      latitude:
+        type: number
+        format: float
+        description: Indica a coordenada de latitude da posição atual do entregador.
+      longitude:
+        type: number
+        format: float
+        description: Indica a coordenada de longitude da posição atual do entregador.
+      lastAddress:
+        type: object
+        description: O último endereço conhecido em que o entregador se encontrava quando o evento foi enviado.
+        properties:
+          country:
+            type: string
+            pattern: "^[A-Z]{2}$"
+            description: Código do país em duas letras conforme o padrão ISO 3166-1 alpha-2.
+          state:
+            type: string
+            description: Estado ou subdivisão do país. Recomenda-se (mas não é obrigatório) utilizar a representação ISO 3166-2.
+          city:
+            type: string
+            description: Nome da cidade.
+          district:
+            type: string
+            description: Nome do distrito ou bairro.
+          street:
+            type: string
+            description: Nome da rua.
+          postalCode:
+            type: string
+            description: Código postal.
+          distanceToPickup:
+            type: string
+            description: Distância até o ponto de coleta, em metros.
+          distanceToDelivery:
+            type: string
+            description: Distância até o ponto de entrega, em metros.
+          timestamp:
+            type: string
+            format: date-time
+            description: Data e hora em que esta informação é válida.
+        required:
+        - distanceToPickup
+        - distanceToDelivery
+        - timestamp
+    required:
+    - latitude
+    - longitude
+  externalTrackingURL:
+    type: string
+    format: uri
+    description: URL externa fornecida pelo serviço logístico para acompanhar a entrega em uma página específica.
+  combinedOrdersIds:
+    type: array
+    items:
+      type: string
+      format: uuid
+    description: IDs de pedidos combinados. Informa quais outros pedidos do mesmo Merchant estão sendo transportados pelo mesmo entregador, com o mesmo deliveryId.
+required:
+- deliveryId
+- orderId
+- orderDisplayId
+- merchant
+- event
+- customerName

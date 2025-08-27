@@ -1,0 +1,7 @@
+name: merchantId
+in: query
+required: true
+description: Identificador único do Merchant no sistema da Onbeef.
+schema:
+  type: string
+  format: uuid

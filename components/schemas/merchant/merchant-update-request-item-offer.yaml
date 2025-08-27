@@ -1,0 +1,12 @@
+allOf:
+- $ref: '#/components/schemas/MerchantUpdateRequestBody'
+- type: object
+  properties:
+    updatedObjects:
+      description: 'Updated `ItemOffer` entity objects'
+      type: array
+      items:
+        type: object
+        description: >-
+          Entidade obrigatória a ser implementada. Descreve um array de ofertas para os itens.
+        $ref: '#/components/schemas/MerchantUpdateItemOfferRequest'

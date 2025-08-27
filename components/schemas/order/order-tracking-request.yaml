@@ -1,0 +1,158 @@
+type: object
+properties:
+  deliveryTrackingInfo:
+    type: object
+    description: "Informações sobre a entrega."
+    properties:
+      event:
+        type: object
+        description: "Último evento conhecido da entrega."
+        properties:
+          type:
+            type: string
+            enum:
+            - PICKUP_ONGOING
+            - ARRIVED_AT_MERCHANT
+            - ORDER_PICKED
+            - DELIVERY_ONGOING
+            - ARRIVED_AT_CUSTOMER
+            - ORDER_DELIVERED
+            - CANCELLED
+            description: "Evento atual da entrega."
+          message:
+            type: string
+            description: "Mensagem livre para fornecer informações mais detalhadas."
+          datetime:
+            type: string
+            format: date-time
+            description: "Data e hora em que o evento ocorreu (UTC, formato ISO)."
+      problem:
+        type: object
+        description: "Em caso de problema na entrega, informa a última razão conhecida."
+        properties:
+          reason:
+            type: string
+            enum:
+            - DELIVERYPERSON_OCCURRENCE
+            - PAYMENT_PROBLEMS
+            - WRONG_PRODUCT_OR_ITEM
+            - ORDER_DELAYED
+            - ORDER_DAMAGED_OR_VIOLATED
+            - CUSTOMER_DID_NOT_PLACE_ORDER
+            - CUSTOMER_ADDRESS_UNKNOWN
+            - ORDER_MISSING_ITEMS
+            - NOBODY_TO_RECEIVE
+            - DELIVERYPERSON_WAITING_PAYMENT_FOR_ALREADY_PAID_ORDER
+            - ORDER_DELIVERED_WITHOUT_PAYMENT
+            - FRAUD_OR_THEFT
+            description: "Motivo do problema."
+          message:
+            type: string
+            description: "Mensagem livre para fornecer mais detalhes sobre o problema."
+          datetime:
+            type: string
+            format: date-time
+            description: "Data e hora em que o problema ocorreu (UTC, formato ISO)."
+      vehicle:
+        type: object
+        description: "Veículo utilizado para a entrega."
+        properties:
+          type:
+            type: array
+            maxItems: 10
+            items:
+              type: string
+              enum:
+              - MOTORBIKE_BAG
+              - MOTORBIKE_BOX
+              - CAR
+              - BICYCLE
+              - SCOOTER
+              - VUC
+              description: "Tipo de veículo."
+          licencePlate:
+            type: string
+            description: "Placa do veículo utilizado para a entrega."
+      eta:
+        type: object
+        description: "Estimativas de horários de retirada e entrega."
+        properties:
+          pickupEtaInMinutes:
+            type: integer
+            description: "Tempo estimado em minutos para o entregador chegar ao Merchant para retirada do pedido."
+          pickupEtaDatetime:
+            type: string
+            format: date-time
+            description: "Data e hora esperada de chegada do entregador ao Merchant (UTC, formato ISO)."
+          deliveryEtaInMinutes:
+            type: integer
+            description: "Tempo estimado em minutos para o entregador chegar ao endereço do consumidor."
+          deliveryEtaDatetime:
+            type: string
+            format: date-time
+            description: "Data e hora esperada de chegada do entregador ao consumidor (UTC, formato ISO)."
+          maxDeliveryTime:
+            type: string
+            format: date-time
+            description: "Data e hora máxima para entrega (não deve exceder o limite informado no pedido, UTC, formato ISO)."
+      deliveryPerson:
+        type: object
+        description: "Informações sobre a pessoa designada para a entrega."
+        properties:
+          id:
+            type: string
+            description: "ID do entregador fornecido pelo Aplicativo de Pedidos."
+          name:
+            type: string
+            description: "Nome do entregador."
+          pictureURL:
+            type: string
+            format: uri
+            description: "URL da foto do entregador. Deve respeitar leis de compartilhamento de dados."
+      geoLocalization:
+        type: object
+        description: "Informações de geolocalização do entregador."
+        properties:
+          latitude:
+            type: number
+            format: float
+            description: "Latitude da posição atual do entregador (graus, -90 a 90)."
+          longitude:
+            type: number
+            format: float
+            description: "Longitude da posição atual do entregador (graus, -180 a 180)."
+          lastAddress:
+            type: object
+            description: "Último endereço conhecido do entregador."
+            properties:
+              country:
+                type: string
+                pattern: '^[A-Z]{2}$'
+                description: "Código do país (ISO 3166-1 alpha-2)."
+              state:
+                type: string
+                description: "Estado ou subdivisão do país (recomenda-se ISO 3166-2)."
+              city:
+                type: string
+                description: "Nome da cidade."
+              district:
+                type: string
+                description: "Nome do bairro ou distrito."
+              street:
+                type: string
+                description: "Nome da rua."
+              postalCode:
+                type: string
+                description: "Código postal."
+              distanceToPickup:
+                type: string
+                description: "Distância até a retirada em metros."
+              distanceToDelivery:
+                type: string
+                description: "Distância até a entrega em metros."
+              timestamp:
+                type: string
+                format: date-time
+                description: "Data e hora em que estas informações são válidas (UTC, formato ISO)."
+required:
+- deliveryTrackingInfo

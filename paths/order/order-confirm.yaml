@@ -1,0 +1,16 @@
+post:
+  tags:
+  - Orders
+  operationId: confirmOrder
+  summary: Confirmar
+  description: |
+    Informa a Onbeef que o pedido foi aceito e que o preparo será iniciado em breve.
+  parameters:
+  - $ref: '#/components/parameters/orderId'
+  security:
+  - BearerAuth: []
+  requestBody:
+    $ref: '#/components/requestBodies/OrderStatus'
+  responses:
+    '202':
+      description: Requisição aceita para processamento.

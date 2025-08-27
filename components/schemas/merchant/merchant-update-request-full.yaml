@@ -1,0 +1,46 @@
+allOf:
+- $ref: '#/components/schemas/MerchantUpdateRequestBody'
+- type: object
+  properties:
+    updatedObjects:
+      description: 'Updated `Merchant` entity objects'
+      type: array
+      items:
+        type: object
+        properties:
+          id:
+            type: string
+            format: uuid
+            description: >-
+              Identificador único do merchant no sistema Onbeef.
+          status:
+            type: string
+            description: >-
+              Indica se o Merchant está Disponível ou Indisponível.
+            enum:
+            - AVAILABLE
+            - UNAVAILABLE
+          items:
+              type: array
+              description: >-
+                Entidade obrigatória a ser implementada. Descreve um array de itens.
+              items:
+                $ref: '#/components/schemas/MerchantUpdateItemRequest'
+          categories:
+            type: array
+            description: >-
+              Descreve um array de seções no menu onde os ItemOffers serão exibidos.
+            items:
+              $ref: '#/components/schemas/MerchantUpdateCategoryRequest'
+          itemOffers:
+            type: array
+            description: >-
+              Entidade obrigatória a ser implementada. Descreve um array de ofertas para os itens.
+            items:
+              $ref: '#/components/schemas/MerchantUpdateItemOfferRequest'
+        required:
+        - id
+        - status
+        - items
+        - categories
+        - itemOffers

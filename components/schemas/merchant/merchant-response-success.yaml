@@ -1,0 +1,36 @@
+type: object
+title: MerchantRequest
+properties:
+  lastUpdate:
+    type: string
+    format: date-time
+    description: >-
+      Data e hora da última modificação do Merchant no formato ISO 8601 (timestamp), como string.
+  TTL:
+    type: integer
+    description: >-
+      Tempo de vida em segundos. Mínimo: 500, Máximo: 86400.
+  id:
+    type: string
+    format: uuid
+    description: >-
+      Identificador único do merchant no sistema Onbeef.
+  status:
+    type: string
+    description: >-
+      Indica se o Merchant está Disponível ou Indisponível.
+    enum:
+    - AVAILABLE
+    - UNAVAILABLE
+  categories:
+    type: array
+    description: >-
+      Lista de categorias do catálogo do merchant, indicando informações sobre cada categoria e seus produtos.
+    items:
+      $ref: '#/components/schemas/Category'
+  products:
+    type: array
+    description: >-
+      Lista de produtos do catálogo do merchant, indicando informações sobre cada produto.
+    items:
+      $ref: '#/components/schemas/Product'

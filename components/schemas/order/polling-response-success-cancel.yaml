@@ -1,0 +1,36 @@
+allOf:
+- $ref: '#/components/schemas/PollingResponseSuccess'
+- type: object
+  properties:
+    metadata:
+      type: object
+      description: 'Informações relacionadas ao Tipo de Evento'
+      properties:
+        reason:
+          type: string
+          description: 'Motivo de cancelamento.'
+        code:
+          type: string
+          description: 'Código de identificação do motivo de cancelamento.'
+          enum:
+          - SYSTEMIC_ISSUES
+          - DUPLICATE_APPLICATION
+          - UNAVAILABLE_ITEM
+          - RESTAURANT_WITHOUT_DELIVERY_PERSON
+          - OUTDATED_MENU
+          - ORDER_OUTSIDE_THE_DELIVERY_AREA
+          - BLOCKED_CUSTOMER
+          - OUTSIDE_DELIVERY_HOURS
+          - INTERNAL_DIFFICULTIES_OF_THE_RESTAURANT
+          - DELIVERY_PROBLEM
+          - CONSUMER_CANCELLATION_REQUESTED
+          - OTHER_CANCELLATION_REASON
+        clientId:
+          type: string
+          description: >-
+            O ID do sistema cliente que gerou a ação que resultou neste evento.
+      required:
+      - reason
+      - code
+  required:
+  - metadata

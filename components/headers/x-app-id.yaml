@@ -1,0 +1,7 @@
+name: X-App-Id
+in: header
+description: Um identificador único do Serviço Logístico. 
+required: true
+schema:
+  type: string
+  format: uuid

@@ -1,0 +1,43 @@
+properties:
+  id:
+    type: string
+    format: uuid
+    description: ID único do item offer.
+  itemId:
+    type: string
+    description: O valor do id da entidade Item correlacionado a esta entidade ItemOffer.
+  price:
+    type: object
+    description: Preço da oferta do item do menu. Valores original e atual podem ser informados para exibir descontos.
+    properties:
+      value:
+        type: number
+        description: Valor do preço atual.
+      originalValue:
+        type: number
+        description: Valor do preço original.
+      currency:
+        type: string
+        description: >-
+          Código da moeda do preço.
+    required:
+    - value
+    - currency
+    - originalValue
+  status:
+    type: string
+    description: Status do item offer.
+    enum:
+    - AVAILABLE
+    - UNAVAILABLE
+  optionGroupsId:
+    type: array
+    description: ID das opções do item offer.
+    items:
+      type: string
+required:
+- id
+- itemId
+- price
+- status
+- optionGroupsId

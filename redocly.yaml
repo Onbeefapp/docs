@@ -1,0 +1,21 @@
+openapi:
+  jsonSamplesExpandLevel: 1
+  theme:
+    colors:
+      primary:
+        main: "#F61F1B"      
+      secondary:
+        main: "#FFFFFF"      
+        light: "#C3C2C1"     
+      text:
+        primary: "#37474F"    
+        secondary: "#868483" 
+        light: "#B0BEC5"    
+      accent:
+        main: "#891815"    
+      success:
+        main: "#66BB6A"    
+      warning:
+        main: "#FFEE58"    
+      error:
+        main: "#fa4641"

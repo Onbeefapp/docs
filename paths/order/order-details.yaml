@@ -1,0 +1,38 @@
+get:
+  tags:
+  - Orders
+  operationId: ordersDetails
+  summary: Obter detalhes do pedido
+  description: |
+    Endpoint para consultar os detalhes de um pedido.
+  parameters:
+  - in: path
+    name: orderId
+    schema:
+      type: string
+      description: 'O identificador único do pedido. O `orderId` é gerado pela Onbeef.'
+      format: uuid
+    required: true
+  security:
+  - BearerAuth: []
+  responses:
+    '200':
+      description: Pedido retornando com sucesso.
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/OrderDetailsSuccess'
+    '404':
+        description: Pedido não encontrado.
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ProblemDetails'
+    '503':
+      description: Serviço indisponível ou token inválido.
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ProblemDetails'
+          example:
+            $ref: '#/components/examples/errors/503-service-unavailable.yaml'

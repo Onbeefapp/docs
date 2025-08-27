@@ -1,0 +1,14 @@
+post:
+  tags:
+  - Orders
+  operationId: cancellationAccepted
+  summary: Aceitar cancelamento do pedido
+  description: |
+    Informa ao Onbeef que a solicitação de cancelamento foi aceita e que o pedido pode ser cancelado..
+  parameters:
+  - $ref: '#/components/parameters/orderId'
+  security:
+  - BearerAuth: []
+  responses:
+    '204':
+      description: O cancelamento do pedido foi confirmado. Nenhum conteúdo de resposta.

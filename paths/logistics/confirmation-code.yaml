@@ -1,0 +1,33 @@
+post:
+  tags:
+  - Logistics
+  operationId: logistictsDeliveryCode
+  summary: Código de Confirmação de Entrega
+  security: []
+  description: O webhook é enviado para notificar a Onbeef sobre o Código de Entrega informado pelo cliente.
+  parameters:
+  - $ref: '#/components/headers/xAppId'
+  - $ref: '#/components/headers/xAppMerchantId'
+  - $ref: '#/components/headers/xAppSignature'
+  requestBody:
+    $ref: '#/components/requestBodies/ConfirmationCode'
+  responses:
+    '200':
+      description: O Código de Confirmação está correto. Você pode prosseguir com a entrega.
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ConfirmationCodeResponseSuccess'
+    '500':
+      description: Request body inválido.
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ProblemDetails'
+    '503':
+      $ref: '#/components/examples/503InvalidBase64Characters'
+      description: Serviço indisponível.
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ProblemDetails'

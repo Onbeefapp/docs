@@ -1,0 +1,37 @@
+type: object
+properties:
+  id:
+    type: string
+    format: uuid
+    description: ID único da categoria.
+  pdv_external_id:
+    type: string
+    nullable: true
+    description: ID externo da categoria no PDV.
+  name:
+    type: string
+    description: Nome da categoria.
+  index:
+    type: integer
+    description: Índice de exibição da categoria.
+  description:
+    type: string
+    nullable: true
+    description: Descrição da categoria.
+  externalCode:
+    type: string
+    nullable: true
+    description: Código externo da categoria (normalmente no PDV do merchant).
+  status:
+    type: string
+    description: Indica se o Merchant está disponível ou indisponível.
+    enum:
+      - AVAILABLE
+      - UNAVAILABLE
+  productIds:
+    type: array
+    nullable: true
+    description: Lista de IDs únicos dos produtos pertencentes à categoria.
+    items:
+      type: string
+      format: uuid

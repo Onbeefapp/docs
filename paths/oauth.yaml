@@ -1,0 +1,28 @@
+post:
+  tags:
+  - Autenticação
+  operationId: obterToken
+  summary: Obter Token
+  security: []
+  description: |
+    Solicita um novo token de acesso para acessar os recursos da API Onbeef.
+  requestBody:
+    $ref: '#/components/requestBodies/TokenRequestBody'
+  responses:
+    '200':
+      description: Retorno bem-sucedido do token.
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/TokenResponseSuccess'
+          examples:
+            TokenResponseSuccessExample:
+              $ref: '#/components/examples/TokenResponseSuccessExample'
+    '401':
+      description: Requisição sem credenciais de autenticação válidas.
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ProblemDetails'
+          example:
+            $ref: '#/components/examples/401InvalidCredentials'

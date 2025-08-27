@@ -1,0 +1,43 @@
+name: eventType
+in: query
+schema:
+  type: array
+  description: |
+    Tipos de eventos desejados. Todos os outros eventos não selecionados pelo grupo serão automaticamente reconhecidos e omitidos da resposta. Deve ser omitido ou não vazio.
+
+    **Definições de tipos de eventos:**
+
+    >`CREATED`: Pedido criado. <br>
+    >`CONFIRMED`: Pedido confirmado. <br>
+    >`PREPARATION_REQUESTED`: Informa ao Software Service que pode iniciar a preparação do pedido. <br>
+    >`PREPARING`: Preparação do pedido iniciada. <br>
+    >`READY_FOR_PICKUP`: Pedido pronto para retirada pelo cliente ou entregador. <br>
+    >`DISPATCHED`: Pedido saiu para entrega. <br>
+    >`PICKUP_AREA_ASSIGNED`: Informa ao Software Service a área designada para retirada do pedido. <br>
+    >`PICKED_UP`: Pedido foi retirado pelo cliente. <br>
+    >`DELIVERED`: Pedido entregue ao cliente. <br>
+    >`CONCLUDED`: Pedido concluído. <br>
+    >`CANCELLATION_REQUESTED`: Enviado pelo Software Service para o Ordering Application. <br>
+    >`CANCELLATION_REQUEST_DENIED`: Deve ser enviado do Ordering Application para o Software Service. <br>
+    >`CANCELLED`: Quando o pedido é efetivamente cancelado. <br>
+    >`ORDER_CANCELLATION_REQUEST`: Deve ser enviado do Ordering Application para o Software Service. <br>
+    >`CANCELLED_DENIED`: Quando o pedido de cancelamento do Ordering Application é negado pelo Software Service.
+  items:
+    type: 'string'
+    description: 'The event type. **[Click here](#operation/pollingEvents)** for definitions of each type.'
+    enum:
+    - 'CREATED'
+    - 'CONFIRMED'
+    - 'PREPARING'
+    - 'DISPATCHED'
+    - 'READY_FOR_PICKUP'
+    - 'PICKUP_AREA_ASSIGNED'
+    - 'PICKED_UP'
+    - 'DELIVERED'
+    - 'CONCLUDED'
+    - 'CANCELLATION_REQUESTED'
+    - 'CANCELLATION_REQUEST_DENIED'
+    - 'CANCELLED'
+    - 'ORDER_CANCELLATION_REQUEST'
+    - 'CANCELLED_DENIED'
+  maxItems: 15

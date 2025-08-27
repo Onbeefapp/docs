@@ -1,0 +1,16 @@
+allOf:
+- $ref: '#/components/schemas/PollingResponseSuccess'
+- type: object
+  properties:
+    metadata:
+      type: object
+      description: 'Informações relacionadas ao Tipo de Evento'
+      properties:
+        clientId:
+          type: string
+          description: >-
+            O ID do sistema cliente que gerou a ação que resultou neste evento.
+      required:
+      - clientId
+  required:
+  - metadata

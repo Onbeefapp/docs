@@ -1,0 +1,9 @@
+type: object
+title: ProblemDetails
+properties:
+  title:
+    type: string
+    description: 'Breve descrição do problema.'
+  status:
+    type: integer
+    description: 'Código de status HTTP da resposta.'

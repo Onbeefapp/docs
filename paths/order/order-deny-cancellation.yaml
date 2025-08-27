@@ -1,0 +1,16 @@
+post:
+  tags:
+  - Orders
+  operationId: cancellationDenied
+  summary: Negar cancelamento do pedido
+  description: |
+    Informa ao Onbeef que a solicitação de cancelamento foi negada e que o pedido não pode ser cancelado.
+  parameters:
+  - $ref: '#/components/parameters/orderId'
+  security:
+  - BearerAuth: []
+  requestBody:
+    $ref: '#/components/requestBodies/requestCancellationDenied'
+  responses:
+    '204':
+      description: O cancelamento do pedido foi negado. Nenhum conteúdo de resposta.

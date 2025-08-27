@@ -1,0 +1,6 @@
+in: query
+name: start_at
+schema:
+  type: string
+  format: date
+required: true

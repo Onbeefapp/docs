@@ -1,0 +1,16 @@
+type: object
+title: TokenRequest
+properties:
+  client_id:
+    type: string
+    description: >-
+      ID do merchant, gerado e obtido ao fazer login no App Onbeef na seção **Integrações**.
+  client_secret:
+    type: string
+    description: >-
+      Chave secreta do merchant, gerada no App Onbeef na seção Integrações.
+  grant_type:
+    type: string
+    description: 'Tipo de autenticação OAuth. Suportado: client_credentials.'
+    enum:
+    - client_credentials

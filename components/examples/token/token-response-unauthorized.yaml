@@ -1,0 +1,3 @@
+value:
+  error: "invalid_credentials"
+  message: "The client credentials were incorrect."

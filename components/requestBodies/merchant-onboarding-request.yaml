@@ -1,0 +1,7 @@
+required: true
+content:
+  application/json:
+    schema:
+      $ref: '#/components/schemas/MerchantOnboardingRequestBody'
+    example:
+        $ref: '#/components/examples/MerchantOnboardingRequestBodyExample'

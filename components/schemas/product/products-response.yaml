@@ -1,0 +1,92 @@
+type: object
+properties:
+  id:
+    type: string
+    format: uuid
+    description: ID único do produto.
+  pdv_external_id:
+    type: string
+    nullable: true
+    description: ID externo do produto no PDV.
+  name:
+    type: string
+    description: Nome do produto.
+  externalCode:
+    type: string
+    nullable: true
+    description: Código externo do produto (normalmente no PDV do merchant).
+  description:
+    type: string
+    nullable: true
+    description: Descrição do produto.
+  status:
+    type: string
+    description: Status do produto.
+    enum:
+      - AVAILABLE
+      - UNAVAILABLE
+  stock:
+    type: integer
+    nullable: true
+    description: Quantidade em estoque do produto.
+  ean:
+    type: string
+    nullable: true
+    description: Código EAN do produto.
+  sku:
+    type: string
+    nullable: true
+    description: Código SKU do produto.
+  serving:
+    type: integer
+    nullable: true
+    description: Número de pessoas que o produto serve.
+  nutritionalInfo:
+    type: string
+    nullable: true
+    description: Informações nutricionais do produto em formato JSON.
+  unit:
+    type: string
+    description: Unidade de medida do produto.
+    enum:
+      - UN
+      - KG
+  media:
+    type: array
+    description: URLs das mídias relacionadas ao produto.
+    items:
+      type: string
+      format: uri
+  index:
+    type: integer
+    description: Índice de exibição do produto.
+  price:
+    type: number
+    format: float
+    description: Preço do produto por unidade ou por quilo.
+  cuts:
+    type: array
+    nullable: true
+    description: Lista de cortes do produto.
+    items:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+          description: ID único do corte.
+        name:
+          type: string
+          description: Nome do corte.
+        spice:
+          type: object 
+          nullable: true
+          description: Detalhes do tempero (opcional).
+          properties:
+            id:
+              type: string
+              format: uuid
+              description: ID único do tempero.
+            name:
+              type: string
+              description: Nome do tempero.

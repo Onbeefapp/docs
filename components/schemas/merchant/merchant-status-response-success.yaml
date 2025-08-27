@@ -1,0 +1,20 @@
+type: object
+title: MerchantReponse
+properties:
+  lastRead:
+    type: string
+    format: date-time
+    description: >-
+      Data da última tentativa de leitura das informações do Merchant.
+  status:
+    type: string
+    description: >-
+      Status da tentativa de leitura.
+    enum:
+    - SUCCESS
+    - PROCESSING
+    - FAIL
+  moreInfo:
+    type: string
+    description: >-
+      Campo aberto para fornecer qualquer informação relevante ao solicitante. Ex.: mensagens de erro ou causas.

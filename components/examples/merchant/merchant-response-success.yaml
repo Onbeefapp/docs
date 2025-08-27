@@ -1,0 +1,1986 @@
+lastUpdate: '2025-08-22T16:13:37.000000Z'
+TTL: 600
+id: e9e7e242-fbee-4e43-9c3f-251c1e6588fb
+status: AVAILABLE
+categories:
+- id: bdfbb2f3-af2a-4ad7-8714-f3c75531e78f
+  pdv_external_id:
+  name: Kits
+  index: 0
+  description:
+  image:
+  externalCode: 72BD8D
+  status: AVAILABLE
+  productsId:
+  - 1db3abc1-d295-4873-be31-ef64050a31f7
+  - e74dd75f-2a7c-416a-997d-02bab6adc10b
+  - 7bc76e91-eb60-4da3-ad1e-5200bfe6fb90
+  - 32f129d9-a191-4105-8c95-ef31210551db
+  - 1e746fd1-cc2c-416e-b539-8a442880f841
+  - 975c50ab-e21d-4ba3-924b-e23c0d388707
+  - ac6803c0-ac5d-44be-a6dc-d71bd6211512
+  - d7cc7aa0-f9d6-4f1d-8e5d-8378f04887d4
+  - cdd1181a-4e54-432f-bd58-75944ec958e8
+  - a2c9f556-6fe3-4c66-a36c-574bf8dc672b
+  - 46750b8b-22b0-43b6-a14f-98438643e3ad
+  - dab8e813-0049-4e23-a368-a3a3763bcd47
+  - 61f891b8-bebb-4c68-94db-858b80b1337e
+  - cf8a3a3d-9d66-4e16-9055-3dd7e548fff7
+  - 87b7e873-1eda-4b82-be9d-14c4a84f4c76
+  - 63ae7336-64a7-46a8-8355-ac5835d4b342
+  - aeeec71b-a936-4bd7-8ea1-24e1399a63fd
+  - f2d1d49a-2897-4876-b2e9-8650769eb23a
+  - 4e5de41a-6c53-4648-9918-80ad8f40992c
+  - '0787bc54-99af-4fb5-bcb2-b48512c43813'
+  - '0947fa70-ce00-47a5-b1cf-d63ca5f5189e'
+  - 63e8f104-7d54-45fb-8c4f-3c8edaab3310
+  - 87eca93e-2302-4d8b-8987-abbe578cec68
+  - 7a9516b2-de1f-4348-8b48-dd1001ab8eb0
+  - c1e9b794-09f4-4086-82cb-6441fa25852f
+  - 0ec69336-0763-45ee-9207-eb3c3494248d
+  - 10119872-519a-4eab-8bdd-959ecc44aa12
+  - 37961d8f-45a4-4a52-846f-fb416cb57628
+  - d9abdf19-db06-4e7d-8e22-61e40dad1d7c
+  - d70be683-0c03-4e63-97ab-89bc2ca359f3
+  - b147bd1d-ffa3-413f-a1fe-19c61edce914
+  - 0b785b42-632e-4a7b-ba6f-bc381407a66f
+  - e1c9bf76-7930-414f-a31d-db5bd7f93fc1
+  - 4b8fef9a-9f6f-41c6-ba35-ae10d3bafadf
+  - 98171bb7-1f26-4add-829b-f9d48ecb1049
+  - 3a5896bb-311d-4fa0-ba29-b4a028e692b5
+  - 11aab3c9-f408-473a-9016-667e67087d2a
+  - 70f83d38-3134-4b18-9f65-c071fb8c2014
+  - 696b517d-b8de-45ca-bb48-d5afc03f1177
+  - b5ea14a3-88d8-4b79-8348-6203a2cd6b4b
+  - 6e54237d-f1cb-4386-83a0-084733f23f1c
+  - 9b84dcf2-05b7-4744-bea4-a8919630bbbb
+  - 5f8263d7-50ae-4d31-a4dd-4b0afcdee597
+  - 47957984-d19d-45d1-90e0-a18a378df108
+  - a4b6ef9a-2cfb-412e-a5fc-22ac73be9c0d
+  - 8093d72a-bfce-4d40-a9e6-9cd0a2acdb36
+  - bab365c8-87d5-40e4-b02f-edaf0a9d5f72
+  - cb4a0e31-8b3c-4a41-99c0-6dadaa43da2f
+  - 07cd134d-3ca0-4a2a-9ed1-c281f7205dd3
+  - 9e7c4875-c7f6-4e64-b01b-7a0231e2afbd
+  - e40b7ac1-c644-4d8f-852f-af9a73ee2970
+  - e88435a6-ef25-46bf-af53-a119bb68e502
+  - df09540a-7e8b-4f2d-aab5-8fde5a1eaa06
+  - 64a1c620-cf99-433e-8258-8b0498a44ff9
+  - 762867cb-b283-49a0-9450-ca216ab5b877
+  - fbd57a6e-fb2b-4135-8520-102a6cbf9c11
+  - e6d8eafc-bb5b-4046-acbf-5a7045479a65
+  - 0d9f9b73-93aa-45e3-877d-01b0481cd4e9
+  - ac9cbe34-9057-4ea4-9dae-bcafa565497c
+  - 8ef5874c-da65-4752-a301-7972fa705e6b
+  - a7496aae-4f3a-49b4-852c-94239e194944
+  - 777b04e6-80be-44d9-bab7-9321c702a7a2
+  - 5d6b7320-dd60-4fab-8227-02c87521cc48
+- id: 82532a6d-c6d4-44c7-ab32-a8eca9bb29ca
+  pdv_external_id:
+  name: Churrasco
+  index: 1
+  description:
+  image:
+  externalCode: 4C951B
+  status: AVAILABLE
+  productsId:
+  - 1db3abc1-d295-4873-be31-ef64050a31f7
+  - e74dd75f-2a7c-416a-997d-02bab6adc10b
+  - 7bc76e91-eb60-4da3-ad1e-5200bfe6fb90
+  - 32f129d9-a191-4105-8c95-ef31210551db
+  - 1e746fd1-cc2c-416e-b539-8a442880f841
+  - 975c50ab-e21d-4ba3-924b-e23c0d388707
+  - ac6803c0-ac5d-44be-a6dc-d71bd6211512
+  - d7cc7aa0-f9d6-4f1d-8e5d-8378f04887d4
+  - cdd1181a-4e54-432f-bd58-75944ec958e8
+  - a2c9f556-6fe3-4c66-a36c-574bf8dc672b
+  - 46750b8b-22b0-43b6-a14f-98438643e3ad
+  - dab8e813-0049-4e23-a368-a3a3763bcd47
+  - 61f891b8-bebb-4c68-94db-858b80b1337e
+  - cf8a3a3d-9d66-4e16-9055-3dd7e548fff7
+  - 87b7e873-1eda-4b82-be9d-14c4a84f4c76
+  - 63ae7336-64a7-46a8-8355-ac5835d4b342
+  - aeeec71b-a936-4bd7-8ea1-24e1399a63fd
+  - f2d1d49a-2897-4876-b2e9-8650769eb23a
+  - 4e5de41a-6c53-4648-9918-80ad8f40992c
+  - '0787bc54-99af-4fb5-bcb2-b48512c43813'
+  - '0947fa70-ce00-47a5-b1cf-d63ca5f5189e'
+  - 63e8f104-7d54-45fb-8c4f-3c8edaab3310
+  - 87eca93e-2302-4d8b-8987-abbe578cec68
+  - 7a9516b2-de1f-4348-8b48-dd1001ab8eb0
+  - c1e9b794-09f4-4086-82cb-6441fa25852f
+  - 0ec69336-0763-45ee-9207-eb3c3494248d
+  - 10119872-519a-4eab-8bdd-959ecc44aa12
+  - 37961d8f-45a4-4a52-846f-fb416cb57628
+  - d9abdf19-db06-4e7d-8e22-61e40dad1d7c
+  - d70be683-0c03-4e63-97ab-89bc2ca359f3
+  - b147bd1d-ffa3-413f-a1fe-19c61edce914
+  - 0b785b42-632e-4a7b-ba6f-bc381407a66f
+  - e1c9bf76-7930-414f-a31d-db5bd7f93fc1
+  - 4b8fef9a-9f6f-41c6-ba35-ae10d3bafadf
+  - 98171bb7-1f26-4add-829b-f9d48ecb1049
+  - 3a5896bb-311d-4fa0-ba29-b4a028e692b5
+  - 11aab3c9-f408-473a-9016-667e67087d2a
+  - 70f83d38-3134-4b18-9f65-c071fb8c2014
+  - 696b517d-b8de-45ca-bb48-d5afc03f1177
+  - b5ea14a3-88d8-4b79-8348-6203a2cd6b4b
+  - 6e54237d-f1cb-4386-83a0-084733f23f1c
+  - 9b84dcf2-05b7-4744-bea4-a8919630bbbb
+  - 5f8263d7-50ae-4d31-a4dd-4b0afcdee597
+  - 47957984-d19d-45d1-90e0-a18a378df108
+  - a4b6ef9a-2cfb-412e-a5fc-22ac73be9c0d
+  - 8093d72a-bfce-4d40-a9e6-9cd0a2acdb36
+  - bab365c8-87d5-40e4-b02f-edaf0a9d5f72
+  - cb4a0e31-8b3c-4a41-99c0-6dadaa43da2f
+  - 07cd134d-3ca0-4a2a-9ed1-c281f7205dd3
+  - 9e7c4875-c7f6-4e64-b01b-7a0231e2afbd
+  - e40b7ac1-c644-4d8f-852f-af9a73ee2970
+  - e88435a6-ef25-46bf-af53-a119bb68e502
+  - df09540a-7e8b-4f2d-aab5-8fde5a1eaa06
+  - 64a1c620-cf99-433e-8258-8b0498a44ff9
+  - 762867cb-b283-49a0-9450-ca216ab5b877
+  - fbd57a6e-fb2b-4135-8520-102a6cbf9c11
+  - e6d8eafc-bb5b-4046-acbf-5a7045479a65
+  - 0d9f9b73-93aa-45e3-877d-01b0481cd4e9
+  - ac9cbe34-9057-4ea4-9dae-bcafa565497c
+  - 8ef5874c-da65-4752-a301-7972fa705e6b
+  - a7496aae-4f3a-49b4-852c-94239e194944
+  - 777b04e6-80be-44d9-bab7-9321c702a7a2
+  - 5d6b7320-dd60-4fab-8227-02c87521cc48
+- id: 4bec8f29-fb3c-497f-93e4-ed91c8578c51
+  pdv_external_id:
+  name: Bovinos
+  index: 2
+  description:
+  image:
+  externalCode: 7B04DA
+  status: AVAILABLE
+  productsId:
+  - 1db3abc1-d295-4873-be31-ef64050a31f7
+  - e74dd75f-2a7c-416a-997d-02bab6adc10b
+  - 7bc76e91-eb60-4da3-ad1e-5200bfe6fb90
+  - 32f129d9-a191-4105-8c95-ef31210551db
+  - 1e746fd1-cc2c-416e-b539-8a442880f841
+  - 975c50ab-e21d-4ba3-924b-e23c0d388707
+  - ac6803c0-ac5d-44be-a6dc-d71bd6211512
+  - d7cc7aa0-f9d6-4f1d-8e5d-8378f04887d4
+  - cdd1181a-4e54-432f-bd58-75944ec958e8
+  - a2c9f556-6fe3-4c66-a36c-574bf8dc672b
+  - 46750b8b-22b0-43b6-a14f-98438643e3ad
+  - dab8e813-0049-4e23-a368-a3a3763bcd47
+  - 61f891b8-bebb-4c68-94db-858b80b1337e
+  - cf8a3a3d-9d66-4e16-9055-3dd7e548fff7
+  - 87b7e873-1eda-4b82-be9d-14c4a84f4c76
+  - 63ae7336-64a7-46a8-8355-ac5835d4b342
+  - aeeec71b-a936-4bd7-8ea1-24e1399a63fd
+  - f2d1d49a-2897-4876-b2e9-8650769eb23a
+  - 4e5de41a-6c53-4648-9918-80ad8f40992c
+  - '0787bc54-99af-4fb5-bcb2-b48512c43813'
+  - '0947fa70-ce00-47a5-b1cf-d63ca5f5189e'
+  - 63e8f104-7d54-45fb-8c4f-3c8edaab3310
+  - 87eca93e-2302-4d8b-8987-abbe578cec68
+  - 7a9516b2-de1f-4348-8b48-dd1001ab8eb0
+  - c1e9b794-09f4-4086-82cb-6441fa25852f
+  - 0ec69336-0763-45ee-9207-eb3c3494248d
+  - 10119872-519a-4eab-8bdd-959ecc44aa12
+  - 37961d8f-45a4-4a52-846f-fb416cb57628
+  - d9abdf19-db06-4e7d-8e22-61e40dad1d7c
+  - d70be683-0c03-4e63-97ab-89bc2ca359f3
+  - b147bd1d-ffa3-413f-a1fe-19c61edce914
+  - 0b785b42-632e-4a7b-ba6f-bc381407a66f
+  - e1c9bf76-7930-414f-a31d-db5bd7f93fc1
+  - 4b8fef9a-9f6f-41c6-ba35-ae10d3bafadf
+  - 98171bb7-1f26-4add-829b-f9d48ecb1049
+  - 3a5896bb-311d-4fa0-ba29-b4a028e692b5
+  - 11aab3c9-f408-473a-9016-667e67087d2a
+  - 70f83d38-3134-4b18-9f65-c071fb8c2014
+  - 696b517d-b8de-45ca-bb48-d5afc03f1177
+  - b5ea14a3-88d8-4b79-8348-6203a2cd6b4b
+  - 6e54237d-f1cb-4386-83a0-084733f23f1c
+  - 9b84dcf2-05b7-4744-bea4-a8919630bbbb
+  - 5f8263d7-50ae-4d31-a4dd-4b0afcdee597
+  - 47957984-d19d-45d1-90e0-a18a378df108
+  - a4b6ef9a-2cfb-412e-a5fc-22ac73be9c0d
+  - 8093d72a-bfce-4d40-a9e6-9cd0a2acdb36
+  - bab365c8-87d5-40e4-b02f-edaf0a9d5f72
+  - cb4a0e31-8b3c-4a41-99c0-6dadaa43da2f
+  - 07cd134d-3ca0-4a2a-9ed1-c281f7205dd3
+  - 9e7c4875-c7f6-4e64-b01b-7a0231e2afbd
+  - e40b7ac1-c644-4d8f-852f-af9a73ee2970
+  - e88435a6-ef25-46bf-af53-a119bb68e502
+  - df09540a-7e8b-4f2d-aab5-8fde5a1eaa06
+  - 64a1c620-cf99-433e-8258-8b0498a44ff9
+  - 762867cb-b283-49a0-9450-ca216ab5b877
+  - fbd57a6e-fb2b-4135-8520-102a6cbf9c11
+  - e6d8eafc-bb5b-4046-acbf-5a7045479a65
+  - 0d9f9b73-93aa-45e3-877d-01b0481cd4e9
+  - ac9cbe34-9057-4ea4-9dae-bcafa565497c
+  - 8ef5874c-da65-4752-a301-7972fa705e6b
+  - a7496aae-4f3a-49b4-852c-94239e194944
+  - 777b04e6-80be-44d9-bab7-9321c702a7a2
+  - 5d6b7320-dd60-4fab-8227-02c87521cc48
+- id: 7af4a877-e867-49ec-b2ea-740c0382b5e7
+  pdv_external_id:
+  name: Suínos
+  index: 3
+  description:
+  image:
+  externalCode: FA04F9
+  status: AVAILABLE
+  productsId:
+  - 1db3abc1-d295-4873-be31-ef64050a31f7
+  - e74dd75f-2a7c-416a-997d-02bab6adc10b
+  - 7bc76e91-eb60-4da3-ad1e-5200bfe6fb90
+  - 32f129d9-a191-4105-8c95-ef31210551db
+  - 1e746fd1-cc2c-416e-b539-8a442880f841
+  - 975c50ab-e21d-4ba3-924b-e23c0d388707
+  - ac6803c0-ac5d-44be-a6dc-d71bd6211512
+  - d7cc7aa0-f9d6-4f1d-8e5d-8378f04887d4
+  - cdd1181a-4e54-432f-bd58-75944ec958e8
+  - a2c9f556-6fe3-4c66-a36c-574bf8dc672b
+  - 46750b8b-22b0-43b6-a14f-98438643e3ad
+  - dab8e813-0049-4e23-a368-a3a3763bcd47
+  - 61f891b8-bebb-4c68-94db-858b80b1337e
+  - cf8a3a3d-9d66-4e16-9055-3dd7e548fff7
+  - 87b7e873-1eda-4b82-be9d-14c4a84f4c76
+  - 63ae7336-64a7-46a8-8355-ac5835d4b342
+  - aeeec71b-a936-4bd7-8ea1-24e1399a63fd
+  - f2d1d49a-2897-4876-b2e9-8650769eb23a
+  - 4e5de41a-6c53-4648-9918-80ad8f40992c
+  - '0787bc54-99af-4fb5-bcb2-b48512c43813'
+  - '0947fa70-ce00-47a5-b1cf-d63ca5f5189e'
+  - 63e8f104-7d54-45fb-8c4f-3c8edaab3310
+  - 87eca93e-2302-4d8b-8987-abbe578cec68
+  - 7a9516b2-de1f-4348-8b48-dd1001ab8eb0
+  - c1e9b794-09f4-4086-82cb-6441fa25852f
+  - 0ec69336-0763-45ee-9207-eb3c3494248d
+  - 10119872-519a-4eab-8bdd-959ecc44aa12
+  - 37961d8f-45a4-4a52-846f-fb416cb57628
+  - d9abdf19-db06-4e7d-8e22-61e40dad1d7c
+  - d70be683-0c03-4e63-97ab-89bc2ca359f3
+  - b147bd1d-ffa3-413f-a1fe-19c61edce914
+  - 0b785b42-632e-4a7b-ba6f-bc381407a66f
+  - e1c9bf76-7930-414f-a31d-db5bd7f93fc1
+  - 4b8fef9a-9f6f-41c6-ba35-ae10d3bafadf
+  - 98171bb7-1f26-4add-829b-f9d48ecb1049
+  - 3a5896bb-311d-4fa0-ba29-b4a028e692b5
+  - 11aab3c9-f408-473a-9016-667e67087d2a
+  - 70f83d38-3134-4b18-9f65-c071fb8c2014
+  - 696b517d-b8de-45ca-bb48-d5afc03f1177
+  - b5ea14a3-88d8-4b79-8348-6203a2cd6b4b
+  - 6e54237d-f1cb-4386-83a0-084733f23f1c
+  - 9b84dcf2-05b7-4744-bea4-a8919630bbbb
+  - 5f8263d7-50ae-4d31-a4dd-4b0afcdee597
+  - 47957984-d19d-45d1-90e0-a18a378df108
+  - a4b6ef9a-2cfb-412e-a5fc-22ac73be9c0d
+  - 8093d72a-bfce-4d40-a9e6-9cd0a2acdb36
+  - bab365c8-87d5-40e4-b02f-edaf0a9d5f72
+  - cb4a0e31-8b3c-4a41-99c0-6dadaa43da2f
+  - 07cd134d-3ca0-4a2a-9ed1-c281f7205dd3
+  - 9e7c4875-c7f6-4e64-b01b-7a0231e2afbd
+  - e40b7ac1-c644-4d8f-852f-af9a73ee2970
+  - e88435a6-ef25-46bf-af53-a119bb68e502
+  - df09540a-7e8b-4f2d-aab5-8fde5a1eaa06
+  - 64a1c620-cf99-433e-8258-8b0498a44ff9
+  - 762867cb-b283-49a0-9450-ca216ab5b877
+  - fbd57a6e-fb2b-4135-8520-102a6cbf9c11
+  - e6d8eafc-bb5b-4046-acbf-5a7045479a65
+  - 0d9f9b73-93aa-45e3-877d-01b0481cd4e9
+  - ac9cbe34-9057-4ea4-9dae-bcafa565497c
+  - 8ef5874c-da65-4752-a301-7972fa705e6b
+  - a7496aae-4f3a-49b4-852c-94239e194944
+  - 777b04e6-80be-44d9-bab7-9321c702a7a2
+  - 5d6b7320-dd60-4fab-8227-02c87521cc48
+- id: 9c0fd468-c352-4ebb-9066-d3cb24164f9e
+  pdv_external_id:
+  name: Aves
+  index: 4
+  description:
+  image:
+  externalCode: EBBD6C
+  status: AVAILABLE
+  productsId:
+  - 1db3abc1-d295-4873-be31-ef64050a31f7
+  - e74dd75f-2a7c-416a-997d-02bab6adc10b
+  - 7bc76e91-eb60-4da3-ad1e-5200bfe6fb90
+  - 32f129d9-a191-4105-8c95-ef31210551db
+  - 1e746fd1-cc2c-416e-b539-8a442880f841
+  - 975c50ab-e21d-4ba3-924b-e23c0d388707
+  - ac6803c0-ac5d-44be-a6dc-d71bd6211512
+  - d7cc7aa0-f9d6-4f1d-8e5d-8378f04887d4
+  - cdd1181a-4e54-432f-bd58-75944ec958e8
+  - a2c9f556-6fe3-4c66-a36c-574bf8dc672b
+  - 46750b8b-22b0-43b6-a14f-98438643e3ad
+  - dab8e813-0049-4e23-a368-a3a3763bcd47
+  - 61f891b8-bebb-4c68-94db-858b80b1337e
+  - cf8a3a3d-9d66-4e16-9055-3dd7e548fff7
+  - 87b7e873-1eda-4b82-be9d-14c4a84f4c76
+  - 63ae7336-64a7-46a8-8355-ac5835d4b342
+  - aeeec71b-a936-4bd7-8ea1-24e1399a63fd
+  - f2d1d49a-2897-4876-b2e9-8650769eb23a
+  - 4e5de41a-6c53-4648-9918-80ad8f40992c
+  - '0787bc54-99af-4fb5-bcb2-b48512c43813'
+  - '0947fa70-ce00-47a5-b1cf-d63ca5f5189e'
+  - 63e8f104-7d54-45fb-8c4f-3c8edaab3310
+  - 87eca93e-2302-4d8b-8987-abbe578cec68
+  - 7a9516b2-de1f-4348-8b48-dd1001ab8eb0
+  - c1e9b794-09f4-4086-82cb-6441fa25852f
+  - 0ec69336-0763-45ee-9207-eb3c3494248d
+  - 10119872-519a-4eab-8bdd-959ecc44aa12
+  - 37961d8f-45a4-4a52-846f-fb416cb57628
+  - d9abdf19-db06-4e7d-8e22-61e40dad1d7c
+  - d70be683-0c03-4e63-97ab-89bc2ca359f3
+  - b147bd1d-ffa3-413f-a1fe-19c61edce914
+  - 0b785b42-632e-4a7b-ba6f-bc381407a66f
+  - e1c9bf76-7930-414f-a31d-db5bd7f93fc1
+  - 4b8fef9a-9f6f-41c6-ba35-ae10d3bafadf
+  - 98171bb7-1f26-4add-829b-f9d48ecb1049
+  - 3a5896bb-311d-4fa0-ba29-b4a028e692b5
+  - 11aab3c9-f408-473a-9016-667e67087d2a
+  - 70f83d38-3134-4b18-9f65-c071fb8c2014
+  - 696b517d-b8de-45ca-bb48-d5afc03f1177
+  - b5ea14a3-88d8-4b79-8348-6203a2cd6b4b
+  - 6e54237d-f1cb-4386-83a0-084733f23f1c
+  - 9b84dcf2-05b7-4744-bea4-a8919630bbbb
+  - 5f8263d7-50ae-4d31-a4dd-4b0afcdee597
+  - 47957984-d19d-45d1-90e0-a18a378df108
+  - a4b6ef9a-2cfb-412e-a5fc-22ac73be9c0d
+  - 8093d72a-bfce-4d40-a9e6-9cd0a2acdb36
+  - bab365c8-87d5-40e4-b02f-edaf0a9d5f72
+  - cb4a0e31-8b3c-4a41-99c0-6dadaa43da2f
+  - 07cd134d-3ca0-4a2a-9ed1-c281f7205dd3
+  - 9e7c4875-c7f6-4e64-b01b-7a0231e2afbd
+  - e40b7ac1-c644-4d8f-852f-af9a73ee2970
+  - e88435a6-ef25-46bf-af53-a119bb68e502
+  - df09540a-7e8b-4f2d-aab5-8fde5a1eaa06
+  - 64a1c620-cf99-433e-8258-8b0498a44ff9
+  - 762867cb-b283-49a0-9450-ca216ab5b877
+  - fbd57a6e-fb2b-4135-8520-102a6cbf9c11
+  - e6d8eafc-bb5b-4046-acbf-5a7045479a65
+  - 0d9f9b73-93aa-45e3-877d-01b0481cd4e9
+  - ac9cbe34-9057-4ea4-9dae-bcafa565497c
+  - 8ef5874c-da65-4752-a301-7972fa705e6b
+  - a7496aae-4f3a-49b4-852c-94239e194944
+  - 777b04e6-80be-44d9-bab7-9321c702a7a2
+  - 5d6b7320-dd60-4fab-8227-02c87521cc48
+- id: b333b9a3-fae3-4a56-a51f-8182799e320c
+  pdv_external_id:
+  name: Mercearia
+  index: 5
+  description:
+  image:
+  externalCode: B2B415
+  status: AVAILABLE
+  productsId:
+  - 1db3abc1-d295-4873-be31-ef64050a31f7
+  - e74dd75f-2a7c-416a-997d-02bab6adc10b
+  - 7bc76e91-eb60-4da3-ad1e-5200bfe6fb90
+  - 32f129d9-a191-4105-8c95-ef31210551db
+  - 1e746fd1-cc2c-416e-b539-8a442880f841
+  - 975c50ab-e21d-4ba3-924b-e23c0d388707
+  - ac6803c0-ac5d-44be-a6dc-d71bd6211512
+  - d7cc7aa0-f9d6-4f1d-8e5d-8378f04887d4
+  - cdd1181a-4e54-432f-bd58-75944ec958e8
+  - a2c9f556-6fe3-4c66-a36c-574bf8dc672b
+  - 46750b8b-22b0-43b6-a14f-98438643e3ad
+  - dab8e813-0049-4e23-a368-a3a3763bcd47
+  - 61f891b8-bebb-4c68-94db-858b80b1337e
+  - cf8a3a3d-9d66-4e16-9055-3dd7e548fff7
+  - 87b7e873-1eda-4b82-be9d-14c4a84f4c76
+  - 63ae7336-64a7-46a8-8355-ac5835d4b342
+  - aeeec71b-a936-4bd7-8ea1-24e1399a63fd
+  - f2d1d49a-2897-4876-b2e9-8650769eb23a
+  - 4e5de41a-6c53-4648-9918-80ad8f40992c
+  - '0787bc54-99af-4fb5-bcb2-b48512c43813'
+  - '0947fa70-ce00-47a5-b1cf-d63ca5f5189e'
+  - 63e8f104-7d54-45fb-8c4f-3c8edaab3310
+  - 87eca93e-2302-4d8b-8987-abbe578cec68
+  - 7a9516b2-de1f-4348-8b48-dd1001ab8eb0
+  - c1e9b794-09f4-4086-82cb-6441fa25852f
+  - 0ec69336-0763-45ee-9207-eb3c3494248d
+  - 10119872-519a-4eab-8bdd-959ecc44aa12
+  - 37961d8f-45a4-4a52-846f-fb416cb57628
+  - d9abdf19-db06-4e7d-8e22-61e40dad1d7c
+  - d70be683-0c03-4e63-97ab-89bc2ca359f3
+  - b147bd1d-ffa3-413f-a1fe-19c61edce914
+  - 0b785b42-632e-4a7b-ba6f-bc381407a66f
+  - e1c9bf76-7930-414f-a31d-db5bd7f93fc1
+  - 4b8fef9a-9f6f-41c6-ba35-ae10d3bafadf
+  - 98171bb7-1f26-4add-829b-f9d48ecb1049
+  - 3a5896bb-311d-4fa0-ba29-b4a028e692b5
+  - 11aab3c9-f408-473a-9016-667e67087d2a
+  - 70f83d38-3134-4b18-9f65-c071fb8c2014
+  - 696b517d-b8de-45ca-bb48-d5afc03f1177
+  - b5ea14a3-88d8-4b79-8348-6203a2cd6b4b
+  - 6e54237d-f1cb-4386-83a0-084733f23f1c
+  - 9b84dcf2-05b7-4744-bea4-a8919630bbbb
+  - 5f8263d7-50ae-4d31-a4dd-4b0afcdee597
+  - 47957984-d19d-45d1-90e0-a18a378df108
+  - a4b6ef9a-2cfb-412e-a5fc-22ac73be9c0d
+  - 8093d72a-bfce-4d40-a9e6-9cd0a2acdb36
+  - bab365c8-87d5-40e4-b02f-edaf0a9d5f72
+  - cb4a0e31-8b3c-4a41-99c0-6dadaa43da2f
+  - 07cd134d-3ca0-4a2a-9ed1-c281f7205dd3
+  - 9e7c4875-c7f6-4e64-b01b-7a0231e2afbd
+  - e40b7ac1-c644-4d8f-852f-af9a73ee2970
+  - e88435a6-ef25-46bf-af53-a119bb68e502
+  - df09540a-7e8b-4f2d-aab5-8fde5a1eaa06
+  - 64a1c620-cf99-433e-8258-8b0498a44ff9
+  - 762867cb-b283-49a0-9450-ca216ab5b877
+  - fbd57a6e-fb2b-4135-8520-102a6cbf9c11
+  - e6d8eafc-bb5b-4046-acbf-5a7045479a65
+  - 0d9f9b73-93aa-45e3-877d-01b0481cd4e9
+  - ac9cbe34-9057-4ea4-9dae-bcafa565497c
+  - 8ef5874c-da65-4752-a301-7972fa705e6b
+  - a7496aae-4f3a-49b4-852c-94239e194944
+  - 777b04e6-80be-44d9-bab7-9321c702a7a2
+  - 5d6b7320-dd60-4fab-8227-02c87521cc48
+- id: c544a915-5626-4d17-8d9b-e2113fe17aca
+  pdv_external_id:
+  name: Grelhados
+  index: 6
+  description:
+  image:
+  externalCode: 8E0C31
+  status: AVAILABLE
+  productsId:
+  - 1db3abc1-d295-4873-be31-ef64050a31f7
+  - e74dd75f-2a7c-416a-997d-02bab6adc10b
+  - 7bc76e91-eb60-4da3-ad1e-5200bfe6fb90
+  - 32f129d9-a191-4105-8c95-ef31210551db
+  - 1e746fd1-cc2c-416e-b539-8a442880f841
+  - 975c50ab-e21d-4ba3-924b-e23c0d388707
+  - ac6803c0-ac5d-44be-a6dc-d71bd6211512
+  - d7cc7aa0-f9d6-4f1d-8e5d-8378f04887d4
+  - cdd1181a-4e54-432f-bd58-75944ec958e8
+  - a2c9f556-6fe3-4c66-a36c-574bf8dc672b
+  - 46750b8b-22b0-43b6-a14f-98438643e3ad
+  - dab8e813-0049-4e23-a368-a3a3763bcd47
+  - 61f891b8-bebb-4c68-94db-858b80b1337e
+  - cf8a3a3d-9d66-4e16-9055-3dd7e548fff7
+  - 87b7e873-1eda-4b82-be9d-14c4a84f4c76
+  - 63ae7336-64a7-46a8-8355-ac5835d4b342
+  - aeeec71b-a936-4bd7-8ea1-24e1399a63fd
+  - f2d1d49a-2897-4876-b2e9-8650769eb23a
+  - 4e5de41a-6c53-4648-9918-80ad8f40992c
+  - '0787bc54-99af-4fb5-bcb2-b48512c43813'
+  - '0947fa70-ce00-47a5-b1cf-d63ca5f5189e'
+  - 63e8f104-7d54-45fb-8c4f-3c8edaab3310
+  - 87eca93e-2302-4d8b-8987-abbe578cec68
+  - 7a9516b2-de1f-4348-8b48-dd1001ab8eb0
+  - c1e9b794-09f4-4086-82cb-6441fa25852f
+  - 0ec69336-0763-45ee-9207-eb3c3494248d
+  - 10119872-519a-4eab-8bdd-959ecc44aa12
+  - 37961d8f-45a4-4a52-846f-fb416cb57628
+  - d9abdf19-db06-4e7d-8e22-61e40dad1d7c
+  - d70be683-0c03-4e63-97ab-89bc2ca359f3
+  - b147bd1d-ffa3-413f-a1fe-19c61edce914
+  - 0b785b42-632e-4a7b-ba6f-bc381407a66f
+  - e1c9bf76-7930-414f-a31d-db5bd7f93fc1
+  - 4b8fef9a-9f6f-41c6-ba35-ae10d3bafadf
+  - 98171bb7-1f26-4add-829b-f9d48ecb1049
+  - 3a5896bb-311d-4fa0-ba29-b4a028e692b5
+  - 11aab3c9-f408-473a-9016-667e67087d2a
+  - 70f83d38-3134-4b18-9f65-c071fb8c2014
+  - 696b517d-b8de-45ca-bb48-d5afc03f1177
+  - b5ea14a3-88d8-4b79-8348-6203a2cd6b4b
+  - 6e54237d-f1cb-4386-83a0-084733f23f1c
+  - 9b84dcf2-05b7-4744-bea4-a8919630bbbb
+  - 5f8263d7-50ae-4d31-a4dd-4b0afcdee597
+  - 47957984-d19d-45d1-90e0-a18a378df108
+  - a4b6ef9a-2cfb-412e-a5fc-22ac73be9c0d
+  - 8093d72a-bfce-4d40-a9e6-9cd0a2acdb36
+  - bab365c8-87d5-40e4-b02f-edaf0a9d5f72
+  - cb4a0e31-8b3c-4a41-99c0-6dadaa43da2f
+  - 07cd134d-3ca0-4a2a-9ed1-c281f7205dd3
+  - 9e7c4875-c7f6-4e64-b01b-7a0231e2afbd
+  - e40b7ac1-c644-4d8f-852f-af9a73ee2970
+  - e88435a6-ef25-46bf-af53-a119bb68e502
+  - df09540a-7e8b-4f2d-aab5-8fde5a1eaa06
+  - 64a1c620-cf99-433e-8258-8b0498a44ff9
+  - 762867cb-b283-49a0-9450-ca216ab5b877
+  - fbd57a6e-fb2b-4135-8520-102a6cbf9c11
+  - e6d8eafc-bb5b-4046-acbf-5a7045479a65
+  - 0d9f9b73-93aa-45e3-877d-01b0481cd4e9
+  - ac9cbe34-9057-4ea4-9dae-bcafa565497c
+  - 8ef5874c-da65-4752-a301-7972fa705e6b
+  - a7496aae-4f3a-49b4-852c-94239e194944
+  - 777b04e6-80be-44d9-bab7-9321c702a7a2
+  - 5d6b7320-dd60-4fab-8227-02c87521cc48
+products:
+- id: 1db3abc1-d295-4873-be31-ef64050a31f7
+  pdv_external_id:
+  name: Toucinho
+  externalCode:
+  description:
+  status: AVAILABLE
+  stock:
+  ean:
+  sku:
+  serving:
+  nutritionalInfo:
+  unit: KG
+  media:
+  - https://2tspace.sfo3.cdn.digitaloceanspaces.com/produtos/9889ef94-40ca-463d-afa2-ba53afacb369.jpeg
+  index: 0
+  price: 29.9
+  cuts:
+  - id: fc0eacd1-b63f-495b-bd10-9d51224f500f
+    name: Peça
+    spice:
+  - id: 968a934c-5c6c-4ecd-84fb-f92e9dbb5f58
+    name: Cubos
+    spice:
+- id: e74dd75f-2a7c-416a-997d-02bab6adc10b
+  pdv_external_id:
+  name: Costela
+  externalCode:
+  description:
+  status: AVAILABLE
+  stock:
+  ean:
+  sku:
+  serving:
+  nutritionalInfo:
+  unit: KG
+  media:
+  - https://2tspace.sfo3.cdn.digitaloceanspaces.com/produtos/4f4b60be-2033-4432-b7ea-49502157c1a7.jpeg
+  - https://2tspace.sfo3.cdn.digitaloceanspaces.com/produtos/bdce5327-104b-409d-87c5-07912b0b3b07.jpeg
+  index: 0
+  price: 100
+  cuts:
+  - id: 487f080b-76f7-4fd1-a922-24cc1baf0ee8
+    name: Inteiro
+    spice:
+- id: 7bc76e91-eb60-4da3-ad1e-5200bfe6fb90
+  pdv_external_id:
+  name: Almondega de frango
+  externalCode:
+  description:
+  status: AVAILABLE
+  stock:
+  ean:
+  sku:
+  serving:
+  nutritionalInfo:
+  unit: KG
+  media:
+  - https://2tspace.sfo3.cdn.digitaloceanspaces.com/produtos/5559d36c-8931-4166-8669-c857d07657aa.jpeg
+  index: 0
+  price: 38.91
+  cuts:
+  - id: 487f080b-76f7-4fd1-a922-24cc1baf0ee8
+    name: Inteiro
+    spice:
+- id: 32f129d9-a191-4105-8c95-ef31210551db
+  pdv_external_id:
+  name: Refrigerante 02 Lts
+  externalCode: '1000'
+  description:
+  status: UNAVAILABLE
+  stock:
+  ean:
+  sku:
+  serving:
+  nutritionalInfo:
+  unit: UN
+  media:
+  - https://2tspace.sfo3.cdn.digitaloceanspaces.com/produtos/8b4eae3f-616c-4126-85cf-7051c31a67b2.png
+  index: 0
+  price: 10.91
+- id: 1e746fd1-cc2c-416e-b539-8a442880f841
+  pdv_external_id:
+  name: Alcatra
+  externalCode: '403'
+  description:
+  status: AVAILABLE
+  stock:
+  ean:
+  sku:
+  serving: 1
+  nutritionalInfo:
+  unit: UN
+  media:
+  - https://2tspace.sfo3.cdn.digitaloceanspaces.com/produtos/18e78886-c790-4820-9c05-1b52fb6db5cc.jpeg
+  index: 0
+  price: 120
+- id: 975c50ab-e21d-4ba3-924b-e23c0d388707
+  pdv_external_id:
+  name: Acém
+  externalCode: '2'
+  description:
+  status: AVAILABLE
+  stock:
+  ean:
+  sku:
+  serving:
+  nutritionalInfo:
+  unit: KG
+  media:
+  - https://2tspace.sfo3.cdn.digitaloceanspaces.com/produtos/d8cca5cc-cf81-4842-9901-cea92a58bbd1.jpeg
+  index: 0
+  price: 45
+  cuts:
+  - id: dabb3667-ffe0-4902-b29e-33116350b39e
+    name: Moído 2x
+    spice:
+  - id: fc0eacd1-b63f-495b-bd10-9d51224f500f
+    name: Peça
+    spice:
+  - id: 4c014f1b-25e9-4094-85e0-6458cf778352
+    name: Moído 1x
+    spice:
+  - id: 968a934c-5c6c-4ecd-84fb-f92e9dbb5f58
+    name: Cubos
+    spice:
+- id: ac6803c0-ac5d-44be-a6dc-d71bd6211512
+  pdv_external_id:
+  name: Kit Hamburger Costela
+  externalCode: '12222'
+  description: 'Acompanha: 4 Burguer costela angus 200g, 8 fatias de cheddar, 8 fatias de bacon e uma maionese especial'
+  status: AVAILABLE
+  stock:
+  ean:
+  sku:
+  serving:
+  nutritionalInfo:
+  unit: UN
+  media:
+  - https://2tspace.sfo3.cdn.digitaloceanspaces.com/produtos/39c29fc5-6152-4e46-875a-d9159c40a105.jpeg
+  index: 0
+  price: 150
+  cuts:
+  - id: 487f080b-76f7-4fd1-a922-24cc1baf0ee8
+    name: Inteiro
+    spice:
+- id: d7cc7aa0-f9d6-4f1d-8e5d-8378f04887d4
+  pdv_external_id:
+  name: Asinha De Frango
+  externalCode:
+  description:
+  status: AVAILABLE
+  stock:
+  ean:
+  sku:
+  serving:
+  nutritionalInfo:
+  unit: KG
+  media:
+  - https://2tspace.sfo3.cdn.digitaloceanspaces.com/produtos/a106fbf2-39ba-4ada-8d51-97e68d6e1e6e.jpeg
+  index: 1
+  price: 34.9
+  cuts:
+  - id: 487f080b-76f7-4fd1-a922-24cc1baf0ee8
+    name: Inteiro
+    spice:
+- id: cdd1181a-4e54-432f-bd58-75944ec958e8
+  pdv_external_id:
+  name: Linguiça Suína Fina
+  externalCode:
+  description:
+  status: AVAILABLE
+  stock:
+  ean:
+  sku:
+  serving:
+  nutritionalInfo:
+  unit: KG
+  media:
+  - https://2tspace.sfo3.cdn.digitaloceanspaces.com/produtos/b8f1f315-91eb-4f97-947b-2b000cac4067.jpeg
+  index: 1
+  price: 28.9
+  cuts:
+  - id: 487f080b-76f7-4fd1-a922-24cc1baf0ee8
+    name: Inteiro
+    spice:
+- id: a2c9f556-6fe3-4c66-a36c-574bf8dc672b
+  pdv_external_id:
+  name: Almondega de carne
+  externalCode:
+  description:
+  status: AVAILABLE
+  stock:
+  ean:
+  sku:
+  serving:
+  nutritionalInfo:
+  unit: KG
+  media:
+  - https://2tspace.sfo3.cdn.digitaloceanspaces.com/produtos/160cbe12-98e3-4df3-8ab1-8676f59b7a60.jpeg
+  index: 1
+  price: 39.9
+  cuts:
+  - id: 487f080b-76f7-4fd1-a922-24cc1baf0ee8
+    name: Inteiro
+    spice:
+- id: 46750b8b-22b0-43b6-a14f-98438643e3ad
+  pdv_external_id:
+  name: Bife Ancho
+  externalCode:
+  description: |-
+    Variação entre 300 a 600g, com 1 Steak alto
+
+    Também conhecido como Noix ou ainda Entrecôte, é um conjunto de duas carnes. Uma mais volumosa e outra estreita. Difícil é saber qual das duas é a melhor. A gordurinha que separa essas duas carnes dá um toque especial de sabor a cada fatia. Curiosamente, é a denominação espanhola que prevaleceu entre nós.
+  status: AVAILABLE
+  stock: 9
+  ean:
+  sku:
+  serving: 1
+  nutritionalInfo:
+  unit: UN
+  media:
+  - https://2tspace.sfo3.cdn.digitaloceanspaces.com/produtos/85debbb9-0e98-47a0-8757-cb725858b782.jpeg
+  index: 1
+  price: 62
+- id: dab8e813-0049-4e23-a368-a3a3763bcd47
+  pdv_external_id:
+  name: Kit Sais de Parrilla 250g
+  externalCode:
+  description: "Linha de Sais de Parrilla CantaGallo, desenvolvidos com muita propriedade pelos nobres amantes do churrasco e de uma boa comida.\ 
+
+
+    Os Sais de Parrilla, também conhecido como sal entrefino, é um tipo de sal muito utilizado nos churrascos argentinos e uruguaios. Toda nossa linha de Sal de Parrilla, contém uma granulometria uniforme menor do que o sal grosso, que vai lhe garantir versatilidade para temperar o que você quiser. Com o padrão CantaGallo, estes sais proporcionam uma absorção rápida do tempero em suas carnes, capaz de preservar a suculência do seu prato."
+  status: AVAILABLE
+  stock:
+  ean:
+  sku:
+  serving:
+  nutritionalInfo:
+  unit: UN
+  media:
+  - https://2tspace.sfo3.cdn.digitaloceanspaces.com/produtos/6b52912e-f36e-42c1-8bb7-25ecdbbc1687.jpeg
+  index: 1
+  price: 53.9
+- id: 61f891b8-bebb-4c68-94db-858b80b1337e
+  pdv_external_id:
+  name: Queijo Cheddar
+  externalCode:
+  description: Produto de alta qualidade
+  status: AVAILABLE
+  stock:
+  ean:
+  sku:
+  serving:
+  nutritionalInfo:
+  unit: KG
+  media: []
+  index: 1
+  price: 25
+  cuts:
+  - id: 487f080b-76f7-4fd1-a922-24cc1baf0ee8
+    name: Inteiro
+    spice:
+- id: cf8a3a3d-9d66-4e16-9055-3dd7e548fff7
+  pdv_external_id:
+  name: Kit Churrasco para 6 pessoasss
+  externalCode: '4145'
+  description: |-
+    1 Picanha 1,1kg
+    1 Fraldinha com gordura 1 kg
+    2 Prime Ribs  800g cada
+    1 Costela de Porco 800g
+  status: AVAILABLE
+  stock:
+  ean:
+  sku:
+  serving:
+  nutritionalInfo:
+  unit: UN
+  media:
+  - https://2tspace.sfo3.cdn.digitaloceanspaces.com/produtos/702775ec-7b2d-462c-96ad-5cbf0455d6f4.png
+  index: 1
+  price: 110
+- id: 87b7e873-1eda-4b82-be9d-14c4a84f4c76
+  pdv_external_id:
+  name: Bananinha
+  externalCode:
+  description:
+  status: AVAILABLE
+  stock:
+  ean:
+  sku:
+  serving:
+  nutritionalInfo:
+  unit: KG
+  media:
+  - https://2tspace.sfo3.cdn.digitaloceanspaces.com/produtos/65c093e0-af4a-433b-ae33-3d188ff8fd9b.jpeg
+  index: 2
+  price: 78.99
+  cuts:
+  - id: b6c7203b-eec8-493b-b38b-2f38490423ad
+    name: Bife médio
+    spice:
+  - id: 487f080b-76f7-4fd1-a922-24cc1baf0ee8
+    name: Inteiro
+    spice:
+  - id: 33468267-c150-4603-9acb-d4642824fe15
+    name: Carpaccio
+    spice:
+      id: 48c417a2-3255-4d32-a236-4468df1b1f23
+      name: Mostarda e Mel
+  - id: 33468267-c150-4603-9acb-d4642824fe15
+    name: Carpaccio
+    spice:
+  - id: b6c7203b-eec8-493b-b38b-2f38490423ad
+    name: Bife médio
+    spice:
+      id: 6aebc00b-17cf-4b1d-8cbf-244bfbf25291
+      name: Chimichurri
+  - id: b6c7203b-eec8-493b-b38b-2f38490423ad
+    name: Bife médio
+    spice:
+      id: a8e13584-b9a6-4e0e-929f-a348154ce089
+      name: Tempero da Casa
+  - id: b6c7203b-eec8-493b-b38b-2f38490423ad
+    name: Bife médio
+    spice:
+      id: e6044172-8a5d-49cc-b4e7-62fe0044b252
+      name: Barbecue, Mostarda e Mel
+- id: 63ae7336-64a7-46a8-8355-ac5835d4b342
+  pdv_external_id:
+  name: Cervejas Long Neck
+  externalCode:
+  description:
+  status: UNAVAILABLE
+  stock:
+  ean:
+  sku:
+  serving:
+  nutritionalInfo:
+  unit: UN
+  media:
+  - https://2tspace.sfo3.cdn.digitaloceanspaces.com/produtos/29302e24-9c6c-49a7-b3d0-dd6e2977666b.png
+  index: 2
+  price: 13.9
+- id: aeeec71b-a936-4bd7-8ea1-24e1399a63fd
+  pdv_external_id:
+  name: Coxa Com Sobrecoxa
+  externalCode:
+  description: "A coxa com sobrecoxa é um corte de carne suculento e saboroso, com textura macia e pele crocante.
+
+    Ideal para churrascos ou assados, é preciso temperar com sal e outros temperos de sua preferência antes de levar à grelha ou ao forno.\ 
+
+    Seu preparo é rápido e simples, podendo ser servida ao ponto ou bem passada"
+  status: AVAILABLE
+  stock:
+  ean:
+  sku:
+  serving:
+  nutritionalInfo:
+  unit: KG
+  media:
+  - https://2tspace.sfo3.cdn.digitaloceanspaces.com/produtos/98190eb6-f854-493f-8831-b0cd5d6e395f.jpeg
+  index: 2
+  price: 32.9
+  cuts:
+  - id: 487f080b-76f7-4fd1-a922-24cc1baf0ee8
+    name: Inteiro
+    spice:
+- id: f2d1d49a-2897-4876-b2e9-8650769eb23a
+  pdv_external_id:
+  name: Capa Do Contra-Filé
+  externalCode:
+  description:
+  status: AVAILABLE
+  stock:
+  ean:
+  sku:
+  serving:
+  nutritionalInfo:
+  unit: KG
+  media:
+  - https://2tspace.sfo3.cdn.digitaloceanspaces.com/produtos/57a2f094-2524-4f37-b3e9-67b2f2db4378.jpeg
+  index: 2
+  price: 38.9
+  cuts:
+  - id: c2c203c6-c21e-4ec2-967d-9031d48ea1fa
+    name: Bife
+    spice:
+  - id: 498d76b9-a6e4-4024-8f89-23a5cd2096ed
+    name: Strogonoff
+    spice:
+  - id: 9ef3004c-4948-4ea9-80ad-1da44b5156f6
+    name: Tirinha
+    spice:
+- id: 4e5de41a-6c53-4648-9918-80ad8f40992c
+  pdv_external_id:
+  name: Costelinha Suína
+  externalCode:
+  description: Essa aqui é de lamber os beiços… super macia e suculenta.
+  status: AVAILABLE
+  stock:
+  ean:
+  sku:
+  serving:
+  nutritionalInfo:
+  unit: KG
+  media:
+  - https://2tspace.sfo3.cdn.digitaloceanspaces.com/produtos/d7d0e68f-f17e-4218-8352-aa14e82a2fa4.jpeg
+  index: 2
+  price: 34.9
+  cuts:
+  - id: 968a934c-5c6c-4ecd-84fb-f92e9dbb5f58
+    name: Cubos
+    spice:
+  - id: fc0eacd1-b63f-495b-bd10-9d51224f500f
+    name: Peça
+    spice:
+  - id: 72543dff-c5f6-4a76-a69d-e37713c1fafe
+    name: Tiras
+    spice:
+- id: '0787bc54-99af-4fb5-bcb2-b48512c43813'
+  pdv_external_id:
+  name: Bife De Chorizo Angus
+  externalCode: '1070'
+  description: "Variação entre 500 a 900g. Embalagem com 2 steaks.\ 
+
+
+    Este é o corte que tornou a carne argentina famosa no mundo. Nos EUA, chama-se NY Strip Loin e é o prato de resistência dos grandes restaurantes. Existem cada vez mais adeptos no Brasil, com o crescente aumento da qualidade da carne brasileira."
+  status: AVAILABLE
+  stock: 35
+  ean:
+  sku:
+  serving:
+  nutritionalInfo:
+  unit: UN
+  media:
+  - https://2tspace.sfo3.cdn.digitaloceanspaces.com/produtos/ba90ebf9-885d-46c5-9029-e2f407ef9b62.jpeg
+  index: 3
+  price: 56.9
+- id: '0947fa70-ce00-47a5-b1cf-d63ca5f5189e'
+  pdv_external_id:
+  name: Suã
+  externalCode:
+  description:
+  status: AVAILABLE
+  stock:
+  ean:
+  sku:
+  serving:
+  nutritionalInfo:
+  unit: KG
+  media:
+  - https://2tspace.sfo3.cdn.digitaloceanspaces.com/produtos/b5795b96-9d1c-412e-812d-ee848b6e0a8e.jpeg
+  index: 3
+  price: 32.9
+  cuts:
+  - id: fc0eacd1-b63f-495b-bd10-9d51224f500f
+    name: Peça
+    spice:
+  - id: 0deac3ed-58e7-49e9-a5e9-072fffb64249
+    name: Picado
+    spice:
+- id: 63e8f104-7d54-45fb-8c4f-3c8edaab3310
+  pdv_external_id:
+  name: Coxão Duro
+  externalCode:
+  description:
+  status: AVAILABLE
+  stock:
+  ean:
+  sku:
+  serving:
+  nutritionalInfo:
+  unit: KG
+  media:
+  - https://2tspace.sfo3.cdn.digitaloceanspaces.com/produtos/d0cc7448-5834-4b32-aee7-31c4002e248e.jpeg
+  index: 3
+  price: 39.9
+  cuts:
+  - id: fc0eacd1-b63f-495b-bd10-9d51224f500f
+    name: Peça
+    spice:
+  - id: 968a934c-5c6c-4ecd-84fb-f92e9dbb5f58
+    name: Cubos
+    spice:
+  - id: c2c203c6-c21e-4ec2-967d-9031d48ea1fa
+    name: Bife
+    spice:
+- id: 87eca93e-2302-4d8b-8987-abbe578cec68
+  pdv_external_id:
+  name: Kit Molhos 200g
+  externalCode: '123'
+  description: Linha de Molhos CantaGallo 200g, desenvolvida para todo àquele que gosta de um toque agridoce na comida. Uma experiência única que dá bom com tudo! Nas carnes de churrasco, queijos, comida oriental, sanduíches e hambúrgueres. Cada molho foi pensado carinhosamente para trazer àquele indispensável equilibrio adocicado!
+  status: AVAILABLE
+  stock:
+  ean:
+  sku:
+  serving:
+  nutritionalInfo:
+  unit: UN
+  media:
+  - https://2tspace.sfo3.cdn.digitaloceanspaces.com/produtos/b8254c1d-d36d-48f6-8cbd-edabf8e81750.jpeg
+  index: 3
+  price: 74.9
+- id: 7a9516b2-de1f-4348-8b48-dd1001ab8eb0
+  pdv_external_id:
+  name: Coxinha Da Asa
+  externalCode:
+  description:
+  status: AVAILABLE
+  stock:
+  ean:
+  sku:
+  serving:
+  nutritionalInfo:
+  unit: KG
+  media:
+  - https://2tspace.sfo3.cdn.digitaloceanspaces.com/produtos/20507048-493a-4287-9dac-54876d5815d1.jpeg
+  index: 3
+  price: 34.9
+  cuts:
+  - id: 487f080b-76f7-4fd1-a922-24cc1baf0ee8
+    name: Inteiro
+    spice:
+- id: c1e9b794-09f4-4086-82cb-6441fa25852f
+  pdv_external_id:
+  name: Chuck Eye Roll
+  externalCode:
+  description: Caso queira, digite abaixo sua preferência de corte
+  status: AVAILABLE
+  stock:
+  ean:
+  sku:
+  serving:
+  nutritionalInfo:
+  unit: KG
+  media:
+  - https://2tspace.sfo3.cdn.digitaloceanspaces.com/produtos/d73be918-5d6b-45b8-8c7d-327b99d79fa2.jpeg
+  index: 4
+  price: 64.9
+  cuts:
+  - id: 487f080b-76f7-4fd1-a922-24cc1baf0ee8
+    name: Inteiro
+    spice:
+- id: 0ec69336-0763-45ee-9207-eb3c3494248d
+  pdv_external_id:
+  name: Costela
+  externalCode:
+  description:
+  status: AVAILABLE
+  stock:
+  ean:
+  sku:
+  serving:
+  nutritionalInfo:
+  unit: KG
+  media:
+  - https://2tspace.sfo3.cdn.digitaloceanspaces.com/produtos/5c9a5397-1203-4ca6-a9ee-5a0f5ae23046.jpeg
+  - https://2tspace.sfo3.cdn.digitaloceanspaces.com/produtos/3bf0f400-1246-4337-a4b4-4144bc622358.jpeg
+  index: 4
+  price: 38.9
+  cuts:
+  - id: 0deac3ed-58e7-49e9-a5e9-072fffb64249
+    name: Picado
+    spice:
+  - id: fc0eacd1-b63f-495b-bd10-9d51224f500f
+    name: Peça
+    spice:
+- id: 10119872-519a-4eab-8bdd-959ecc44aa12
+  pdv_external_id:
+  name: Copa Lombo
+  externalCode:
+  description:
+  status: AVAILABLE
+  stock:
+  ean:
+  sku:
+  serving:
+  nutritionalInfo:
+  unit: KG
+  media:
+  - https://2tspace.sfo3.cdn.digitaloceanspaces.com/produtos/ebddcdfe-aa93-4edc-b182-e226bbf60103.jpeg
+  index: 4
+  price: 32.9
+  cuts:
+  - id: c2c203c6-c21e-4ec2-967d-9031d48ea1fa
+    name: Bife
+    spice:
+  - id: fc0eacd1-b63f-495b-bd10-9d51224f500f
+    name: Peça
+    spice:
+- id: 37961d8f-45a4-4a52-846f-fb416cb57628
+  pdv_external_id:
+  name: caju
+  externalCode:
+  description:
+  status: AVAILABLE
+  stock:
+  ean:
+  sku:
+  serving:
+  nutritionalInfo:
+  unit: UN
+  media: []
+  index: 4
+  price: 50
+- id: d9abdf19-db06-4e7d-8e22-61e40dad1d7c
+  pdv_external_id:
+  name: Coração de Frango
+  externalCode:
+  description:
+  status: AVAILABLE
+  stock:
+  ean:
+  sku:
+  serving:
+  nutritionalInfo:
+  unit: KG
+  media:
+  - https://2tspace.sfo3.cdn.digitaloceanspaces.com/produtos/e5a69bd7-22ac-40e0-819c-36fc3a35c8c7.jpeg
+  index: 4
+  price: 26.9
+  cuts:
+  - id: 487f080b-76f7-4fd1-a922-24cc1baf0ee8
+    name: Inteiro
+    spice:
+- id: d70be683-0c03-4e63-97ab-89bc2ca359f3
+  pdv_external_id:
+  name: Kit Churrasco do Brabo
+  externalCode:
+  description:
+  status: AVAILABLE
+  stock:
+  ean:
+  sku:
+  serving: 10
+  nutritionalInfo:
+  unit: UN
+  media: []
+  index: 5
+  price: 200
+- id: b147bd1d-ffa3-413f-a1fe-19c61edce914
+  pdv_external_id:
+  name: Contra-Filé
+  externalCode: '414'
+  description: Corte macio, muito saboroso e extremamente prático. Presente tanto em churrascos quanto nas preparações do dia a dia. É Ideal para fritar ou grelhar com muita praticidade e sem desperdício.
+  status: AVAILABLE
+  stock:
+  ean:
+  sku:
+  serving:
+  nutritionalInfo:
+  unit: KG
+  media:
+  - https://2tspace.sfo3.cdn.digitaloceanspaces.com/produtos/185dbb52-e074-40f2-81d8-8e3e27b91dab.jpeg
+  index: 5
+  price: 46.9
+  cuts:
+  - id: 83f62863-e749-430b-a6fd-9157602c5edd
+    name: Grelha
+    spice:
+  - id: f4eb6134-3472-4617-b3f7-75086f3e4ebb
+    name: Espeto
+    spice:
+  - id: fc0eacd1-b63f-495b-bd10-9d51224f500f
+    name: Peça
+    spice:
+  - id: c2c203c6-c21e-4ec2-967d-9031d48ea1fa
+    name: Bife
+    spice:
+  - id: 72543dff-c5f6-4a76-a69d-e37713c1fafe
+    name: Tiras
+    spice:
+- id: 0b785b42-632e-4a7b-ba6f-bc381407a66f
+  pdv_external_id:
+  name: Cupim
+  externalCode:
+  description: "O cupim é um corte de carne bovina com sabor intenso e textura macia.
+
+    É uma opção ideal para churrascos, cozidos ou assados lentos, pois é uma carne que pede um tempo maior de preparo para atingir a maciez ideal.\ 
+
+    O segredo é temperar bem com sal grosso e especiarias, envolver em papel alumínio e deixar assar em fogo baixo por algumas horas, até ficar macio e suculento. Pode ser servido com legumes assados, arroz ou como preferir.\ 
+
+    Experimente o delicioso sabor do cupim e surpreenda seus convidados com uma carne de qualidade!"
+  status: AVAILABLE
+  stock:
+  ean:
+  sku:
+  serving:
+  nutritionalInfo:
+  unit: KG
+  media:
+  - https://2tspace.sfo3.cdn.digitaloceanspaces.com/produtos/8bce2fb1-684e-4db9-bda2-83437fe20d0c.jpeg
+  index: 5
+  price: 69.9
+  cuts:
+  - id: fc0eacd1-b63f-495b-bd10-9d51224f500f
+    name: Peça
+    spice:
+  - id: 83f62863-e749-430b-a6fd-9157602c5edd
+    name: Grelha
+    spice:
+  - id: 3fb96ae6-8264-4cc3-aff1-74ae3c5c6386
+    name: Moído
+    spice:
+- id: e1c9bf76-7930-414f-a31d-db5bd7f93fc1
+  pdv_external_id:
+  name: Acém diferenciado
+  externalCode:
+  description:
+  status: AVAILABLE
+  stock:
+  ean:
+  sku:
+  serving:
+  nutritionalInfo:
+  unit: KG
+  media: []
+  index: 5
+  price: 34.55
+  cuts:
+  - id: b6c7203b-eec8-493b-b38b-2f38490423ad
+    name: Bife médio
+    spice:
+  - id: e37a64d1-9452-40d4-8ee0-e77abaad2511
+    name: Bife grosso
+    spice:
+  - id: c2c203c6-c21e-4ec2-967d-9031d48ea1fa
+    name: Bife
+    spice:
+  - id: 403ac0c6-4a36-4a0e-ab62-85591ba473e4
+    name: Bife fino
+    spice:
+- id: 4b8fef9a-9f6f-41c6-ba35-ae10d3bafadf
+  pdv_external_id:
+  name: Linguiça de frango fina
+  externalCode:
+  description:
+  status: AVAILABLE
+  stock:
+  ean:
+  sku:
+  serving:
+  nutritionalInfo:
+  unit: KG
+  media:
+  - https://2tspace.sfo3.cdn.digitaloceanspaces.com/produtos/a171afb2-e3dc-452d-9973-05d0a88fe905.jpeg
+  index: 5
+  price: 32.9
+  cuts:
+  - id: 487f080b-76f7-4fd1-a922-24cc1baf0ee8
+    name: Inteiro
+    spice:
+- id: 98171bb7-1f26-4add-829b-f9d48ecb1049
+  pdv_external_id:
+  name: Pernil sem Osso
+  externalCode:
+  description:
+  status: AVAILABLE
+  stock:
+  ean:
+  sku:
+  serving:
+  nutritionalInfo:
+  unit: KG
+  media:
+  - https://2tspace.sfo3.cdn.digitaloceanspaces.com/produtos/4d579924-33f0-45ee-8cc8-0570a268dc13.jpeg
+  index: 5
+  price: 39.9
+  cuts:
+  - id: c2c203c6-c21e-4ec2-967d-9031d48ea1fa
+    name: Bife
+    spice:
+  - id: fc0eacd1-b63f-495b-bd10-9d51224f500f
+    name: Peça
+    spice:
+  - id: 968a934c-5c6c-4ecd-84fb-f92e9dbb5f58
+    name: Cubos
+    spice:
+- id: 3a5896bb-311d-4fa0-ba29-b4a028e692b5
+  pdv_external_id:
+  name: Lombo
+  externalCode:
+  description: |-
+    O lombo suíno é um corte de carne macio e suculento, com textura agradável e sabor irresistível.
+    Ideal para assados, churrascos ou cozidos, é fácil de preparar e perfeito para refeições especiais.
+    Para um churrasco perfeito, tempere com sal grosso e especiarias de sua preferência e deixe na grelha até ficar dourado e macio. No forno, é preciso assar em temperatura média por algumas horas, regando com molho ou cerveja para manter a umidade. Sirva com saladas, legumes ou acompanhamentos de sua preferência e desfrute da deliciosa combinação de sabor e suculência do lombo suíno.
+  status: AVAILABLE
+  stock:
+  ean:
+  sku:
+  serving:
+  nutritionalInfo:
+  unit: KG
+  media:
+  - https://2tspace.sfo3.cdn.digitaloceanspaces.com/produtos/52e56af4-56fe-404a-b87f-2e7bd04ada14.jpeg
+  index: 6
+  price: 38.9
+  cuts:
+  - id: c2c203c6-c21e-4ec2-967d-9031d48ea1fa
+    name: Bife
+    spice:
+  - id: 968a934c-5c6c-4ecd-84fb-f92e9dbb5f58
+    name: Cubos
+    spice:
+  - id: fc0eacd1-b63f-495b-bd10-9d51224f500f
+    name: Peça
+    spice:
+- id: 11aab3c9-f408-473a-9016-667e67087d2a
+  pdv_external_id:
+  name: Coxa e Filé de Coxa S/ Pele
+  externalCode:
+  description:
+  status: AVAILABLE
+  stock:
+  ean:
+  sku:
+  serving:
+  nutritionalInfo:
+  unit: KG
+  media:
+  - https://2tspace.sfo3.cdn.digitaloceanspaces.com/produtos/159c2d58-3a95-4247-af50-d5adce47911d.jpeg
+  index: 6
+  price: 32.9
+  cuts:
+  - id: fc0eacd1-b63f-495b-bd10-9d51224f500f
+    name: Peça
+    spice:
+  - id: 92cdb52e-de02-4f6f-8b8d-f2a5ce2067c7
+    name: Filé
+    spice:
+- id: 70f83d38-3134-4b18-9f65-c071fb8c2014
+  pdv_external_id:
+  name: Acém Da fazenda além
+  externalCode:
+  description:
+  status: AVAILABLE
+  stock:
+  ean:
+  sku:
+  serving:
+  nutritionalInfo:
+  unit: KG
+  media:
+  - https://2tspace.sfo3.cdn.digitaloceanspaces.com/produtos/a8d7c253-681e-435a-8c79-13c234b377c3.jpeg
+  index: 6
+  price: 130
+  cuts:
+  - id: 73afa7b6-fcc5-453c-b059-16de83acb4c3
+    name: À passarinho
+    spice:
+  - id: 403ac0c6-4a36-4a0e-ab62-85591ba473e4
+    name: Bife fino
+    spice:
+  - id: c2c203c6-c21e-4ec2-967d-9031d48ea1fa
+    name: Bife
+    spice:
+- id: 696b517d-b8de-45ca-bb48-d5afc03f1177
+  pdv_external_id:
+  name: Carne de sol
+  externalCode:
+  description:
+  status: AVAILABLE
+  stock:
+  ean:
+  sku:
+  serving:
+  nutritionalInfo:
+  unit: KG
+  media:
+  - https://2tspace.sfo3.cdn.digitaloceanspaces.com/produtos/4a9577d8-f5e9-44aa-ab83-65099d9a7dba.jpeg
+  index: 6
+  price: 42.9
+  cuts:
+  - id: 968a934c-5c6c-4ecd-84fb-f92e9dbb5f58
+    name: Cubos
+    spice:
+  - id: c2c203c6-c21e-4ec2-967d-9031d48ea1fa
+    name: Bife
+    spice:
+- id: b5ea14a3-88d8-4b79-8348-6203a2cd6b4b
+  pdv_external_id:
+  name: Denver
+  externalCode:
+  description:
+  status: AVAILABLE
+  stock:
+  ean:
+  sku:
+  serving:
+  nutritionalInfo:
+  unit: KG
+  media:
+  - https://2tspace.sfo3.cdn.digitaloceanspaces.com/produtos/b9bd917f-60b7-4ae5-9e60-d157d1ef2afa.jpeg
+  index: 6
+  price: 42.9
+  cuts:
+  - id: 487f080b-76f7-4fd1-a922-24cc1baf0ee8
+    name: Inteiro
+    spice:
+- id: 6e54237d-f1cb-4386-83a0-084733f23f1c
+  pdv_external_id:
+  name: Filé Mignon
+  externalCode:
+  description: Sinônimo de qualidade, o Filé Mignon é o corte mais macio do boi, além de ser magro e por isso extremamente versátil. No dia a dia é uma beleza, na grelha o mais aconselhado é ir no estilo espetinho.
+  status: AVAILABLE
+  stock:
+  ean:
+  sku:
+  serving:
+  nutritionalInfo:
+  unit: KG
+  media:
+  - https://2tspace.sfo3.cdn.digitaloceanspaces.com/produtos/a16a8483-e56f-4124-ab9d-b7a4d618093d.jpeg
+  index: 7
+  price: 79.9
+  cuts:
+  - id: 403ac0c6-4a36-4a0e-ab62-85591ba473e4
+    name: Bife fino
+    spice:
+  - id: 498d76b9-a6e4-4024-8f89-23a5cd2096ed
+    name: Strogonoff
+    spice:
+  - id: 98c32f88-d929-4974-95ed-2f63b01f6dd3
+    name: Escalope
+    spice:
+  - id: fc0eacd1-b63f-495b-bd10-9d51224f500f
+    name: Peça
+    spice:
+  - id: 54827894-7923-4d6d-bda5-b18002f71fba
+    name: Medalhão
+    spice:
+  - id: e37a64d1-9452-40d4-8ee0-e77abaad2511
+    name: Bife grosso
+    spice:
+  - id: f4eb6134-3472-4617-b3f7-75086f3e4ebb
+    name: Espeto
+    spice:
+  - id: 33468267-c150-4603-9acb-d4642824fe15
+    name: Carpaccio
+    spice:
+  - id: b6c7203b-eec8-493b-b38b-2f38490423ad
+    name: Bife médio
+    spice:
+- id: 9b84dcf2-05b7-4744-bea4-a8919630bbbb
+  pdv_external_id:
+  name: Fraldinha
+  externalCode:
+  description:
+  status: AVAILABLE
+  stock:
+  ean:
+  sku:
+  serving:
+  nutritionalInfo:
+  unit: KG
+  media:
+  - https://2tspace.sfo3.cdn.digitaloceanspaces.com/produtos/15528807-9352-4b45-90ba-ffe69436f95a.jpeg
+  index: 7
+  price: 54.9
+  cuts:
+  - id: fc0eacd1-b63f-495b-bd10-9d51224f500f
+    name: Peça
+    spice:
+  - id: 72543dff-c5f6-4a76-a69d-e37713c1fafe
+    name: Tiras
+    spice:
+- id: 5f8263d7-50ae-4d31-a4dd-4b0afcdee597
+  pdv_external_id:
+  name: Bacon
+  externalCode:
+  description:
+  status: AVAILABLE
+  stock:
+  ean:
+  sku:
+  serving:
+  nutritionalInfo:
+  unit: KG
+  media:
+  - https://2tspace.sfo3.cdn.digitaloceanspaces.com/produtos/1b5e2d1e-a955-4a5d-8917-290a35b4719a.jpeg
+  index: 7
+  price: 36.9
+  cuts:
+  - id: 968a934c-5c6c-4ecd-84fb-f92e9dbb5f58
+    name: Cubos
+    spice:
+  - id: 72543dff-c5f6-4a76-a69d-e37713c1fafe
+    name: Tiras
+    spice:
+  - id: fc0eacd1-b63f-495b-bd10-9d51224f500f
+    name: Peça
+    spice:
+- id: 47957984-d19d-45d1-90e0-a18a378df108
+  pdv_external_id:
+  name: Sobrecoxa S/Pele
+  externalCode:
+  description:
+  status: AVAILABLE
+  stock:
+  ean:
+  sku:
+  serving:
+  nutritionalInfo:
+  unit: KG
+  media:
+  - https://2tspace.sfo3.cdn.digitaloceanspaces.com/produtos/232cd94a-5713-4c4f-a919-e4a060df269e.jpeg
+  index: 7
+  price: 29.9
+  cuts:
+  - id: fc0eacd1-b63f-495b-bd10-9d51224f500f
+    name: Peça
+    spice:
+  - id: 92cdb52e-de02-4f6f-8b8d-f2a5ce2067c7
+    name: Filé
+    spice:
+- id: a4b6ef9a-2cfb-412e-a5fc-22ac73be9c0d
+  pdv_external_id:
+  name: Joelho
+  externalCode:
+  description:
+  status: AVAILABLE
+  stock:
+  ean:
+  sku:
+  serving:
+  nutritionalInfo:
+  unit: KG
+  media:
+  - https://2tspace.sfo3.cdn.digitaloceanspaces.com/produtos/185e7b0c-e1da-44ca-820c-7e1eca24271b.jpeg
+  index: 8
+  price: 32.9
+  cuts:
+  - id: 487f080b-76f7-4fd1-a922-24cc1baf0ee8
+    name: Inteiro
+    spice:
+- id: 8093d72a-bfce-4d40-a9e6-9cd0a2acdb36
+  pdv_external_id:
+  name: Linguiça
+  externalCode:
+  description:
+  status: AVAILABLE
+  stock:
+  ean:
+  sku:
+  serving:
+  nutritionalInfo:
+  unit: KG
+  media:
+  - https://2tspace.sfo3.cdn.digitaloceanspaces.com/produtos/6a1db64e-3745-41f4-9715-5085e5ad87d3.jpeg
+  index: 8
+  price: 38.9
+  cuts:
+  - id: 487f080b-76f7-4fd1-a922-24cc1baf0ee8
+    name: Inteiro
+    spice:
+- id: bab365c8-87d5-40e4-b02f-edaf0a9d5f72
+  pdv_external_id:
+  name: Lagarto
+  externalCode:
+  description: O lagarto é um corte de carne magro e macio, ideal para assados, cozidos e ensopados. Com baixo teor de gordura, é uma opção saudável e saborosa para uma refeição completa. Para prepará-lo, basta temperar com sal e pimenta e levar ao forno em baixa temperatura por algumas horas, até que fique bem macio. Sirva fatiado em rodelas finas e desfrute do sabor delicado e suculento do lagarto. Aproveite essa delícia em sua próxima refeição!
+  status: AVAILABLE
+  stock:
+  ean:
+  sku:
+  serving:
+  nutritionalInfo:
+  unit: KG
+  media:
+  - https://2tspace.sfo3.cdn.digitaloceanspaces.com/produtos/b481520b-bb21-4515-9bce-3a09ca77f7ed.jpeg
+  index: 8
+  price: 62.9
+  cuts:
+  - id: fc0eacd1-b63f-495b-bd10-9d51224f500f
+    name: Peça
+    spice:
+  - id: c2c203c6-c21e-4ec2-967d-9031d48ea1fa
+    name: Bife
+    spice:
+  - id: 33468267-c150-4603-9acb-d4642824fe15
+    name: Carpaccio
+    spice:
+  - id: 968a934c-5c6c-4ecd-84fb-f92e9dbb5f58
+    name: Cubos
+    spice:
+- id: cb4a0e31-8b3c-4a41-99c0-6dadaa43da2f
+  pdv_external_id:
+  name: Sobrecoxa C/ Pele
+  externalCode:
+  description: Douradinha, surpreende qualquer um no almoço da semana. É também uma deliciosa entrada para o churrasco ou prato principal pra quem quer "dar um tempo" nas outras carnes.
+  status: AVAILABLE
+  stock:
+  ean:
+  sku:
+  serving:
+  nutritionalInfo:
+  unit: KG
+  media:
+  - https://2tspace.sfo3.cdn.digitaloceanspaces.com/produtos/0d7f9e5f-19dd-4281-babd-a6277f944973.jpeg
+  index: 8
+  price: 42.99
+  cuts:
+  - id: 92cdb52e-de02-4f6f-8b8d-f2a5ce2067c7
+    name: Filé
+    spice:
+  - id: fc0eacd1-b63f-495b-bd10-9d51224f500f
+    name: Peça
+    spice:
+- id: 07cd134d-3ca0-4a2a-9ed1-c281f7205dd3
+  pdv_external_id:
+  name: Miolo Do Acém
+  externalCode:
+  description:
+  status: AVAILABLE
+  stock:
+  ean:
+  sku:
+  serving:
+  nutritionalInfo:
+  unit: KG
+  media:
+  - https://2tspace.sfo3.cdn.digitaloceanspaces.com/produtos/5993973e-9b84-4204-9ccb-51e98860a177.jpeg
+  index: 9
+  price: 32.9
+  cuts:
+  - id: 72543dff-c5f6-4a76-a69d-e37713c1fafe
+    name: Tiras
+    spice:
+  - id: 968a934c-5c6c-4ecd-84fb-f92e9dbb5f58
+    name: Cubos
+    spice:
+- id: 9e7c4875-c7f6-4e64-b01b-7a0231e2afbd
+  pdv_external_id:
+  name: Maminha
+  externalCode:
+  description: A maminha é um corte nobre de carne bovina com sabor suculento e levemente adocicado. Com textura macia e suave, é ideal para churrascos ou assados no forno. Seu preparo é fácil e rápido, podendo ser servida ao ponto ou bem passada.
+  status: AVAILABLE
+  stock:
+  ean:
+  sku:
+  serving:
+  nutritionalInfo:
+  unit: KG
+  media:
+  - https://2tspace.sfo3.cdn.digitaloceanspaces.com/produtos/d9ba91e3-931b-4d3f-af48-9a0ed7a9dc74.jpeg
+  index: 9
+  price: 62.9
+  cuts:
+  - id: fc0eacd1-b63f-495b-bd10-9d51224f500f
+    name: Peça
+    spice:
+  - id: 83f62863-e749-430b-a6fd-9157602c5edd
+    name: Grelha
+    spice:
+- id: e40b7ac1-c644-4d8f-852f-af9a73ee2970
+  pdv_external_id:
+  name: Músculo
+  externalCode:
+  description:
+  status: AVAILABLE
+  stock:
+  ean:
+  sku:
+  serving:
+  nutritionalInfo:
+  unit: KG
+  media:
+  - https://2tspace.sfo3.cdn.digitaloceanspaces.com/produtos/e2eb6989-6b71-4e40-bd08-e574113706fe.jpeg
+  index: 10
+  price: 39.9
+  cuts:
+  - id: 968a934c-5c6c-4ecd-84fb-f92e9dbb5f58
+    name: Cubos
+    spice:
+  - id: fc0eacd1-b63f-495b-bd10-9d51224f500f
+    name: Peça
+    spice:
+- id: e88435a6-ef25-46bf-af53-a119bb68e502
+  pdv_external_id:
+  name: Meio De Asa (Tulipa)
+  externalCode:
+  description: "O meio da asa é um corte de carne suculento e saboroso, perfeito para churrascos, assados ou frituras.\ 
+
+    Com textura macia e pele crocante, é ideal para acompanhar petiscos ou pratos principais.\ 
+
+    Para preparar, basta temperar com sal e outros temperos de sua preferência e levar à grelha, ao forno ou à fritadeira. Sirva quente e desfrute do sabor irresistível do meio da asa. Aproveite essa delícia em sua próxima refeição!"
+  status: AVAILABLE
+  stock:
+  ean:
+  sku:
+  serving:
+  nutritionalInfo:
+  unit: KG
+  media:
+  - https://2tspace.sfo3.cdn.digitaloceanspaces.com/produtos/2e6cde2d-d125-4947-be9e-f2fe3f1cd081.jpeg
+  index: 10
+  price: 46.9
+  cuts:
+  - id: 487f080b-76f7-4fd1-a922-24cc1baf0ee8
+    name: Inteiro
+    spice:
+- id: df09540a-7e8b-4f2d-aab5-8fde5a1eaa06
+  pdv_external_id:
+  name: Ossobuco
+  externalCode:
+  description: "O ossobuco é um corte de carne bovina com osso, suculento e saboroso, ideal para ensopados, cozidos e assados.\ 
+
+    Com textura macia e marmorização perfeita, é rico em colágeno e nutrientes, trazendo benefícios à saúde.\ 
+
+    Para preparar, basta temperar com sal e outros temperos de sua preferência e cozinhar em fogo baixo por algumas horas, até que fique bem macio.\ 
+
+    Sirva com legumes ou acompanhamentos de sua preferência e desfrute do sabor intenso e inesquecível do ossobuco. Experimente essa delícia em sua próxima refeição!"
+  status: AVAILABLE
+  stock:
+  ean:
+  sku:
+  serving:
+  nutritionalInfo:
+  unit: KG
+  media:
+  - https://2tspace.sfo3.cdn.digitaloceanspaces.com/produtos/f10da154-8464-473e-a118-590c8d68ab81.jpeg
+  index: 11
+  price: 36.9
+  cuts:
+  - id: 487f080b-76f7-4fd1-a922-24cc1baf0ee8
+    name: Inteiro
+    spice:
+- id: 64a1c620-cf99-433e-8258-8b0498a44ff9
+  pdv_external_id:
+  name: Panceta
+  externalCode:
+  description:
+  status: AVAILABLE
+  stock:
+  ean:
+  sku:
+  serving:
+  nutritionalInfo:
+  unit: KG
+  media:
+  - https://2tspace.sfo3.cdn.digitaloceanspaces.com/produtos/6bf32f83-8c2b-45a7-aacc-5b162309cbcc.jpeg
+  index: 11
+  price: 38.9
+  cuts:
+  - id: 487f080b-76f7-4fd1-a922-24cc1baf0ee8
+    name: Inteiro
+    spice:
+- id: 762867cb-b283-49a0-9450-ca216ab5b877
+  pdv_external_id:
+  name: Peito
+  externalCode: '1'
+  description: "O peito é um corte de carne bovina saboroso e versátil, que pode ser usado em diversas receitas, como churrasco, assados, cozidos e ensopados.
+
+    Com textura fibrosa e marmorização perfeita, é ideal para preparações de longo cozimento, garantindo um sabor intenso e suculento.\ 
+
+    Para um churrasco perfeito, tempere com sal grosso e deixe na grelha até ficar dourado e macio. Experimente o sabor irresistível do peito em sua próxima refeição!"
+  status: AVAILABLE
+  stock:
+  ean:
+  sku:
+  serving:
+  nutritionalInfo:
+  unit: KG
+  media:
+  - https://2tspace.sfo3.cdn.digitaloceanspaces.com/produtos/47fdda9c-ebe9-4640-a36f-e3177adec50c.jpeg
+  index: 12
+  price: 34.9
+  cuts:
+  - id: fc0eacd1-b63f-495b-bd10-9d51224f500f
+    name: Peça
+    spice:
+  - id: 968a934c-5c6c-4ecd-84fb-f92e9dbb5f58
+    name: Cubos
+    spice:
+  - id: 72543dff-c5f6-4a76-a69d-e37713c1fafe
+    name: Tiras
+    spice:
+- id: fbd57a6e-fb2b-4135-8520-102a6cbf9c11
+  pdv_external_id:
+  name: Patinho
+  externalCode:
+  description:
+  status: AVAILABLE
+  stock:
+  ean:
+  sku:
+  serving:
+  nutritionalInfo:
+  unit: KG
+  media:
+  - https://2tspace.sfo3.cdn.digitaloceanspaces.com/produtos/aae66692-6758-46b3-9967-ce3ac1b68471.jpeg
+  index: 12
+  price: 38.9
+  cuts:
+  - id: 498d76b9-a6e4-4024-8f89-23a5cd2096ed
+    name: Strogonoff
+    spice:
+  - id: c2c203c6-c21e-4ec2-967d-9031d48ea1fa
+    name: Bife
+    spice:
+  - id: 4c014f1b-25e9-4094-85e0-6458cf778352
+    name: Moído 1x
+    spice:
+  - id: dabb3667-ffe0-4902-b29e-33116350b39e
+    name: Moído 2x
+    spice:
+  - id: 9ef3004c-4948-4ea9-80ad-1da44b5156f6
+    name: Tirinha
+    spice:
+- id: e6d8eafc-bb5b-4046-acbf-5a7045479a65
+  pdv_external_id:
+  name: Picanha
+  externalCode:
+  description: Um corte com sabor inconfundível, macia e suculenta. É ideal para churrasco e refeições especiais, não tem quem não goste.
+  status: AVAILABLE
+  stock: 9
+  ean:
+  sku:
+  serving:
+  nutritionalInfo:
+  unit: KG
+  media:
+  - https://2tspace.sfo3.cdn.digitaloceanspaces.com/produtos/2f038c92-cff0-497f-9f1e-d680959ea3c0.jpeg
+  index: 13
+  price: 109.9
+  cuts:
+  - id: 487f080b-76f7-4fd1-a922-24cc1baf0ee8
+    name: Inteiro
+    spice:
+- id: 0d9f9b73-93aa-45e3-877d-01b0481cd4e9
+  pdv_external_id:
+  name: Paloma
+  externalCode:
+  description:
+  status: AVAILABLE
+  stock:
+  ean:
+  sku:
+  serving:
+  nutritionalInfo:
+  unit: KG
+  media:
+  - https://2tspace.sfo3.cdn.digitaloceanspaces.com/produtos/19fa17b4-85b9-4c6c-bad8-55737dd3eaa6.jpeg
+  index: 13
+  price: 36.9
+  cuts:
+  - id: dabb3667-ffe0-4902-b29e-33116350b39e
+    name: Moído 2x
+    spice:
+  - id: 9ef3004c-4948-4ea9-80ad-1da44b5156f6
+    name: Tirinha
+    spice:
+  - id: c2c203c6-c21e-4ec2-967d-9031d48ea1fa
+    name: Bife
+    spice:
+  - id: fc0eacd1-b63f-495b-bd10-9d51224f500f
+    name: Peça
+    spice:
+  - id: 4c014f1b-25e9-4094-85e0-6458cf778352
+    name: Moído 1x
+    spice:
+- id: ac9cbe34-9057-4ea4-9dae-bcafa565497c
+  pdv_external_id:
+  name: Paleta
+  externalCode:
+  description:
+  status: AVAILABLE
+  stock:
+  ean:
+  sku:
+  serving:
+  nutritionalInfo:
+  unit: KG
+  media:
+  - https://2tspace.sfo3.cdn.digitaloceanspaces.com/produtos/d3cd2117-d578-44ae-8cc5-87538282ffb7.jpeg
+  index: 14
+  price: 37.9
+  cuts:
+  - id: fc0eacd1-b63f-495b-bd10-9d51224f500f
+    name: Peça
+    spice:
+  - id: 968a934c-5c6c-4ecd-84fb-f92e9dbb5f58
+    name: Cubos
+    spice:
+- id: 8ef5874c-da65-4752-a301-7972fa705e6b
+  pdv_external_id:
+  name: Tomahawk
+  externalCode:
+  description: "Se você gosta de churrasco, precisa conhecer esse corte.\ 
+
+    A carne Tomahawk é um corte nobre de costela, com osso em formato de machado, sabor intenso e marmorização perfeita.\ 
+
+    Ideal para churrascos ou assados no forno, é preciso temperar com sal grosso ou de parrilla e levar à grelha em fogo alto para garantir a suculência.\ 
+
+    Sirva ao ponto ou mal passada para um sabor único e inesquecível."
+  status: AVAILABLE
+  stock:
+  ean:
+  sku:
+  serving:
+  nutritionalInfo:
+  unit: KG
+  media:
+  - https://2tspace.sfo3.cdn.digitaloceanspaces.com/produtos/4ee3dc98-4758-4fb5-888f-312c83388bd1.jpeg
+  index: 14
+  price: 74.9
+  cuts:
+  - id: 487f080b-76f7-4fd1-a922-24cc1baf0ee8
+    name: Inteiro
+    spice:
+- id: a7496aae-4f3a-49b4-852c-94239e194944
+  pdv_external_id:
+  name: T-Bone
+  externalCode:
+  description: |-
+    Variação entre 500 e 800g.
+
+    Um dos cortes mais populares nos Estados Unidos. Tem o Filé Mignon e o Conta Filé na mesma fatia separado pelo osso característico que colabora com o sabor e com a apresentação!
+  status: AVAILABLE
+  stock:
+  ean:
+  sku:
+  serving:
+  nutritionalInfo:
+  unit: KG
+  media:
+  - https://2tspace.sfo3.cdn.digitaloceanspaces.com/produtos/5b6f5236-f721-4848-bc86-182d50d35542.jpeg
+  index: 15
+  price: 81
+  cuts:
+  - id: 487f080b-76f7-4fd1-a922-24cc1baf0ee8
+    name: Inteiro
+    spice:
+- id: 777b04e6-80be-44d9-bab7-9321c702a7a2
+  pdv_external_id:
+  name: Rabada
+  externalCode:
+  description:
+  status: AVAILABLE
+  stock:
+  ean:
+  sku:
+  serving:
+  nutritionalInfo:
+  unit: KG
+  media:
+  - https://2tspace.sfo3.cdn.digitaloceanspaces.com/produtos/24b32a3c-892e-4346-8d94-f2e8fb87d3f6.jpeg
+  index: 15
+  price: 29.9
+  cuts:
+  - id: 968a934c-5c6c-4ecd-84fb-f92e9dbb5f58
+    name: Cubos
+    spice:
+  - id: fc0eacd1-b63f-495b-bd10-9d51224f500f
+    name: Peça
+    spice:
+- id: 5d6b7320-dd60-4fab-8227-02c87521cc48
+  pdv_external_id:
+  name: Hamburguer de Frango
+  externalCode:
+  description:
+  status: AVAILABLE
+  stock:
+  ean:
+  sku:
+  serving:
+  nutritionalInfo:
+  unit: KG
+  media:
+  - https://2tspace.sfo3.cdn.digitaloceanspaces.com/produtos/b2267372-7ea6-49ee-bf39-e5964fdd70e9.jpeg
+  index: 16
+  price: 48.91
+  cuts:
+  - id: 487f080b-76f7-4fd1-a922-24cc1baf0ee8
+    name: Inteiro
+    spice:

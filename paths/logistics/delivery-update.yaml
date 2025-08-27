@@ -1,0 +1,29 @@
+post:
+  tags:
+  - Logistics
+  operationId: newLogisticEvent
+  summary: Notificação de Evento de Pedido de Entrega
+  security: []
+  description: O webhook é enviado para notificar a Onbeef sobre um novo evento de pedido ocorrido no Serviço Logístico.
+  parameters:
+  - $ref: '#/components/headers/xAppId'
+  - $ref: '#/components/headers/xAppMerchantId'
+  - $ref: '#/components/headers/xAppSignature'
+  requestBody:
+    $ref: '#/components/requestBodies/DeliveryUpdate'
+  responses:
+    '204':
+      description: Requisição processada com sucesso. Nenhum conteúdo retornado.
+    '500':
+      description: Request body inválido.
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ProblemDetails'
+    '503':
+      $ref: '#/components/responses/503InvalidBase64Characters'
+      description: Serviço indisponível ou token inválido.
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ProblemDetails'

@@ -1,0 +1,7 @@
+name: X-App-Signature
+in: header
+description: Assinatura da requisição
+required: true
+schema:
+  type: string
+  format: SHA256

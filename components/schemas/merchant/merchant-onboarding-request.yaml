@@ -1,0 +1,22 @@
+type: object
+title: MerchantOnboardingRequestBody
+properties:
+  getMerchantURL:
+    type: object
+    description: >-
+      Informações sobre o acesso ao GET /v1/merchant do Serviço de Software do Merchant. Esse endpoint contém as informações necessárias para que a Onbeef consiga disponibilizar o Merchant em sua plataforma.
+    properties:
+      baseURL:
+        type: string
+        format: uri
+        description: >-
+          A URL para acessar o endpoint.
+      apiKey:
+        type: string
+        description: >-
+          A API_KEY para acessar o endpoint.
+  ordersWebhookURL:
+    type: string
+    format: uri
+    description: >-
+      Informações sobre o acesso ao webhook POST /v1/orderUpdate do Serviço de Software do Merchant. É para esse endereço que a Onbeef enviará os eventos dos pedidos conforme eles ocorrerem.

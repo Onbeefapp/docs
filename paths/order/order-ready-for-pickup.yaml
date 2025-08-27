@@ -1,0 +1,14 @@
+post:
+  tags:
+  - Orders
+  operationId: orderReady
+  summary: Pronto para Retirada
+  description: |
+    Informa ao Onbeef que o pedido está pronto para retirada.
+  parameters:
+  - $ref: '#/components/parameters/orderId'
+  security:
+  - BearerAuth: []
+  responses:
+    '202':
+      description: Requisição aceita para processamento.

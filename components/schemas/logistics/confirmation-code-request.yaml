@@ -1,0 +1,12 @@
+type: object
+properties:
+  orderId:
+    type: string
+    format: uuid
+    description:   O `orderId` informado na Solicitação de Entrega.
+  deliveryCode:
+    type: string
+    description: Código de confirmação da entrega fornecido pelo cliente.
+required:
+- orderId
+- deliveryCode

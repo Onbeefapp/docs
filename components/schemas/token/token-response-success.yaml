@@ -1,0 +1,15 @@
+type: object
+title: TokenResponseSuccess
+properties:
+  access_token:
+    type: string
+    description: 'Código que representa o token de acesso.'
+  token_type:
+    type: string
+    description: 'Tipo de token. Atualmente, o único tipo suportado é `bearer`.'
+    enum:
+    - 'bearer'
+  expires_in:
+    type: number
+    format: integer
+    description: 'Tempo de expiração do token em segundos.'

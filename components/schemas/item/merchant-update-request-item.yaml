@@ -1,0 +1,65 @@
+properties:
+  id:
+    type: string
+    format: uuid
+    description: ID único do produto.
+  name:
+    type: string
+    description: Nome do produto.
+  description:
+    type: string
+    description: Descrição do produto.
+  externalCode:
+    type: string
+    description: Código externo do produto (normalmente no PDV do merchant).
+  sku:
+    type: string
+    description: Código SKU do produto.
+  image:
+    type: object
+    description: Imagem do produto.
+    properties:
+      url:
+        type: string
+        format: uri
+        description: URL da imagem do produto.
+    required:
+    - url
+  serving:
+    type: integer
+    description: Número de pessoas que o produto serve.
+  nutritionalInfo:
+    type: object
+    description: Informações nutricionais do produto.
+    properties:
+      description:
+        type: string
+        description: Descrição das informações nutricionais.
+      calories:
+        type: string
+        description: >-
+          O número de calorias em Cal, kcal ou kJ, usando o seguinte formato: valor Cal ou min-max Cal.
+      additives:
+        type: array
+        description: Lista de aditivos do produto.
+        items:
+          type: string
+          description: Nome do aditivo.
+      isAlcoholic:
+        type: boolean
+        description: Indica se o produto é alcoólico ou não.
+    required:
+    - description
+    - calories
+    - additives
+    - isAlcoholic
+  unit:
+    type: string
+    description: Unidade de medida do produto.
+    enum:
+    - UN
+    - KG
+required:
+- id
+- name
+- unit

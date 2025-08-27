@@ -1,0 +1,56 @@
+type: object
+title: OrderPollingResponse
+discriminator:
+  propertyName: eventType
+  mapping:
+    CREATED: '#/components/schemas/PollingResponseSuccessDefault'
+    CONFIRMED: '#/components/schemas/PollingResponseSuccessConfirmed'
+    PREPARATION_REQUESTED: '#/components/schemas/PollingResponseSuccessDefault'
+    PREPARING: '#/components/schemas/PollingResponseSuccessDefault'
+    DISPATCHED: '#/components/schemas/PollingResponseSuccessDefault'
+    READY_FOR_PICKUP: '#/components/schemas/PollingResponseSuccessDefault'
+    PICKUP_AREA_ASSIGNED: '#/components/schemas/PollingResponseSuccessPickupAreaAssigned'
+    PICKED_UP: '#/components/schemas/PollingResponseSuccessDefault'
+    CONCLUDED: '#/components/schemas/PollingResponseSuccessDefault'
+    CANCELLATION_REQUESTED: '#/components/schemas/PollingResponseSuccessCancel'
+    CANCELLATION_REQUESTED_DENIED: '#/components/schemas/PollingResponseSuccessCancel'
+    CANCELLED: '#/components/schemas/PollingResponseSuccessCancel'
+    ORDER_CANCELLATION_REQUEST: '#/components/schemas/PollingResponseSuccessCancel'
+    CANCELLED_DENIED: '#/components/schemas/PollingResponseSuccessCancel'
+properties:
+  eventId:
+    type: string
+    format: uuid
+    description: >-
+      Um identificador único do evento.
+  eventType:
+    type: string
+    description: 'O tipo de entidade do objeto atualizado.'
+  orderId:
+    type: string
+    format: uuid
+    description: >-
+      Um identificador único do pedido gerado pela Onbeef.
+  orderURL:
+    type: string
+    format: uri
+    description: >-
+      Uma URL para consultar os detalhes do pedido.
+  createdAt:
+    type: string
+    format: date-time
+    description: 'Data e hora em que o evento foi gerado.'
+  sourceAppId:
+    type: string
+    format: uuid
+    description: 'Um identificador único do aplicativo que gerou o evento.'
+  virtualBrand:
+    type: string
+    description: >-
+      Esse campo pode ser usado como um identificador alternativo para o merchant, nos casos em que o mesmo estabelecimento possua diferentes identificações ou marcas
+required:
+- eventId
+- eventType
+- orderId
+- orderURL
+- createdAt

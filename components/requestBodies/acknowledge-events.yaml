@@ -1,0 +1,8 @@
+required: true
+content:
+  application/json:
+    schema:
+      type: array
+      items:
+        $ref: '#/components/schemas/AcknowledgementEventsRequest'
+      maxItems: 100

@@ -1,0 +1,51 @@
+get:
+  tags:
+  - Orders
+  operationId: pollingEvents
+  summary: Obter novos eventos
+  security:
+  - BearerAuth: []
+  description: |
+    Consulta eventos de quaisquer pedidos de Merchants associados ao usuário autenticado.
+
+    Cada evento recebido por este endpoint deve ser devidamente reconhecido; caso contrário, ele continuará a ser retornado em requisições futuras.
+  parameters:
+  - $ref: '#/components/parameters/eventType'
+  - $ref: '#/components/parameters/startAt'
+  - $ref: '#/components/parameters/endAt'
+  responses:
+    '200':
+      description: 'Retorna com sucesso a lista de eventos consultados.'
+      content:
+        'application/json':
+          schema:
+            type: object
+            title: OrderPollingResponse
+            discriminator:
+              propertyName: eventType
+              mapping:
+                CREATED: '#/components/schemas/PollingResponseSuccessDefault'
+                CONFIRMED: '#/components/schemas/PollingResponseSuccessConfirmed'
+                PREPARATION_REQUESTED: '#/components/schemas/PollingResponseSuccessDefault'
+                PREPARING: '#/components/schemas/PollingResponseSuccessDefault'
+                DISPATCHED: '#/components/schemas/PollingResponseSuccessDefault'
+                READY_FOR_PICKUP: '#/components/schemas/PollingResponseSuccessDefault'
+                PICKUP_AREA_ASSIGNED: '#/components/schemas/PollingResponseSuccessPickupAreaAssigned'
+                PICKED_UP: '#/components/schemas/PollingResponseSuccessDefault'
+                CONCLUDED: '#/components/schemas/PollingResponseSuccessDefault'
+                CANCELLATION_REQUESTED: '#/components/schemas/PollingResponseSuccessCancel'
+                CANCELLATION_REQUESTED_DENIED: '#/components/schemas/PollingResponseSuccessCancel'
+                CANCELLED: '#/components/schemas/PollingResponseSuccessCancel'
+                ORDER_CANCELLATION_REQUEST: '#/components/schemas/PollingResponseSuccessCancel'
+                CANCELLED_DENIED: '#/components/schemas/PollingResponseSuccessCancel'
+            properties:
+              eventId:
+                type: string
+                format: uuid
+                description: >-
+                  Um identificador único do evento.
+              eventType:
+                type: string
+                description: 'O tipo de entidade do objeto atualizado.'
+            required:
+            - eventId

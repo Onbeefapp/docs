@@ -1,0 +1,14 @@
+allOf:
+- $ref: '#/components/schemas/PollingResponseSuccess'
+- type: object
+  properties:
+    metadata:
+      type: object
+      description: 'Informações relacionadas ao Tipo de Evento'
+      properties:
+        pickupArea:
+          type: string
+          description: >-
+            Informações sobre a área de retirada onde o merchant deve entregar o pedido. Ex.: Número da Vaga de Estacionamento.
+      required:
+      - pickupArea

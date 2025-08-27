@@ -1,0 +1,6 @@
+in: query
+name: end_at
+schema:
+  type: string
+  format: date
+required: true

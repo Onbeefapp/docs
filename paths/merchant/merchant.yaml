@@ -1,0 +1,32 @@
+get:
+  tags:
+  - Merchant
+  operationId: obterMerchant
+  summary: Obter informações de um Merchant
+  security:
+  - BearerAuth: []
+  description: |
+    Endpoint para obter todos os dados de um Merchant específico, como informações básicas, cardápios e serviços.
+  responses:
+    '200':
+      description: Retorno bem-sucedido das informações do merchant.
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/MerchantResponseSuccess'
+          example:
+            $ref: '#/components/examples/MerchantResponseSuccessExample'
+    '401':
+      description: Falha na autenticação.
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ProblemDetails'
+    '503':
+      description: Serviço indisponível ou token inválido.
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ProblemDetails'
+          example:
+            $ref: '#/components/examples/503InvalidBase64Characters'

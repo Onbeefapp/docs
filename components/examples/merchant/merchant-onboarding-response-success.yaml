@@ -1,0 +1,4 @@
+getMerchantURL:
+  baseURL: http://localhost
+  apiKey: string
+ordersWebhookURL: http://localhost

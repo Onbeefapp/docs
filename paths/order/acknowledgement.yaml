@@ -1,0 +1,27 @@
+post:
+  tags:
+  - Orders
+  operationId: pollingAcknowledgment
+  summary: Confirmar Eventos
+  security:
+  - BearerAuth: []
+  description: Confirmar um conjunto de eventos, removendo-os das futuras chamadas de polling.
+  requestBody:
+    $ref: '#/components/requestBodies/AcknowledgementEvents'
+  responses:
+    '202':
+      description: 'A solicitação foi aceita para processamento.'
+    '401':
+      description: Requisição sem credenciais de autenticação válidas.
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ProblemDetails'
+    '503':
+      description: Serviço indisponível ou token inválido.
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ProblemDetails'
+          example:
+            $ref: '#/components/examples/503InvalidBase64Characters'

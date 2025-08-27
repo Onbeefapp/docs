@@ -1,0 +1,7 @@
+in: path
+name: orderId
+schema:
+  type: string
+  description: 'O identificador único do pedido. O `orderId` é gerado pela Onbeef.'
+  format: uuid
+required: true

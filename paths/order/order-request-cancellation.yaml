@@ -1,0 +1,16 @@
+post:
+  tags:
+  - Orders
+  operationId: requestCancellation
+  summary: Solicitar cancelamento do pedido
+  description: |
+    Solicitar cancelamento do pedido a Onbeef.
+  parameters:
+  - $ref: '#/components/parameters/orderId'
+  security:
+  - BearerAuth: []
+  requestBody:
+    $ref: '#/components/requestBodies/requestCancellation'
+  responses:
+    '202':
+      description: Requisição aceita para processamento.

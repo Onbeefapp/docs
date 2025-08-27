@@ -1,0 +1,9 @@
+type: object
+title: TokenResponseUnauthorized
+properties:
+  error:
+    type: string
+    description: 'Breve descrição do problema.'
+  message:
+    type: string
+    description: 'Descrição legível do erro.'

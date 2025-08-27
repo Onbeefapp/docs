@@ -1,0 +1,39 @@
+properties:
+  id:
+    type: string
+    format: uuid
+    description: ID único da categoria.
+  name:
+    type: string
+    description: Nome da categoria.
+  description:
+    type: string
+    description: Descrição da categoria.
+  image:
+    type: object
+    description: Imagem da categoria.
+    properties:
+      url:
+        type: string
+        format: uri
+        description: URL da imagem da categoria.
+    required:
+    - url
+  externalCode:
+    type: string
+    description: Código externo da categoria (normalmente no PDV do merchant).
+  status:
+    type: string
+    description: Status da categoria.
+    enum:
+    - AVAILABLE
+    - UNAVAILABLE
+  itemOfferId:
+    type: array
+    description: ID dos itens oferecidos pela categoria.
+    items:
+      type: string
+required:
+- id
+- name
+- status

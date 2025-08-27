@@ -1,0 +1,35 @@
+post:
+  tags:
+  - Orders
+  operationId: orderValidateDelivery
+  summary: Validar Código de Entrega
+  description: |
+    Este endpoint tem como objetivo validar um código de entrega fornecido pelo consumidor, para que o entregador saiba se o pedido está sendo entregue à pessoa correta.
+  parameters:
+  - $ref: '#/components/parameters/orderId'
+  - in: query
+    name: deliveryCode
+    required: true
+    schema:
+      type: string
+      description: O Código de Confirmação de Entrega a ser validado.
+  security:
+  - BearerAuth: []
+  responses:
+    '200':
+      description: O Código de Confirmação está correto.
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              orderId:
+                type: string
+                format: uuid
+                description: O orderId informado na Solicitação de Entrega.
+              deliveryCode:
+                type: string
+                description: Código de confirmação de entrega fornecido pelo cliente.
+            required:
+            - orderId
+            - deliveryCode

@@ -1,0 +1,36 @@
+get:
+  tags:
+  - Merchant
+  operationId: obterMerchantStatus
+  summary: Obter status de leitura das informações do Merchant
+  parameters:
+  - $ref: '#/components/parameters/merchantId'
+  security:
+  - BearerAuth: []
+  description: |
+    Endpoint para obter o status da leitura das informações específicas do Merchant fornecidas pela Onbeef.
+  responses:
+    '200':
+      description: Status de leitura do Merchant retornado com sucesso.
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/MerchantStatusResponseSuccess'
+          example:
+            $ref: '#/components/examples/MerchantStatusResponseSuccessExample'
+    '500':
+      description: Falha de validação de parâmetros.
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ProblemDetails'
+          example:
+            $ref: '#/components/examples/500MerchantIdFieldRequired'
+    '503':
+      description: Serviço indisponível ou token inválido.
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ProblemDetails'
+          example:
+            $ref: '#/components/examples/503InvalidBase64Characters'

@@ -1,0 +1,16 @@
+post:
+  tags:
+  - Orders
+  operationId: dispatchOrder
+  summary: Despachar
+  description: |
+    Informa ao Onbeef que o pedido que o pedido foi despachado.
+  parameters:
+  - $ref: '#/components/parameters/orderId'
+  security:
+  - BearerAuth: []
+  requestBody:
+    $ref: '#/components/requestBodies/OrderStatus'
+  responses:
+    '202':
+      description: Requisição aceita para processamento.

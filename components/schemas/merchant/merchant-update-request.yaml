@@ -1,0 +1,21 @@
+type: object
+discriminator:
+  propertyName: entityType
+  mapping:
+    MERCHANT: '#/components/schemas/MerchantUpdateRequestFull'
+    ITEM: '#/components/schemas/MerchantUpdateRequestItem'
+    ITEM_OFFER: '#/components/schemas/MerchantUpdateRequestItemOffer'
+properties:
+  merchantStatus:
+    type: string
+    description: Esse campo indica se o Merchant está disponível ou não.
+    enum:
+    - AVAILABLE
+    - UNAVAILABLE
+  entityType:
+    type: string
+    description: 'O tipo de entidade do objeto atualizado.'
+required:
+- entityType
+- merchantStatus
+- updatedObjects

@@ -1,0 +1,28 @@
+required: true
+content:
+  application/json:
+    schema:
+      type: object
+      discriminator:
+        propertyName: entityType
+        mapping:
+          MERCHANT: '#/components/schemas/MerchantUpdateRequestFull'
+          ITEM: '#/components/schemas/MerchantUpdateRequestItem'
+          ITEM_OFFER: '#/components/schemas/MerchantUpdateRequestItemOffer'
+      properties:
+        merchantStatus:
+          type: string
+          description: Esse campo indica se o Merchant está disponível ou não.
+          enum:
+          - AVAILABLE
+          - UNAVAILABLE
+        eventType:
+          type: string
+          description: 'O tipo de entidade do objeto atualizado.'
+        onlyAddProducts:
+          type: boolean
+          description: 'Caso sim, os items enviados serão adicionados, e os restantes serão removidos.'
+      required:
+      - entityType
+      - merchantStatus
+      - updatedObjects

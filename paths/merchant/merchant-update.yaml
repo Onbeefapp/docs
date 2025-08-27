@@ -1,0 +1,30 @@
+put:
+  tags:
+  - Merchant
+  operationId: MerchantUpdate
+  summary: Atualização de Merchant.
+  security:
+  - BearerAuth: []
+  description: Endpoint para atualizar informações de um Merchant, como item, status e categorias.
+  requestBody:
+    $ref: '#/components/requestBodies/MerchantUpdateRequestBody'
+  responses:
+    '204':
+      description: Requisição processada com sucesso. Nenhum conteúdo retornado.
+    '500':
+      description: Request body inválido.
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ProblemDetails'
+          example:
+            $ref: '#/components/examples/500MerchantStatusFieldRequired'
+    '503':
+      $ref: '#/components/responses/503InvalidBase64Characters'
+      description: Serviço indisponível ou token inválido.
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ProblemDetails'
+          example:
+            $ref: '#/components/examples/503InvalidBase64Characters'

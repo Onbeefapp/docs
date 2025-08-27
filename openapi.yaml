@@ -1,0 +1,205 @@
+openapi: 3.1.0
+info:
+  title: API Connect Onbeef
+  description: |
+    # Introdução
+
+    Esta API segue o padrão **Open Delivery** e fornece recursos para:
+
+    - **Autenticação**
+    - **Gerenciamento de merchants** (informações, cardápios e status)
+    - **Cadastro e atualização** de dados do merchant
+    - **Recuperação de pedidos** e atualização de status
+    - **Eventos de pedidos** e confirmações de entrega
+
+    Documentação Open Delivery: <a href="https://abrasel-nacional.github.io/docs" target="_blank">https://abrasel-nacional.github.io/docs</a>
+  version: 1.0.0
+  contact:
+    email: rafael@onbeefapp.com.br
+    url: 'https://onbeefapp.com.br'
+servers:
+- url: 'https://api.dev.connect.onbeefapp.com.br'
+  description: Ambiente de Homologação (Sandbox)
+- url: 'https://api.connect.onbeefapp.com.br'
+  description: Ambiente de Produção
+components:
+  headers:
+    xAppId:
+      $ref: './components/headers/x-app-id.yaml'
+    xAppMerchantId:
+      $ref: './components/headers/x-app-merchant-id.yaml'
+    xAppSignature:
+      $ref: './components/headers/x-app-signature.yaml'
+  securitySchemes:
+    BearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+  parameters:
+    merchantId:
+      $ref: './components/parameters/merchant-id.yaml'
+    eventType:
+      $ref: './components/parameters/event-type.yaml'
+    orderId:
+      $ref: './components/parameters/order-id.yaml'
+    startAt:
+      $ref: './components/parameters/start-at.yaml'
+    endAt:
+      $ref: './components/parameters/end-at.yaml'
+  schemas:
+    TokenRequest:
+      $ref: './components/schemas/token/token-request.yaml'
+    TokenResponseSuccess:
+      $ref: './components/schemas/token/token-response-success.yaml'
+    TokenResponseUnauthorized:
+      $ref: './components/schemas/token/token-response-unauthorized.yaml'
+    MerchantResponseSuccess:
+      $ref: './components/schemas/merchant/merchant-response-success.yaml'
+    Category:
+      $ref: './components/schemas/category/categories-response.yaml'
+    Product:
+      $ref: './components/schemas/product/products-response.yaml'
+    ProblemDetails:
+      $ref: './components/schemas/problem-details.yaml'
+    MerchantStatusResponseSuccess:
+      $ref: './components/schemas/merchant/merchant-status-response-success.yaml'
+    MerchantOnboardingRequestBody:
+      $ref: './components/schemas/merchant/merchant-onboarding-request.yaml'
+    MerchantOnboardingResponseSuccess:
+      $ref: './components/schemas/merchant/merchant-onboarding-response-success.yaml'
+    MerchantUpdateRequestBody:
+      $ref: './components/schemas/merchant/merchant-update-request.yaml'
+    MerchantUpdateRequestFull:
+      $ref: './components/schemas/merchant/merchant-update-request-full.yaml'
+    MerchantUpdateRequestItem:
+      $ref: './components/schemas/merchant/merchant-update-request-item.yaml'
+    MerchantUpdateRequestItemOffer:
+      $ref: './components/schemas/merchant/merchant-update-request-item-offer.yaml'
+    MerchantUpdateItemRequest:
+      $ref: './components/schemas/item/merchant-update-request-item.yaml'
+    MerchantUpdateItemOfferRequest:
+      $ref: './components/schemas/itemOffer/merchant-update-request-item-offer.yaml'
+    MerchantUpdateCategoryRequest:
+      $ref: './components/schemas/category/merchant-update-request-categories.yaml'
+    DeliveryUpdateRequestBody:
+      $ref: './components/schemas/logistics/delivery-update-request.yaml'
+    ConfirmationCodeRequestBody:
+      $ref: './components/schemas/logistics/confirmation-code-request.yaml'
+    ConfirmationCodeResponseSuccess:
+      $ref: './components/schemas/logistics/confirmation-code-response-success.yaml'
+    PollingResponseSuccess:
+      $ref: './components/schemas/order/polling-response-success.yaml'
+    PollingResponseSuccessDefault:
+      $ref: './components/schemas/order/polling-response-success-default.yaml'
+    PollingResponseSuccessConfirmed:
+      $ref: './components/schemas/order/polling-response-success-confirmed.yaml'
+    PollingResponseSuccessPickupAreaAssigned:
+      $ref: './components/schemas/order/polling-response-success-pickup-area-assigned.yaml'
+    PollingResponseSuccessCancel:
+      $ref: './components/schemas/order/polling-response-success-cancel.yaml'
+    AcknowledgementEventsRequest:
+      $ref: './components/schemas/order/acknowledgement-request.yaml'
+    OrderDetailsSuccess:
+      $ref: './components/schemas/order/order-details-success.yaml'
+    OrderDetailsItemsRequest:
+      $ref: './components/schemas/item/order-details-items-request.yaml'
+    OrderStatusRequest:
+      $ref: './components/schemas/order/order-status-request.yaml'
+    requestCancellation:
+      $ref: './components/schemas/order/request-cancellation.yaml'
+    requestCancellationDenied:
+      $ref: './components/schemas/order/request-cancellation-denied.yaml'
+    OrderTrackingRequest:
+      $ref: './components/schemas/order/order-tracking-request.yaml'
+  examples:
+    TokenRequestExample:
+      $ref: './components/examples/token/token-request.yaml'
+    TokenResponseSuccessExample:
+      $ref: './components/examples/token/token-response-success.yaml'
+    TokenResponseUnauthorizedExample:
+      $ref: './components/examples/token/token-response-unauthorized.yaml'
+    MerchantResponseSuccessExample:
+      $ref: './components/examples/merchant/merchant-response-success.yaml'
+    MerchantStatusResponseSuccessExample:
+      $ref: './components/examples/merchant/merchant-status-response-success.yaml'
+    MerchantOnboardingRequestBodyExample:
+      $ref: './components/examples/merchant/merchant-onboarding-request.yaml'
+    MerchantOnboardingResponseSuccessExample:
+      $ref: './components/examples/merchant/merchant-onboarding-response-success.yaml'
+    401InvalidCredentials:
+      $ref: './components/examples/errors/401-invalid-credentials.yaml'
+    500MerchantIdFieldRequired:
+      $ref: './components/examples/errors/500-merchant-id-field-required.yaml'
+    500MerchantStatusFieldRequired:
+      $ref: './components/examples/errors/500-merchant-status-field-required.yaml'
+    503InvalidBase64Characters:
+      $ref: './components/examples/errors/503-invalid-base64-characters.yaml'
+  requestBodies:
+    TokenRequestBody:
+      $ref: './components/requestBodies/token-request.yaml'
+    MerchantOnboardingRequestBody:
+      $ref: './components/requestBodies/merchant-onboarding-request.yaml'
+    MerchantUpdateRequestBody:
+      $ref: './components/requestBodies/merchant-update-request.yaml'
+    DeliveryUpdate:
+      $ref: './components/requestBodies/delivery-update.yaml'
+    ConfirmationCode:
+      $ref: './components/requestBodies/confirmation-code.yaml'
+    AcknowledgementEvents:
+      $ref: './components/requestBodies/acknowledge-events.yaml'
+    OrderStatus:
+      $ref: './components/requestBodies/order-status.yaml'
+    requestCancellation:
+      $ref: './components/requestBodies/request-cancellation.yaml'
+    requestCancellationDenied:
+      $ref: './components/requestBodies/request-cancellation-denied.yaml'
+    OrderTracking:
+      $ref: './components/requestBodies/order-tracking.yaml'
+paths:
+  /oauth/token:
+    $ref: './paths/oauth.yaml'
+  /v1/merchant:
+    $ref: './paths/merchant/merchant.yaml'
+  /v1/merchantStatus:
+    $ref: './paths/merchant/merchant-status.yaml'
+  /v1/merchantOnboarding:
+    $ref: './paths/merchant/merchant-onboarding.yaml'
+  /v1/merchantUpdate:
+    $ref: './paths/merchant/merchant-update.yaml'
+  /v1/logistics/deliveryUpdate:
+    $ref: './paths/logistics/delivery-update.yaml'
+  /v1/logistics/confirmationCode:
+    $ref: './paths/logistics/confirmation-code.yaml'
+  /v1/events:polling:
+    $ref: './paths/order/polling.yaml'
+  /v1/events/acknowledgement:
+    $ref: './paths/order/acknowledgement.yaml'
+  /v1/orders/{orderId}:
+    $ref: './paths/order/order-details.yaml'
+  /v1/orders/{orderId}/confirm:
+    $ref: './paths/order/order-confirm.yaml'
+  /v1/orders/{orderId}/readyForPickup:
+    $ref: './paths/order/order-ready-for-pickup.yaml'
+  /v1/orders/{orderId}/dispatch:
+    $ref: './paths/order/order-dispatch.yaml'
+  /v1/orders/{orderId}/delivered:
+    $ref: './paths/order/order-delivered.yaml'
+  /v1/orders/{orderId}/validateCode:
+    $ref: './paths/order/order-validate-code.yaml'
+  /v1/orders/{orderId}/requestCancellation:
+    $ref: './paths/order/order-request-cancellation.yaml'
+  /v1/orders/{orderId}/acceptCancellation:
+    $ref: './paths/order/order-accept-cancellation.yaml'
+  /v1/orders/{orderId}/denyCancellation:
+    $ref: './paths/order/order-deny-cancellation.yaml'
+  /v1/orders/{orderId}/tracking:
+    $ref: './paths/order/order-tracking.yaml'
+tags:
+- name: Autenticação
+  description: A Onbeef suporta apenas autenticação OAuth 2.
+- name: Merchant
+  description: A entidade `Merchant` será utilizada pela Onbeef para recuperar todos os dados de um Merchant e apresentá-los ao usuário.
+- name: Logistics
+  description: A entidade `Logistics` será para solicitar uma nova entrega a um operador logístico e acompanhar/atualizar essa entrega.
+- name: Orders
+  description: A entidade `Order` será utilizada para consultas completas e para a atualização das informações.

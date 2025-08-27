@@ -1,0 +1,14 @@
+type: object
+properties:
+  reason:
+    type: string
+    description: >-
+      Campo de texto aberto para informar o motivo do cancelamento.
+  code:
+    type: string
+    enum:
+    - DISH_ALREADY_DONE
+    - OUT_FOR_DELIVERY
+required:
+- reason
+- code

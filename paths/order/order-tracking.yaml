@@ -1,0 +1,16 @@
+post:
+  tags:
+  - Orders
+  operationId: orderTracking
+  summary: Enviar Atualizações de Entrega
+  description: |
+    Envia informações sobre a entrega em andamento.
+  parameters:
+  - $ref: '#/components/parameters/orderId'
+  security:
+  - BearerAuth: []
+  requestBody:
+    $ref: '#/components/requestBodies/OrderTracking'
+  responses:
+    '202':
+      description: Requisição aceita para processamento.
