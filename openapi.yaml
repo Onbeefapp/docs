@@ -13,6 +13,14 @@ info:
     - **Eventos de pedidos** e confirmações de entrega
 
     Documentação Open Delivery: <a href="https://abrasel-nacional.github.io/docs" target="_blank">https://abrasel-nacional.github.io/docs</a>
+    
+    # Changelog  
+
+    Aqui você acompanha todas as atualizações, melhorias e correções realizadas na API de integrações da Onbeef.      
+    No changelog estão documentadas as mudanças mais recentes para que sua integração esteja sempre atualizada.
+
+    👉 Confira a versão completa:  
+    [https://api.connect.onbeefapp.com.br/changelog](https://api.connect.onbeefapp.com.br/changelog)
   x-logo:
     url: 'https://onbeefapp.com.br/wp-content/uploads/2024/03/logo_onbeef.20b983ed-300x300.png'
   version: 1.0.0
