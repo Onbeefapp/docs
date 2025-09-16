@@ -6,8 +6,8 @@ post:
   security: []
   description: O webhook é enviado para notificar a Onbeef sobre o Código de Entrega informado pelo cliente.
   parameters:
-  - $ref: '#/components/headers/xAppId'
-  - $ref: '#/components/headers/xAppMerchantId'
+  - $ref: '#/components/headers/XAppId'
+  - $ref: '#/components/headers/XAppMerchantId'
   - $ref: '#/components/headers/xAppSignature'
   requestBody:
     $ref: '#/components/requestBodies/ConfirmationCode'

@@ -6,7 +6,7 @@ post:
   description: |
     Informa ao Onbeef que a solicitação de cancelamento foi aceita e que o pedido pode ser cancelado..
   parameters:
-  - $ref: '#/components/parameters/orderId'
+  - $ref: '#/components/parameters/OrderId'
   security:
   - BearerAuth: []
   responses:

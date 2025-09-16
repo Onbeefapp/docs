@@ -15,7 +15,11 @@ properties:
   entityType:
     type: string
     description: 'O tipo de entidade do objeto atualizado.'
+  onlyAddProducts:
+    type: boolean
+    description: 'Se for true, os itens serão adicionados ou atualizados sem remover os já existentes. Se for false, os itens serão adicionados, mas todos os outros produtos existentes serão excluídos.'
 required:
 - entityType
 - merchantStatus
+- onlyAddProducts
 - updatedObjects

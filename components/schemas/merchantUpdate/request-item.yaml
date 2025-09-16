@@ -1,5 +1,5 @@
 allOf:
-  - $ref: '#/components/schemas/MerchantUpdateRequestBody'
+  - $ref: '#/components/schemas/MerchantUpdateRequest'
   - type: object
     properties:
       updatedObjects:

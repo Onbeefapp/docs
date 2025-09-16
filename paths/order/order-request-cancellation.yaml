@@ -6,7 +6,7 @@ post:
   description: |
     Solicitar cancelamento do pedido a Onbeef.
   parameters:
-  - $ref: '#/components/parameters/orderId'
+  - $ref: '#/components/parameters/OrderId'
   security:
   - BearerAuth: []
   requestBody:

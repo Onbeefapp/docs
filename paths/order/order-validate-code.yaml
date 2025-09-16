@@ -6,7 +6,7 @@ post:
   description: |
     Este endpoint tem como objetivo validar um código de entrega fornecido pelo consumidor, para que o entregador saiba se o pedido está sendo entregue à pessoa correta.
   parameters:
-  - $ref: '#/components/parameters/orderId'
+  - $ref: '#/components/parameters/OrderId'
   - in: query
     name: deliveryCode
     required: true

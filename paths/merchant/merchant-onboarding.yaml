@@ -4,7 +4,7 @@ put:
   operationId: putMerchantOnboarding
   summary: Registrar / Atualizar informações do endpoint Merchant.
   parameters:
-  - $ref: '#/components/parameters/merchantId'
+  - $ref: '#/components/parameters/MerchantId'
   security:
   - BearerAuth: []
   description: Registrar e atualizar as informações do endpoint GET /v1/merchant na Onbeef.
@@ -16,7 +16,7 @@ put:
       content:
         application/json:
           schema:
-            $ref: '#/components/schemas/MerchantOnboardingResponseSuccess'
+            $ref: '#/components/schemas/MerchantOnboardingResponse'
           example:
             $ref: '#/components/examples/MerchantOnboardingResponseSuccessExample'
     '500':

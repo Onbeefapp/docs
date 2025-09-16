@@ -6,7 +6,7 @@ post:
   description: |
     Informa a Onbeef que o pedido foi aceito e que o preparo será iniciado em breve.
   parameters:
-  - $ref: '#/components/parameters/orderId'
+  - $ref: '#/components/parameters/OrderId'
   security:
   - BearerAuth: []
   requestBody:

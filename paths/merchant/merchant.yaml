@@ -13,7 +13,7 @@ get:
       content:
         application/json:
           schema:
-            $ref: '#/components/schemas/MerchantResponseSuccess'
+            $ref: '#/components/schemas/MerchantResponse'
           example:
             $ref: '#/components/examples/MerchantResponseSuccessExample'
     '401':

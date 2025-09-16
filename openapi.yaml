@@ -13,7 +13,7 @@ info:
     - **Eventos de pedidos** e confirmações de entrega
 
     Documentação Open Delivery: <a href="https://abrasel-nacional.github.io/docs" target="_blank">https://abrasel-nacional.github.io/docs</a>
-    
+
     # Changelog  
 
     Aqui você acompanha todas as atualizações, melhorias e correções realizadas na API de integrações da Onbeef.      
@@ -34,9 +34,9 @@ servers:
   description: Ambiente de Produção
 components:
   headers:
-    xAppId:
+    XAppId:
       $ref: './components/headers/x-app-id.yaml'
-    xAppMerchantId:
+    XAppMerchantId:
       $ref: './components/headers/x-app-merchant-id.yaml'
     xAppSignature:
       $ref: './components/headers/x-app-signature.yaml'
@@ -46,49 +46,49 @@ components:
       scheme: bearer
       bearerFormat: JWT
   parameters:
-    merchantId:
+    MerchantId:
       $ref: './components/parameters/merchant-id.yaml'
-    eventType:
+    EventType:
       $ref: './components/parameters/event-type.yaml'
-    orderId:
+    OrderId:
       $ref: './components/parameters/order-id.yaml'
-    startAt:
+    StartAt:
       $ref: './components/parameters/start-at.yaml'
-    endAt:
+    EndAt:
       $ref: './components/parameters/end-at.yaml'
   schemas:
     TokenRequest:
-      $ref: './components/schemas/token/token-request.yaml'
-    TokenResponseSuccess:
-      $ref: './components/schemas/token/token-response-success.yaml'
-    TokenResponseUnauthorized:
-      $ref: './components/schemas/token/token-response-unauthorized.yaml'
-    MerchantResponseSuccess:
-      $ref: './components/schemas/merchant/merchant-response-success.yaml'
+      $ref: './components/schemas/token/request.yaml'
+    TokenResponse:
+      $ref: './components/schemas/token/response.yaml'
+    TokenUnauthorized:
+      $ref: './components/schemas/token/unauthorized.yaml'
+    MerchantResponse:
+      $ref: './components/schemas/merchant/response.yaml'
     Category:
-      $ref: './components/schemas/category/categories-response.yaml'
+      $ref: './components/schemas/category/response.yaml'
     Product:
-      $ref: './components/schemas/product/products-response.yaml'
+      $ref: './components/schemas/product/response.yaml'
     ProblemDetails:
       $ref: './components/schemas/problem-details.yaml'
-    MerchantStatusResponseSuccess:
-      $ref: './components/schemas/merchant/merchant-status-response-success.yaml'
-    MerchantOnboardingRequestBody:
-      $ref: './components/schemas/merchant/merchant-onboarding-request.yaml'
-    MerchantOnboardingResponseSuccess:
-      $ref: './components/schemas/merchant/merchant-onboarding-response-success.yaml'
-    MerchantUpdateRequestBody:
-      $ref: './components/schemas/merchant/merchant-update-request.yaml'
+    MerchantStatusResponse:
+      $ref: './components/schemas/merchantStatus/response.yaml'
+    MerchantOnboardingRequest:
+      $ref: './components/schemas/merchantOnboarding/request.yaml'
+    MerchantOnboardingResponse:
+      $ref: './components/schemas/merchantOnboarding/response.yaml'
+    MerchantUpdateRequest:
+      $ref: './components/schemas/merchantUpdate/request.yaml'
     MerchantUpdateRequestFull:
-      $ref: './components/schemas/merchant/merchant-update-request-full.yaml'
+      $ref: './components/schemas/merchantUpdate/request-full.yaml'
     MerchantUpdateRequestItem:
-      $ref: './components/schemas/merchant/merchant-update-request-item.yaml'
+      $ref: './components/schemas/merchantUpdate/request-item.yaml'
     MerchantUpdateRequestItemOffer:
-      $ref: './components/schemas/merchant/merchant-update-request-item-offer.yaml'
+      $ref: './components/schemas/merchantUpdate/request-item-offer.yaml'
     MerchantUpdateItemRequest:
-      $ref: './components/schemas/item/merchant-update-request-item.yaml'
+      $ref: './components/schemas/merchantUpdate/item/request.yaml'
     MerchantUpdateItemOfferRequest:
-      $ref: './components/schemas/itemOffer/merchant-update-request-item-offer.yaml'
+      $ref: './components/schemas/merchantUpdate/itemOffer/request.yaml'
     MerchantUpdateCategoryRequest:
       $ref: './components/schemas/category/merchant-update-request-categories.yaml'
     DeliveryUpdateRequestBody:
@@ -112,7 +112,7 @@ components:
     OrderDetailsSuccess:
       $ref: './components/schemas/order/order-details-success.yaml'
     OrderDetailsItemsRequest:
-      $ref: './components/schemas/item/order-details-items-request.yaml'
+      $ref: './components/schemas/product/item/request.yaml'
     OrderStatusRequest:
       $ref: './components/schemas/order/order-status-request.yaml'
     requestCancellation:

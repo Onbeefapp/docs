@@ -10,9 +10,9 @@ get:
 
     Cada evento recebido por este endpoint deve ser devidamente reconhecido; caso contrário, ele continuará a ser retornado em requisições futuras.
   parameters:
-  - $ref: '#/components/parameters/eventType'
-  - $ref: '#/components/parameters/startAt'
-  - $ref: '#/components/parameters/endAt'
+  - $ref: '#/components/parameters/EventType'
+  - $ref: '#/components/parameters/StartAt'
+  - $ref: '#/components/parameters/EndAt'
   responses:
     '200':
       description: 'Retorna com sucesso a lista de eventos consultados.'

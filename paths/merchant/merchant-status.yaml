@@ -4,7 +4,7 @@ get:
   operationId: obterMerchantStatus
   summary: Obter status de leitura das informações do Merchant
   parameters:
-  - $ref: '#/components/parameters/merchantId'
+  - $ref: '#/components/parameters/MerchantId'
   security:
   - BearerAuth: []
   description: |
@@ -15,7 +15,7 @@ get:
       content:
         application/json:
           schema:
-            $ref: '#/components/schemas/MerchantStatusResponseSuccess'
+            $ref: '#/components/schemas/MerchantStatusResponse'
           example:
             $ref: '#/components/examples/MerchantStatusResponseSuccessExample'
     '500':

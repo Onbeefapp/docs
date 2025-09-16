@@ -6,7 +6,7 @@ post:
   description: |
     Informa ao Onbeef que o pedido está pronto para retirada.
   parameters:
-  - $ref: '#/components/parameters/orderId'
+  - $ref: '#/components/parameters/OrderId'
   security:
   - BearerAuth: []
   responses:

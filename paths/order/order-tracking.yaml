@@ -6,7 +6,7 @@ post:
   description: |
     Envia informações sobre a entrega em andamento.
   parameters:
-  - $ref: '#/components/parameters/orderId'
+  - $ref: '#/components/parameters/OrderId'
   security:
   - BearerAuth: []
   requestBody:

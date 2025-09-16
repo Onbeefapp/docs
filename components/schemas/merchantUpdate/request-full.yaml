@@ -1,5 +1,5 @@
 allOf:
-- $ref: '#/components/schemas/MerchantUpdateRequestBody'
+- $ref: '#/components/schemas/MerchantUpdateRequest'
 - type: object
   properties:
     updatedObjects:
@@ -21,11 +21,11 @@ allOf:
             - AVAILABLE
             - UNAVAILABLE
           items:
-              type: array
-              description: >-
-                Entidade obrigatória a ser implementada. Descreve um array de itens.
-              items:
-                $ref: '#/components/schemas/MerchantUpdateItemRequest'
+            type: array
+            description: >-
+              Entidade obrigatória a ser implementada. Descreve um array de itens.
+            items:
+              $ref: '#/components/schemas/MerchantUpdateItemRequest'
           categories:
             type: array
             description: >-
