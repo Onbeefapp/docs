@@ -34,7 +34,7 @@ properties:
   createdAt:
     type: string
     format: date-time
-    description: Data e hora de criação do pedido.
+    description: Data e hora de criação do pedido, seguindo o padrão ISO 8601 em UTC+0.
   lastEvent:
     type: string
     enum:
@@ -234,11 +234,11 @@ properties:
       scheduledDateTimeStart:
         type: string
         format: date-time
-        description: Data e hora em que o pedido estará pronto.
+        description: Data e hora em que o pedido estará pronto, seguindo o padrão ISO 8601 em UTC+0.
       scheduledDateTimeEnd:
         type: string
         format: date-time
-        description: Data e hora em que o pedido estará pronto.
+        description: Data e hora em que o pedido estará pronto, seguindo o padrão ISO 8601 em UTC+0.
   orderTiming:
     type: string
     enum:
@@ -253,7 +253,7 @@ properties:
   preparationStartDateTime:
     type: string
     format: date-time
-    description: Sugestão de horário de início da preparação após a criação do pedido.
+    description: Sugestão de horário de início da preparação após a criação do pedido, seguindo o padrão ISO 8601 em UTC+0.
   payments:
     type: object
     description: Todas as informações sobre o pagamento, como métodos, pré-pagamentos, troco, etc.
@@ -373,11 +373,11 @@ properties:
           estimatedDeliveryDateTime:
             type: string
             format: date-time
-            description: Data e hora estimada de entrega.
+            description: Data e hora estimada de entrega, seguindo o padrão ISO 8601 em UTC+0.
           deliveryDateTime:
             type: string
             format: date-time
-            description: Data de entrega. A data e hora em que a entrega realmente ocorreu.
+            description: Data de entrega. A data e hora em que a entrega realmente ocorreu, seguindo o padrão ISO 8601 em UTC+0.
   takeout:
     type: object
     description: Informações referentes a pedidos para retirada `TAKEOUT`.
@@ -387,4 +387,4 @@ properties:
       takeoutDateTime:
         type: string
         format: date-time
-        description: Data e hora de retirada.
+        description: Data e hora de retirada, seguindo o padrão ISO 8601 em UTC+0.
