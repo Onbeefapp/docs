@@ -1,8 +1,4 @@
 properties:
-  id:
-    type: string
-    format: uuid
-    description: ID único do item offer.
   itemId:
     type: string
     description: O valor do id da entidade Item correlacionado a esta entidade ItemOffer.
@@ -24,20 +20,6 @@ properties:
     - value
     - currency
     - originalValue
-  status:
-    type: string
-    description: Status do item offer.
-    enum:
-    - AVAILABLE
-    - UNAVAILABLE
-  optionGroupsId:
-    type: array
-    description: ID das opções do item offer.
-    items:
-      type: string
 required:
-- id
 - itemId
 - price
-- status
-- optionGroupsId
