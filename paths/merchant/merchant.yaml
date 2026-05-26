@@ -14,8 +14,9 @@ get:
         application/json:
           schema:
             $ref: '#/components/schemas/MerchantResponse'
-          example:
-            $ref: '#/components/examples/MerchantResponseSuccessExample'
+          examples:
+            MerchantResponseSuccessExample:
+              $ref: '#/components/examples/MerchantResponseSuccessExample'
     '401':
       description: Falha na autenticação.
       content:
@@ -28,5 +29,6 @@ get:
         application/json:
           schema:
             $ref: '#/components/schemas/ProblemDetails'
-          example:
-            $ref: '#/components/examples/503InvalidBase64Characters'
+          examples:
+            503InvalidBase64Characters:
+              $ref: '#/components/examples/503InvalidBase64Characters'

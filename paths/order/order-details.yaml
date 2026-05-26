@@ -34,5 +34,6 @@ get:
         application/json:
           schema:
             $ref: '#/components/schemas/ProblemDetails'
-          example:
-            $ref: '#/components/examples/errors/503-service-unavailable.yaml'
+          examples:
+            503InvalidBase64Characters:
+              $ref: '#/components/examples/503InvalidBase64Characters'

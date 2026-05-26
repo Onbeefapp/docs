@@ -6,24 +6,26 @@ post:
   security: []
   description: O webhook é enviado para notificar a Onbeef sobre um novo evento de pedido ocorrido no Serviço Logístico.
   parameters:
-  - $ref: '#/components/headers/XAppId'
-  - $ref: '#/components/headers/XAppMerchantId'
-  - $ref: '#/components/headers/xAppSignature'
+  - $ref: '#/components/parameters/XAppId'
+  - $ref: '#/components/parameters/XAppMerchantId'
+  - $ref: '#/components/parameters/XAppSignature'
   requestBody:
     $ref: '#/components/requestBodies/DeliveryUpdate'
   responses:
     '204':
       description: Requisição processada com sucesso. Nenhum conteúdo retornado.
-    '500':
+    '422':
       description: Request body inválido.
       content:
         application/json:
           schema:
             $ref: '#/components/schemas/ProblemDetails'
     '503':
-      $ref: '#/components/responses/503InvalidBase64Characters'
       description: Serviço indisponível ou token inválido.
       content:
         application/json:
           schema:
             $ref: '#/components/schemas/ProblemDetails'
+          examples:
+            503InvalidBase64Characters:
+              $ref: '#/components/examples/503InvalidBase64Characters'

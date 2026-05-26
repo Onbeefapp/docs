@@ -4,19 +4,17 @@ discriminator:
   propertyName: eventType
   mapping:
     CREATED: '#/components/schemas/PollingResponseSuccessDefault'
-    CONFIRMED: '#/components/schemas/PollingResponseSuccessConfirmed'
-    PREPARATION_REQUESTED: '#/components/schemas/PollingResponseSuccessDefault'
-    PREPARING: '#/components/schemas/PollingResponseSuccessDefault'
+    CONFIRMED: '#/components/schemas/PollingResponseSuccessDefault'
     DISPATCHED: '#/components/schemas/PollingResponseSuccessDefault'
     READY_FOR_PICKUP: '#/components/schemas/PollingResponseSuccessDefault'
-    PICKUP_AREA_ASSIGNED: '#/components/schemas/PollingResponseSuccessPickupAreaAssigned'
-    PICKED_UP: '#/components/schemas/PollingResponseSuccessDefault'
+    PICKUP_AREA_ASSIGNED: '#/components/schemas/PollingResponseSuccessDefault'
+    DELIVERED: '#/components/schemas/PollingResponseSuccessDefault'
     CONCLUDED: '#/components/schemas/PollingResponseSuccessDefault'
-    CANCELLATION_REQUESTED: '#/components/schemas/PollingResponseSuccessCancel'
-    CANCELLATION_REQUESTED_DENIED: '#/components/schemas/PollingResponseSuccessCancel'
-    CANCELLED: '#/components/schemas/PollingResponseSuccessCancel'
-    ORDER_CANCELLATION_REQUEST: '#/components/schemas/PollingResponseSuccessCancel'
-    CANCELLED_DENIED: '#/components/schemas/PollingResponseSuccessCancel'
+    CANCELLATION_REQUESTED: '#/components/schemas/PollingResponseSuccessDefault'
+    CANCELLATION_REQUEST_DENIED: '#/components/schemas/PollingResponseSuccessDefault'
+    CANCELLED: '#/components/schemas/PollingResponseSuccessDefault'
+    ORDER_CANCELLATION_REQUEST: '#/components/schemas/PollingResponseSuccessDefault'
+    CANCELLED_DENIED: '#/components/schemas/PollingResponseSuccessDefault'
 properties:
   eventId:
     type: string

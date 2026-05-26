@@ -16,12 +16,21 @@ content:
           enum:
           - AVAILABLE
           - UNAVAILABLE
-        eventType:
+        entityType:
           type: string
           description: 'O tipo de entidade do objeto atualizado.'
+          enum:
+          - MERCHANT
+          - ITEM
+          - ITEM_OFFER
         onlyAddProducts:
           type: boolean
           description: 'Se for true, os itens serão adicionados ou atualizados sem remover os já existentes. Se for false, os itens serão adicionados, mas todos os outros produtos existentes serão excluídos.'
+        updatedObjects:
+          type: array
+          description: 'Lista de entidades atualizadas. O conteúdo varia conforme o `entityType` (ver schemas referenciados pelo discriminator).'
+          items:
+            type: object
       required:
       - entityType
       - merchantStatus

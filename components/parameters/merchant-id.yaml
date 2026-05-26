@@ -1,7 +1,10 @@
 name: merchantId
 in: query
 required: true
-description: Identificador único do Merchant no sistema da Onbeef.
+description: |
+  Identificador único do Merchant no sistema da Onbeef.
+
+  Em `/v1/merchantStatus` o campo é obrigatório por validação, mas o merchant utilizado é sempre o do token Bearer; o valor enviado aqui é ignorado.
 schema:
   type: string
   format: uuid

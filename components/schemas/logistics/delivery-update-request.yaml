@@ -173,7 +173,7 @@ properties:
       price:
         type: object
         description: |
-          O preço calculado da entrega. Pode ser 0. 
+          O preço calculado da entrega. Pode ser 0.
 
           O preço deve ser calculado de acordo com a Tabela de Preços utilizada, bem como com os acordos comerciais previamente estabelecidos.
         properties:
@@ -185,9 +185,9 @@ properties:
           currency:
             type: string
             description: Código da moeda.
-          required:
-          - price
-          - currency
+        required:
+        - value
+        - currency
       pricingList:
         type: string
         description: Indica qual tabela foi usada para calcular o preço da entrega.

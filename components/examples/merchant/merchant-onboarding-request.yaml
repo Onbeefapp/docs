@@ -1,4 +1,6 @@
-getMerchantURL:
-  baseURL: http://localhost
-  apiKey: string
-ordersWebhookURL: http://localhost
+value:
+  merchantId: 9b2f4c1e-0a3d-4e8c-9d6a-2b7f1c0d5e3a
+  getMerchantURL:
+    baseURL: http://localhost
+    apiKey: string
+  ordersWebhookURL: http://localhost

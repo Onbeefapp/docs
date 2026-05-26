@@ -19,33 +19,12 @@ get:
       content:
         'application/json':
           schema:
-            type: object
-            title: OrderPollingResponse
-            discriminator:
-              propertyName: eventType
-              mapping:
-                CREATED: '#/components/schemas/PollingResponseSuccessDefault'
-                CONFIRMED: '#/components/schemas/PollingResponseSuccessConfirmed'
-                PREPARATION_REQUESTED: '#/components/schemas/PollingResponseSuccessDefault'
-                PREPARING: '#/components/schemas/PollingResponseSuccessDefault'
-                DISPATCHED: '#/components/schemas/PollingResponseSuccessDefault'
-                READY_FOR_PICKUP: '#/components/schemas/PollingResponseSuccessDefault'
-                PICKUP_AREA_ASSIGNED: '#/components/schemas/PollingResponseSuccessPickupAreaAssigned'
-                PICKED_UP: '#/components/schemas/PollingResponseSuccessDefault'
-                CONCLUDED: '#/components/schemas/PollingResponseSuccessDefault'
-                CANCELLATION_REQUESTED: '#/components/schemas/PollingResponseSuccessCancel'
-                CANCELLATION_REQUESTED_DENIED: '#/components/schemas/PollingResponseSuccessCancel'
-                CANCELLED: '#/components/schemas/PollingResponseSuccessCancel'
-                ORDER_CANCELLATION_REQUEST: '#/components/schemas/PollingResponseSuccessCancel'
-                CANCELLED_DENIED: '#/components/schemas/PollingResponseSuccessCancel'
-            properties:
-              eventId:
-                type: string
-                format: uuid
-                description: >-
-                  Um identificador único do evento.
-              eventType:
-                type: string
-                description: 'O tipo de entidade do objeto atualizado.'
-            required:
-            - eventId
+            type: array
+            items:
+              $ref: '#/components/schemas/PollingResponseSuccess'
+    '401':
+      description: Requisição sem credenciais de autenticação válidas.
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ProblemDetails'

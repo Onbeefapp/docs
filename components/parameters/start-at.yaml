@@ -1,6 +1,7 @@
 in: query
 name: start_at
+description: Data/hora inicial do filtro de eventos. Formatos aceitos: `Y-m-d` ou `Y-m-d H:i`.
 schema:
   type: string
   format: date
-required: true
+required: false

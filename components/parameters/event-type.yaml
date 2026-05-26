@@ -9,12 +9,9 @@ schema:
 
     >`CREATED`: Pedido criado. <br>
     >`CONFIRMED`: Pedido confirmado. <br>
-    >`PREPARATION_REQUESTED`: Informa ao Software Service que pode iniciar a preparação do pedido. <br>
-    >`PREPARING`: Preparação do pedido iniciada. <br>
     >`READY_FOR_PICKUP`: Pedido pronto para retirada pelo cliente ou entregador. <br>
     >`DISPATCHED`: Pedido saiu para entrega. <br>
     >`PICKUP_AREA_ASSIGNED`: Informa ao Software Service a área designada para retirada do pedido. <br>
-    >`PICKED_UP`: Pedido foi retirado pelo cliente. <br>
     >`DELIVERED`: Pedido entregue ao cliente. <br>
     >`CONCLUDED`: Pedido concluído. <br>
     >`CANCELLATION_REQUESTED`: Enviado pelo Software Service para o Ordering Application. <br>
@@ -28,11 +25,9 @@ schema:
     enum:
     - 'CREATED'
     - 'CONFIRMED'
-    - 'PREPARING'
     - 'DISPATCHED'
     - 'READY_FOR_PICKUP'
     - 'PICKUP_AREA_ASSIGNED'
-    - 'PICKED_UP'
     - 'DELIVERED'
     - 'CONCLUDED'
     - 'CANCELLATION_REQUESTED'

@@ -1,6 +1,7 @@
 in: query
 name: end_at
+description: Data/hora final do filtro de eventos. Formatos aceitos: `Y-m-d` ou `Y-m-d H:i`.
 schema:
   type: string
   format: date
-required: true
+required: false

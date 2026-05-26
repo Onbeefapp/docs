@@ -16,21 +16,24 @@ get:
         application/json:
           schema:
             $ref: '#/components/schemas/MerchantStatusResponse'
-          example:
-            $ref: '#/components/examples/MerchantStatusResponseSuccessExample'
-    '500':
+          examples:
+            MerchantStatusResponseSuccessExample:
+              $ref: '#/components/examples/MerchantStatusResponseSuccessExample'
+    '422':
       description: Falha de validação de parâmetros.
       content:
         application/json:
           schema:
             $ref: '#/components/schemas/ProblemDetails'
-          example:
-            $ref: '#/components/examples/500MerchantIdFieldRequired'
+          examples:
+            500MerchantIdFieldRequired:
+              $ref: '#/components/examples/500MerchantIdFieldRequired'
     '503':
       description: Serviço indisponível ou token inválido.
       content:
         application/json:
           schema:
             $ref: '#/components/schemas/ProblemDetails'
-          example:
-            $ref: '#/components/examples/503InvalidBase64Characters'
+          examples:
+            503InvalidBase64Characters:
+              $ref: '#/components/examples/503InvalidBase64Characters'

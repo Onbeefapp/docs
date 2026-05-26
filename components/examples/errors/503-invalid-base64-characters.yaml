@@ -1,2 +1,3 @@
-title: Error while decoding from Base64Url, invalid base64 characters detected
-status: 503
+value:
+  title: Service unavailable
+  status: 503

@@ -7,14 +7,20 @@ post:
     Este endpoint tem como objetivo validar um código de entrega fornecido pelo consumidor, para que o entregador saiba se o pedido está sendo entregue à pessoa correta.
   parameters:
   - $ref: '#/components/parameters/OrderId'
-  - in: query
-    name: deliveryCode
-    required: true
-    schema:
-      type: string
-      description: O Código de Confirmação de Entrega a ser validado.
   security:
   - BearerAuth: []
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          type: object
+          properties:
+            deliveryCode:
+              type: string
+              description: O Código de Confirmação de Entrega a ser validado.
+          required:
+          - deliveryCode
   responses:
     '200':
       description: O Código de Confirmação está correto.
@@ -33,3 +39,21 @@ post:
             required:
             - orderId
             - deliveryCode
+    '401':
+      description: Requisição sem credenciais de autenticação válidas.
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ProblemDetails'
+    '404':
+      description: Pedido não encontrado.
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ProblemDetails'
+    '422':
+      description: Código de entrega inválido.
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ProblemDetails'

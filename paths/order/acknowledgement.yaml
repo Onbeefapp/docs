@@ -23,5 +23,6 @@ post:
         application/json:
           schema:
             $ref: '#/components/schemas/ProblemDetails'
-          example:
-            $ref: '#/components/examples/503InvalidBase64Characters'
+          examples:
+            503InvalidBase64Characters:
+              $ref: '#/components/examples/503InvalidBase64Characters'

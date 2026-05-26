@@ -24,5 +24,6 @@ post:
         application/json:
           schema:
             $ref: '#/components/schemas/ProblemDetails'
-          example:
-            $ref: '#/components/examples/401InvalidCredentials'
+          examples:
+            401InvalidCredentials:
+              $ref: '#/components/examples/401InvalidCredentials'

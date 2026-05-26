@@ -12,3 +12,15 @@ post:
   responses:
     '202':
       description: Requisição aceita para processamento.
+    '401':
+      description: Requisição sem credenciais de autenticação válidas.
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ProblemDetails'
+    '404':
+      description: Pedido não encontrado.
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ProblemDetails'

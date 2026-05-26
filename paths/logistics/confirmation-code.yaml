@@ -6,9 +6,9 @@ post:
   security: []
   description: O webhook é enviado para notificar a Onbeef sobre o Código de Entrega informado pelo cliente.
   parameters:
-  - $ref: '#/components/headers/XAppId'
-  - $ref: '#/components/headers/XAppMerchantId'
-  - $ref: '#/components/headers/xAppSignature'
+  - $ref: '#/components/parameters/XAppId'
+  - $ref: '#/components/parameters/XAppMerchantId'
+  - $ref: '#/components/parameters/XAppSignature'
   requestBody:
     $ref: '#/components/requestBodies/ConfirmationCode'
   responses:
@@ -18,16 +18,18 @@ post:
         application/json:
           schema:
             $ref: '#/components/schemas/ConfirmationCodeResponseSuccess'
-    '500':
+    '422':
       description: Request body inválido.
       content:
         application/json:
           schema:
             $ref: '#/components/schemas/ProblemDetails'
     '503':
-      $ref: '#/components/examples/503InvalidBase64Characters'
       description: Serviço indisponível.
       content:
         application/json:
           schema:
             $ref: '#/components/schemas/ProblemDetails'
+          examples:
+            503InvalidBase64Characters:
+              $ref: '#/components/examples/503InvalidBase64Characters'

@@ -1,6 +1,10 @@
 type: object
 title: MerchantOnboardingRequestBody
 properties:
+  merchantId:
+    type: string
+    description: >-
+      Identificador único do Merchant no sistema da Onbeef.
   getMerchantURL:
     type: object
     description: >-
@@ -15,8 +19,15 @@ properties:
         type: string
         description: >-
           A API_KEY para acessar o endpoint.
+    required:
+    - baseURL
+    - apiKey
   ordersWebhookURL:
     type: string
     format: uri
     description: >-
       Informações sobre o acesso ao webhook POST /v1/orderUpdate do Serviço de Software do Merchant. É para esse endereço que a Onbeef enviará os eventos dos pedidos conforme eles ocorrerem.
+required:
+- merchantId
+- getMerchantURL
+- ordersWebhookURL

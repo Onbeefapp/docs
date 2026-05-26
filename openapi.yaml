@@ -1,4 +1,4 @@
-openapi: 3.1.0
+openapi: 3.0.3
 info:
   title: API Connect Onbeef
   description: |
@@ -33,13 +33,6 @@ servers:
 - url: 'https://api.connect.onbeefapp.com.br'
   description: Ambiente de Produção
 components:
-  headers:
-    XAppId:
-      $ref: './components/headers/x-app-id.yaml'
-    XAppMerchantId:
-      $ref: './components/headers/x-app-merchant-id.yaml'
-    xAppSignature:
-      $ref: './components/headers/x-app-signature.yaml'
   securitySchemes:
     BearerAuth:
       type: http
@@ -52,10 +45,28 @@ components:
       $ref: './components/parameters/event-type.yaml'
     OrderId:
       $ref: './components/parameters/order-id.yaml'
+    XAppId:
+      $ref: './components/headers/x-app-id.yaml'
+    XAppMerchantId:
+      $ref: './components/headers/x-app-merchant-id.yaml'
+    XAppSignature:
+      $ref: './components/headers/x-app-signature.yaml'
     StartAt:
-      $ref: './components/parameters/start-at.yaml'
+      name: start_at
+      in: query
+      description: 'Data/hora inicial do filtro de eventos. Formatos aceitos: `Y-m-d` ou `Y-m-d H:i`.'
+      required: false
+      schema:
+        type: string
+        format: date
     EndAt:
-      $ref: './components/parameters/end-at.yaml'
+      name: end_at
+      in: query
+      description: 'Data/hora final do filtro de eventos. Formatos aceitos: `Y-m-d` ou `Y-m-d H:i`.'
+      required: false
+      schema:
+        type: string
+        format: date
   schemas:
     TokenRequest:
       $ref: './components/schemas/token/request.yaml'
@@ -101,12 +112,6 @@ components:
       $ref: './components/schemas/order/polling-response-success.yaml'
     PollingResponseSuccessDefault:
       $ref: './components/schemas/order/polling-response-success-default.yaml'
-    PollingResponseSuccessConfirmed:
-      $ref: './components/schemas/order/polling-response-success-confirmed.yaml'
-    PollingResponseSuccessPickupAreaAssigned:
-      $ref: './components/schemas/order/polling-response-success-pickup-area-assigned.yaml'
-    PollingResponseSuccessCancel:
-      $ref: './components/schemas/order/polling-response-success-cancel.yaml'
     AcknowledgementEventsRequest:
       $ref: './components/schemas/order/acknowledgement-request.yaml'
     OrderDetailsSuccess:
@@ -182,7 +187,7 @@ paths:
     $ref: './paths/logistics/confirmation-code.yaml'
   /v1/events:polling:
     $ref: './paths/order/polling.yaml'
-  /v1/events/acknowledgement:
+  /v1/events/acknowledgment:
     $ref: './paths/order/acknowledgement.yaml'
   /v1/orders/{orderId}:
     $ref: './paths/order/order-details.yaml'
@@ -210,6 +215,6 @@ tags:
 - name: Merchant
   description: A entidade `Merchant` será utilizada pela Onbeef para recuperar todos os dados de um Merchant e apresentá-los ao usuário.
 - name: Logistics
-  description: A entidade `Logistics` será para solicitar uma nova entrega a um operador logístico e acompanhar/atualizar essa entrega.
+  description: Endpoints expostos pela Onbeef para receber notificações de eventos de entrega e validação de código de confirmação enviadas pelo operador logístico (webhooks recebidos pela Onbeef).
 - name: Orders
   description: A entidade `Order` será utilizada para consultas completas e para a atualização das informações.

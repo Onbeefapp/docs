@@ -3,11 +3,11 @@ properties:
   id:
     type: 'string'
     format: 'uuid'
-    description: 'Um identificador único do evento.'
+    description: 'Identificador único do evento. Corresponde ao `eventId` retornado pelo endpoint de polling.'
   orderId:
     type: 'string'
     format: 'uuid'
-    description: 'O identificador único do pedido. O ID do pedido é gerado pela **Aplicação de Pedido**.'
+    description: 'O identificador único do pedido. O `orderId` é gerado pela Onbeef.'
   eventType:
     type: 'string'
     description: 'O tipo de evento.'

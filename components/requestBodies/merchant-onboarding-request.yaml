@@ -3,5 +3,6 @@ content:
   application/json:
     schema:
       $ref: '#/components/schemas/MerchantOnboardingRequest'
-    example:
+    examples:
+      MerchantOnboardingRequestBodyExample:
         $ref: '#/components/examples/MerchantOnboardingRequestBodyExample'

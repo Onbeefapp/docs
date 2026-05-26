@@ -7,3 +7,9 @@ properties:
   status:
     type: integer
     description: 'Código de status HTTP da resposta.'
+  error:
+    type: string
+    description: 'Código de erro legado. Presente em respostas 401 de credenciais inválidas.'
+  message:
+    type: string
+    description: 'Mensagem legada. Presente em respostas 401 de credenciais inválidas.'

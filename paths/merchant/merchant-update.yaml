@@ -11,20 +11,21 @@ put:
   responses:
     '204':
       description: Requisição processada com sucesso. Nenhum conteúdo retornado.
-    '500':
+    '422':
       description: Request body inválido.
       content:
         application/json:
           schema:
             $ref: '#/components/schemas/ProblemDetails'
-          example:
-            $ref: '#/components/examples/500MerchantStatusFieldRequired'
+          examples:
+            500MerchantStatusFieldRequired:
+              $ref: '#/components/examples/500MerchantStatusFieldRequired'
     '503':
-      $ref: '#/components/responses/503InvalidBase64Characters'
       description: Serviço indisponível ou token inválido.
       content:
         application/json:
           schema:
             $ref: '#/components/schemas/ProblemDetails'
-          example:
-            $ref: '#/components/examples/503InvalidBase64Characters'
+          examples:
+            503InvalidBase64Characters:
+              $ref: '#/components/examples/503InvalidBase64Characters'

@@ -1,2 +1,3 @@
-title: The merchant status field is required.
-status: 500
+value:
+  title: The merchant status field is required.
+  status: 422

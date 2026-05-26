@@ -16,5 +16,6 @@ properties:
     - FAIL
   moreInfo:
     type: string
+    nullable: true
     description: >-
       Campo aberto para fornecer qualquer informação relevante ao solicitante. Ex.: mensagens de erro ou causas.

@@ -14,3 +14,15 @@ post:
   responses:
     '204':
       description: O cancelamento do pedido foi negado. Nenhum conteúdo de resposta.
+    '401':
+      description: Requisição sem credenciais de autenticação válidas.
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ProblemDetails'
+    '404':
+      description: Pedido não encontrado.
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ProblemDetails'
