@@ -6,6 +6,9 @@ properties:
   name:
     type: string
     description: Nome da categoria.
+  index:
+    type: integer
+    description: Posição da categoria na ordenação do menu.
   description:
     type: string
     description: Descrição da categoria.
@@ -36,4 +39,6 @@ properties:
 required:
 - id
 - name
+- index
 - status
+- itemOfferId
