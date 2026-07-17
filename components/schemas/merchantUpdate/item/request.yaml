@@ -1,22 +1,42 @@
+type: object
+description: >-
+  Produto do catálogo. Campos opcionais omitidos (ou enviados como `null`) mantêm o valor atual do produto na Onbeef.
 properties:
   id:
     type: string
     format: uuid
-    description: ID único do produto.
+    description: >-
+      ID único do produto no sistema do PDV. Nas atualizações com `entityType: ITEM`, deve ser o mesmo `id` enviado no cadastro do catálogo (`entityType: MERCHANT`); produtos sem correspondência não são processados.
   name:
     type: string
     description: Nome do produto.
   description:
     type: string
+    nullable: true
     description: Descrição do produto.
   externalCode:
     type: string
+    nullable: true
     description: Código externo do produto (normalmente no PDV do merchant).
+  ean:
+    type: string
+    nullable: true
+    description: Código de barras (EAN) do produto.
+  status:
+    type: string
+    nullable: true
+    description: >-
+      Status do produto. Define se o produto fica disponível ou indisponível na Onbeef. Se omitido, o status atual do produto é mantido.
+    enum:
+    - AVAILABLE
+    - UNAVAILABLE
   sku:
     type: string
+    nullable: true
     description: Código SKU do produto.
   image:
     type: object
+    nullable: true
     description: Imagem do produto.
     properties:
       url:
@@ -27,9 +47,11 @@ properties:
     - url
   serving:
     type: integer
+    nullable: true
     description: Número de pessoas que o produto serve.
   nutritionalInfo:
     type: object
+    nullable: true
     description: Informações nutricionais do produto.
     properties:
       description:
@@ -55,7 +77,8 @@ properties:
     - isAlcoholic
   unit:
     type: string
-    description: Unidade de medida do produto.
+    description: >-
+      Unidade de medida do produto. Define se o preço é aplicado por unidade (`UN`) ou por quilo (`KG`).
     enum:
     - UN
     - KG

@@ -1,0 +1,18 @@
+allOf:
+- $ref: '#/components/schemas/MerchantUpdateItemOfferRequest'
+- type: object
+  properties:
+    id:
+      type: string
+      format: uuid
+      description: >-
+        Identificador único da oferta. É o valor referenciado pelo campo `itemOfferId` das categorias: ofertas cujo `id` não conste em nenhuma categoria não são processadas.
+    status:
+      type: string
+      description: >-
+        Status da oferta. Define se o produto fica disponível ou indisponível na Onbeef. Se omitido, o status atual do produto é mantido.
+      enum:
+      - AVAILABLE
+      - UNAVAILABLE
+  required:
+  - id

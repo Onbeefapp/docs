@@ -12,7 +12,8 @@ content:
       properties:
         merchantStatus:
           type: string
-          description: Esse campo indica se o Merchant está disponível ou não.
+          description: >-
+            Indica se o estabelecimento está disponível ou não. Obrigatório em todas as requisições por compatibilidade, mas só é aplicado quando `entityType` é `MERCHANT`; em `ITEM` e `ITEM_OFFER` o campo é ignorado.
           enum:
           - AVAILABLE
           - UNAVAILABLE
@@ -25,7 +26,9 @@ content:
           - ITEM_OFFER
         onlyAddProducts:
           type: boolean
-          description: 'Se for true, os itens serão adicionados ou atualizados sem remover os já existentes. Se for false, os itens serão adicionados, mas todos os outros produtos existentes serão excluídos.'
+          default: false
+          description: >-
+            Aplicável apenas quando `entityType` é `MERCHANT`. Se for true, os produtos serão adicionados ou atualizados sem remover os já existentes. Se for false (padrão quando omitido), além de adicionar e atualizar, a Onbeef remove as categorias e produtos vinculados ao PDV (identificador do PDV preenchido) que não constarem no payload. Categorias e produtos sem vínculo com o PDV nunca são removidos: o que define a remoção é o vínculo, não onde o registro foi criado.
         updatedObjects:
           type: array
           description: 'Lista de entidades atualizadas. O conteúdo varia conforme o `entityType` (ver schemas referenciados pelo discriminator).'
@@ -34,5 +37,11 @@ content:
       required:
       - entityType
       - merchantStatus
-      - onlyAddProducts
       - updatedObjects
+    examples:
+      MerchantUpdateRequestFullExample:
+        $ref: '#/components/examples/MerchantUpdateRequestFullExample'
+      MerchantUpdateRequestItemExample:
+        $ref: '#/components/examples/MerchantUpdateRequestItemExample'
+      MerchantUpdateRequestItemOfferExample:
+        $ref: '#/components/examples/MerchantUpdateRequestItemOfferExample'

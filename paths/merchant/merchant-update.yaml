@@ -2,15 +2,33 @@ put:
   tags:
   - Merchant
   operationId: MerchantUpdate
-  summary: Atualização de Merchant.
+  summary: Sincronizar catálogo e atualizar produtos
   security:
   - BearerAuth: []
-  description: Endpoint para atualizar informações de um Merchant, como item, status e categorias.
+  description: |
+    Endpoint para sincronizar o catálogo e atualizar produtos, preços e status do estabelecimento.
+
+    O processamento é assíncrono: a API responde `204` assim que a solicitação é aceita, e o resultado deve ser consultado no endpoint `/v1/merchantStatus` (status `PROCESSING`, `SUCCESS` ou `FAIL`, com detalhes no campo `moreInfo`).
+
+    Comportamento por `entityType`:
+    - **MERCHANT**: sincronização completa do catálogo.
+      - Categorias são localizadas pelo `id` enviado pelo PDV: quando já vinculadas, apenas o status é atualizado (nome e ordenação atuais são preservados); quando não encontradas, são criadas.
+      - Produtos só são processados quando a categoria referencia a oferta (`itemOfferId`), a oferta existe em `itemOffers` e o produto correspondente existe em `items`.
+      - Em produtos já existentes, nome, descrição e ordenação são preservados (personalizações feitas pelo lojista na Onbeef têm prioridade).
+      - Com `onlyAddProducts: false`, as categorias e produtos vinculados ao PDV (identificador do PDV preenchido) que não constarem no payload são removidos. Registros sem vínculo com o PDV nunca são removidos: o que define a remoção é o vínculo, não onde o registro foi criado.
+      - Se o payload contiver entradas inválidas (categorias sem `id`/`name`, ofertas sem produto ou sem preço correspondentes), as entradas válidas são processadas, nenhuma remoção é executada e o status final é `FAIL` com o detalhe em `moreInfo`.
+    - **ITEM**: atualiza dados e status de produtos já existentes, identificados pelo `id`. Não cria produtos novos.
+    - **ITEM_OFFER**: atualiza o preço de produtos já existentes, identificados pelo `itemId`.
+
+    Observações:
+    - Campos opcionais omitidos (ou enviados como `null`) mantêm o valor atual do produto na Onbeef.
+    - Kits de preço aberto cadastrados na Onbeef não recebem preço do PDV; ofertas enviadas para esses produtos são reportadas em `moreInfo` com status `FAIL`.
   requestBody:
     $ref: '#/components/requestBodies/MerchantUpdateRequestBody'
   responses:
     '204':
-      description: Requisição processada com sucesso. Nenhum conteúdo retornado.
+      description: >-
+        Solicitação aceita para processamento. Nenhum conteúdo retornado. Como o processamento é assíncrono, consulte `/v1/merchantStatus` para acompanhar o resultado.
     '422':
       description: Request body inválido.
       content:

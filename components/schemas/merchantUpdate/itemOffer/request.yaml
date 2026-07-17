@@ -4,22 +4,22 @@ properties:
     description: O valor do id da entidade Item correlacionado a esta entidade ItemOffer.
   price:
     type: object
-    description: Preço da oferta do item do menu. Valores original e atual podem ser informados para exibir descontos.
+    description: Preço da oferta do produto no catálogo.
     properties:
       value:
         type: number
-        description: Valor do preço atual.
+        description: Valor do preço atual. É o valor aplicado ao produto na Onbeef.
       originalValue:
         type: number
+        nullable: true
         description: Valor do preço original.
       currency:
         type: string
+        nullable: true
         description: >-
           Código da moeda do preço.
     required:
     - value
-    - currency
-    - originalValue
 required:
 - itemId
 - price

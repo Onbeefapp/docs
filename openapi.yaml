@@ -100,6 +100,8 @@ components:
       $ref: './components/schemas/merchantUpdate/item/request.yaml'
     MerchantUpdateItemOfferRequest:
       $ref: './components/schemas/merchantUpdate/itemOffer/request.yaml'
+    MerchantUpdateFullItemOfferRequest:
+      $ref: './components/schemas/merchantUpdate/itemOffer/request-full.yaml'
     MerchantUpdateCategoryRequest:
       $ref: './components/schemas/category/merchant-update-request-categories.yaml'
     DeliveryUpdateRequestBody:
@@ -141,6 +143,12 @@ components:
       $ref: './components/examples/merchant/merchant-onboarding-request.yaml'
     MerchantOnboardingResponseSuccessExample:
       $ref: './components/examples/merchant/merchant-onboarding-response-success.yaml'
+    MerchantUpdateRequestFullExample:
+      $ref: './components/examples/merchant/merchant-update-request-full.yaml'
+    MerchantUpdateRequestItemExample:
+      $ref: './components/examples/merchant/merchant-update-request-item.yaml'
+    MerchantUpdateRequestItemOfferExample:
+      $ref: './components/examples/merchant/merchant-update-request-item-offer.yaml'
     401InvalidCredentials:
       $ref: './components/examples/errors/401-invalid-credentials.yaml'
     500MerchantIdFieldRequired:

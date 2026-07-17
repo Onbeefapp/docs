@@ -1,0 +1,11 @@
+summary: ITEM_OFFER
+value:
+  merchantStatus: AVAILABLE
+  entityType: ITEM_OFFER
+  updatedObjects:
+  - itemId: 5a6b7c8d-9e0f-4a2b-3c4d-5e6f7a8b9c0d
+    price:
+      value: 84.90
+  - itemId: 6b7c8d9e-0f1a-4b3c-4d5e-6f7a8b9c0d1e
+    price:
+      value: 22.90

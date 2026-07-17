@@ -12,35 +12,34 @@ allOf:
             type: string
             format: uuid
             description: >-
-              Identificador único do merchant no sistema Onbeef.
+              Identificador do estabelecimento no sistema do PDV. Armazenado pela Onbeef como referência externa do estabelecimento.
           status:
             type: string
             description: >-
-              Indica se o Merchant está Disponível ou Indisponível.
+              Indica se o estabelecimento está disponível ou indisponível. O status aplicado pela Onbeef é lido do campo `merchantStatus` no nível raiz da requisição.
             enum:
             - AVAILABLE
             - UNAVAILABLE
           items:
             type: array
             description: >-
-              Entidade obrigatória a ser implementada. Descreve um array de itens.
+              Entidade obrigatória a ser implementada. Descreve um array de produtos.
             items:
               $ref: '#/components/schemas/MerchantUpdateItemRequest'
           categories:
             type: array
             description: >-
-              Descreve um array de seções no menu onde os ItemOffers serão exibidos.
+              Descreve um array de seções do catálogo onde os ItemOffers serão exibidos. Produtos só são processados quando a categoria referencia a oferta (`itemOfferId`), a oferta existe em `itemOffers` e o produto correspondente existe em `items`.
             items:
               $ref: '#/components/schemas/MerchantUpdateCategoryRequest'
           itemOffers:
             type: array
             description: >-
-              Entidade obrigatória a ser implementada. Descreve um array de ofertas para os itens.
+              Entidade obrigatória a ser implementada. Descreve um array de ofertas para os produtos.
             items:
-              $ref: '#/components/schemas/MerchantUpdateItemOfferRequest'
+              $ref: '#/components/schemas/MerchantUpdateFullItemOfferRequest'
         required:
         - id
-        - status
         - items
         - categories
         - itemOffers
