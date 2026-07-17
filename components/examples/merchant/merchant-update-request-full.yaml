@@ -1,0 +1,41 @@
+summary: MERCHANT
+value:
+  merchantStatus: AVAILABLE
+  entityType: MERCHANT
+  onlyAddProducts: false
+  updatedObjects:
+  - id: 9b2f4c1e-0a3d-4e8c-9d6a-2b7f1c0d5e3a
+    categories:
+    - id: 3f8a1b2c-4d5e-4f70-8192-a3b4c5d6e7f8
+      name: Carnes Bovinas
+      index: 0
+      status: AVAILABLE
+      itemOfferId:
+      - 7c9e2f4a-1b3d-4e6f-8a90-b1c2d3e4f5a6
+      - 8d0f3a5b-2c4e-4f71-9b01-c2d3e4f5a6b7
+    items:
+    - id: 5a6b7c8d-9e0f-4a2b-3c4d-5e6f7a8b9c0d
+      name: Picanha
+      description: Peça de picanha bovina
+      externalCode: '1001'
+      ean: '7891234567890'
+      unit: KG
+      image:
+        url: https://exemplo.com/imagens/picanha.jpg
+    - id: 6b7c8d9e-0f1a-4b3c-4d5e-6f7a8b9c0d1e
+      name: Linguiça Toscana
+      description: Pacote com 1kg de linguiça toscana
+      externalCode: '1002'
+      ean: '7890987654321'
+      unit: UN
+    itemOffers:
+    - id: 7c9e2f4a-1b3d-4e6f-8a90-b1c2d3e4f5a6
+      itemId: 5a6b7c8d-9e0f-4a2b-3c4d-5e6f7a8b9c0d
+      status: AVAILABLE
+      price:
+        value: 89.90
+    - id: 8d0f3a5b-2c4e-4f71-9b01-c2d3e4f5a6b7
+      itemId: 6b7c8d9e-0f1a-4b3c-4d5e-6f7a8b9c0d1e
+      status: AVAILABLE
+      price:
+        value: 24.50

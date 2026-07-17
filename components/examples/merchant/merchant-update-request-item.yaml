@@ -1,0 +1,15 @@
+summary: ITEM
+value:
+  merchantStatus: AVAILABLE
+  entityType: ITEM
+  updatedObjects:
+  - id: 5a6b7c8d-9e0f-4a2b-3c4d-5e6f7a8b9c0d
+    name: Picanha Premium
+    description: Peça de picanha bovina premium
+    externalCode: '1001'
+    ean: '7891234567890'
+    unit: KG
+    status: AVAILABLE
+    serving: 4
+    image:
+      url: https://exemplo.com/imagens/picanha-premium.jpg

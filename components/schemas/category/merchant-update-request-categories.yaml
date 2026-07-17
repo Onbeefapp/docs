@@ -2,13 +2,16 @@ properties:
   id:
     type: string
     format: uuid
-    description: ID único da categoria.
+    description: >-
+      Identificador da categoria no sistema do PDV. A Onbeef usa esse valor para localizar uma categoria já vinculada ao estabelecimento: quando encontra, atualiza apenas o status e preserva o nome e a ordenação atuais; quando não encontra, cria uma nova categoria.
   name:
     type: string
-    description: Nome da categoria.
+    description: >-
+      Nome da categoria. Utilizado apenas na criação; em categorias já vinculadas o nome atual é preservado.
   index:
     type: integer
-    description: Posição da categoria na ordenação do menu.
+    description: >-
+      Posição da categoria na ordenação do catálogo. Utilizado apenas na criação; em categorias já vinculadas a ordenação atual é preservada.
   description:
     type: string
     description: Descrição da categoria.
@@ -33,7 +36,8 @@ properties:
     - UNAVAILABLE
   itemOfferId:
     type: array
-    description: ID dos itens oferecidos pela categoria.
+    description: >-
+      IDs das ofertas (campo `id` da entidade ItemOffer) exibidas nesta categoria. Cada id referenciado precisa existir no array `itemOffers`, e a oferta precisa apontar (`itemId`) para um produto existente no array `items`.
     items:
       type: string
 required:
